@@ -1,4 +1,5 @@
 @import "mixins/FluidTypography";
+@import "mixins/colors";
 
 // Varibaes
 $min_width: 320px;
@@ -16,14 +17,6 @@ body {
   background: #333333;
 }
 
-.orange {
-  color: #a37006;
-}
-
-.bg-orange {
-  background: #a37006;
-}
-
 nav {
   .navbar-brand img {
     width: auto;
@@ -31,5 +24,20 @@ nav {
   }
   #lang {
     background: #4d4d4d;
+  }
+}
+
+menu {
+  img {
+    width: auto;
+    height: 1.5rem;
+  }
+
+  p {
+    font-size: 0.5rem;
+  }
+
+  .menu-item-border {
+    border-right: 0.1rem solid $gray;
   }
 }
