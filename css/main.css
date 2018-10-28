@@ -22,7 +22,15 @@ body {
   color: #a37006;
 }
 
-#lang {
+.bg-orange {
+  background: #a37006;
+}
+
+nav .navbar-brand img {
+  width: auto;
+  height: 4rem;
+}
+nav #lang {
   background: #4d4d4d;
 }
 

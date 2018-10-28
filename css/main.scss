@@ -20,6 +20,16 @@ body {
   color: #a37006;
 }
 
-#lang {
-  background: #4d4d4d;
+.bg-orange {
+  background: #a37006;
+}
+
+nav {
+  .navbar-brand img {
+    width: auto;
+    height: 4rem;
+  }
+  #lang {
+    background: #4d4d4d;
+  }
 }
