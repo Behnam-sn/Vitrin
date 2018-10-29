@@ -25,14 +25,23 @@ html {
 }
 
 body {
+  font-family: B Yekan;
   direction: ltr;
   text-align: left;
   background: #333333;
 }
 
+.font-myriad {
+  font-family: Myriad pro regular;
+}
+
+.rtl {
+  direction: rtl;
+}
+
 nav .navbar-brand img {
   width: auto;
-  height: 4rem;
+  height: 3rem;
 }
 nav #lang {
   background: #4d4d4d;
@@ -40,13 +49,28 @@ nav #lang {
 
 menu img {
   width: auto;
-  height: 1.5rem;
+  height: 1.1rem;
 }
 menu p {
-  font-size: 0.5rem;
+  font-size: 0.48rem;
+}
+menu .menu-item {
+  padding: 0 0.7rem;
 }
 menu .menu-item-border {
-  border-right: 0.1rem solid #cccccc;
+  border-right: 0.07rem solid #cccccc;
+}
+menu input[type=text] {
+  font-size: 0.8rem;
+  width: 9rem;
+  height: 1.5rem;
+  border: 0.1rem solid transparent;
+  border-radius: 1.8rem;
+  background: #CCCCCC;
+  transition: background 0.4s linear;
+}
+menu input[type=text]:hover, menu input[type=text]:focus {
+  background: #e6e6e6;
 }
 
 /*# sourceMappingURL=main.css.map */
