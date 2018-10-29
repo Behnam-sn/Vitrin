@@ -73,4 +73,20 @@ menu input[type=text]:hover, menu input[type=text]:focus {
   background: #e6e6e6;
 }
 
+aside #user-panel #user-img {
+  background-color: #ffab00;
+}
+aside #user-panel #user-img img {
+  width: 2.2rem;
+  height: auto;
+}
+aside #user-panel #user-arrow {
+  margin-left: 4.5rem;
+  margin-right: 0.8rem;
+}
+aside #user-panel #user-arrow img {
+  width: auto;
+  height: 0.6rem;
+}
+
 /*# sourceMappingURL=main.css.map */
