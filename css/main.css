@@ -36,6 +36,11 @@ html {
   background: #ffab00;
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: B Yekan;
   direction: ltr;
@@ -74,11 +79,12 @@ menu input[type=text] {
   height: 1.5rem;
   border: 0.1rem solid transparent;
   border-radius: 1.8rem;
-  background: #CCCCCC;
-  transition: background 0.4s linear;
+  background: #cccccc;
+  outline: none !important;
+  transition: background 0.3s linear;
 }
 menu input[type=text]:hover, menu input[type=text]:focus {
-  background: #e6e6e6;
+  background: white;
 }
 
 aside #user-panel #user-img {
@@ -95,6 +101,19 @@ aside #user-panel #user-arrow {
 aside #user-panel #user-arrow img {
   width: auto;
   height: 0.6rem;
+}
+aside #buttons button {
+  font-size: 0.9rem;
+  width: 4.3rem;
+  height: 1.5rem;
+  padding: 0;
+  border: 0.1rem solid transparent;
+  border-radius: 1rem;
+  outline: none !important;
+  transition: background 0.3s linear;
+}
+aside #buttons button:hover {
+  background: #cc8900;
 }
 
 /*# sourceMappingURL=main.css.map */

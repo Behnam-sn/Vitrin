@@ -2,6 +2,14 @@
 @import "mixins/FluidTypography";
 @import "mixins/color";
 
+@mixin transition($property: background) {
+  transition: $property 0.3s linear;  
+}
+
+a,
+button {
+  cursor: pointer;
+}
 
 body {
   font-family: B Yekan;
@@ -10,7 +18,7 @@ body {
   background: #333333;
 }
 
-.rtl{
+.rtl {
   direction: rtl;
 }
 
@@ -34,7 +42,7 @@ menu {
     font-size: 0.48rem;
   }
 
-  .menu-item{
+  .menu-item {
     padding: 0 0.7rem;
   }
 
@@ -42,38 +50,56 @@ menu {
     border-right: 0.07rem solid $gray;
   }
 
-  input[type=text]{
+  input[type="text"] {
     font-size: 0.8rem;
     width: 9rem;
     height: 1.5rem;
     border: 0.1rem solid transparent;
     border-radius: 1.8rem;
-    background: #CCCCCC;
-    transition: background 0.4s linear;
+    background: #cccccc;
+    outline: none !important;
+    @include transition();
 
     &:hover,
-    &:focus{
-      background:#e6e6e6;
+    &:focus {
+      background: lighten(#cccccc, 30%)
     }
   }
 }
 
-aside{
-  #user-panel{
-    #user-img{
+aside {
+  #user-panel {
+    #user-img {
       background-color: $orange;
-      img{
+      img {
         width: 2.2rem;
         height: auto;
       }
     }
 
-    #user-arrow{
+    #user-arrow {
       margin-left: 4.5rem;
       margin-right: 0.8rem;
-      img{
+      img {
         width: auto;
         height: 0.6rem;
+      }
+    }
+  }
+
+  #buttons {
+    button {
+      font-size: 0.9rem;
+      width: 4.3rem;
+      height: 1.5rem;
+      padding: 0;
+      border: 0.1rem solid transparent;
+      border-radius: 1rem;
+      outline: none !important;
+      @include transition();
+      
+      &:hover{
+        background: darken( $orange, 10% );
       }
     }
   }
