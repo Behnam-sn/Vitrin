@@ -1,15 +1,3 @@
-.text-orange {
-  color: #ffab00;
-}
-
-.text-gray {
-  color: #cccccc;
-}
-
-.bg-orange {
-  background: #ffab00;
-}
-
 @font-face {
   font-family: B Yekan;
   src: url("../../font/B Yekan.ttf");
@@ -34,6 +22,18 @@ html {
   html {
     font-size: 24px;
   }
+}
+
+.text-orange {
+  color: #ffab00;
+}
+
+.text-gray {
+  color: #cccccc;
+}
+
+.bg-orange {
+  background: #ffab00;
 }
 
 body {
