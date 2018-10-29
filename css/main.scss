@@ -1,5 +1,6 @@
 @import "mixins/FluidTypography";
-@import "mixins/colors";
+@import "mixins/color";
+@import "mixins/font";
 
 // Varibaes
 $min_width: 320px;
@@ -16,10 +17,6 @@ body {
   direction: ltr;
   text-align: left;
   background: #333333;
-}
-
-.font-myriad{
-  font-family: Myriad pro regular;
 }
 
 .rtl{
