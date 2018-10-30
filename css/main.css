@@ -115,5 +115,20 @@ aside #buttons button {
 aside #buttons button:hover {
   background: #cc8900;
 }
+aside #banner .img-one {
+  height: 7rem;
+  width: auto;
+}
+aside #banner .img-two {
+  height: auto;
+  width: 10.25rem;
+}
+aside #copyright {
+  background: #4D4D4D;
+}
+aside #copyright img {
+  height: 2.7rem;
+  width: auto;
+}
 
 /*# sourceMappingURL=main.css.map */

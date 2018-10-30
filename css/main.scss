@@ -103,4 +103,25 @@ aside {
       }
     }
   }
+
+  #banner{
+    .img-one{
+      height: 7rem;
+      width: auto;
+    }
+
+    .img-two{
+      height: auto;
+      width: 10.25rem;
+    }
+  }
+  
+  #copyright{
+    
+    background: #4D4D4D;
+    img{
+      height: 2.7rem;
+      width: auto;
+    }
+  }
 }
