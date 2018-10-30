@@ -33,6 +33,7 @@ nav {
 }
 
 menu {
+  height: 100rem;
   img {
     width: auto;
     height: 1.1rem;
@@ -68,6 +69,7 @@ menu {
 }
 
 aside {
+  right: 0;
   #user-panel {
     #user-img {
       background-color: $orange;
@@ -78,7 +80,7 @@ aside {
     }
 
     #user-arrow {
-      margin-left: 4.5rem;
+      margin-left: 3.7rem;
       margin-right: 0.8rem;
       img {
         width: auto;

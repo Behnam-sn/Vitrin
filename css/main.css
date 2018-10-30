@@ -60,6 +60,9 @@ nav #lang {
   background: #4d4d4d;
 }
 
+menu {
+  height: 100rem;
+}
 menu img {
   width: auto;
   height: 1.1rem;
@@ -87,6 +90,9 @@ menu input[type=text]:hover, menu input[type=text]:focus {
   background: white;
 }
 
+aside {
+  right: 0;
+}
 aside #user-panel #user-img {
   background-color: #ffab00;
 }
@@ -95,7 +101,7 @@ aside #user-panel #user-img img {
   height: auto;
 }
 aside #user-panel #user-arrow {
-  margin-left: 4.5rem;
+  margin-left: 3.7rem;
   margin-right: 0.8rem;
 }
 aside #user-panel #user-arrow img {
