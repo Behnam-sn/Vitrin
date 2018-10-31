@@ -53,7 +53,7 @@ body {
 }
 
 #page {
-  width: 48rem;
+  width: 47rem;
 }
 
 nav .navbar-brand img {
@@ -79,7 +79,7 @@ menu .menu-item-border {
 }
 menu input[type=text] {
   font-size: 0.8rem;
-  width: 10rem;
+  width: 9rem;
   height: 1.5rem;
   background: #cccccc;
   border: 0.1rem solid transparent;
@@ -93,6 +93,7 @@ menu input[type=text]:hover, menu input[type=text]:focus {
 
 aside {
   right: 0;
+  background: #333333;
 }
 aside #user-panel #user-img {
   background-color: #ffab00;
@@ -174,6 +175,41 @@ main .item .price {
 main .item .price .tag {
   margin-right: 0.1rem;
   margin-top: 0.1rem;
+}
+
+footer {
+  background: #4d4d4d;
+  font-size: 0.75rem;
+}
+footer .row {
+  width: 49rem;
+}
+footer a:hover {
+  text-decoration: none;
+}
+footer #picture img {
+  width: 5.5rem;
+  height: auto;
+  border-radius: 0.7rem;
+}
+footer .white-border {
+  border-left: 0.05rem #ffffff solid;
+}
+footer #social {
+  margin-top: 1rem;
+}
+footer #social .margin {
+  margin: 0 0.12rem;
+}
+footer #social .margin-one {
+  margin-left: 0.12rem;
+}
+footer #social img {
+  width: 1.5rem;
+  height: auto;
+}
+footer p {
+  font-size: 0.75rem;
 }
 
 /*# sourceMappingURL=main.css.map */

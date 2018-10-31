@@ -29,8 +29,7 @@ body {
 }
 
 #page {
-  width: 48rem;
-  // padding-right: 10rem;
+  width: 47rem;
 }
 
 nav {
@@ -63,7 +62,7 @@ menu {
 
   input[type="text"] {
     font-size: 0.8rem;
-    width: 10rem;
+    width: 9rem;
     height: 1.5rem;
     background: #cccccc;
     @include border();
@@ -78,6 +77,7 @@ menu {
 
 aside {
   right: 0;
+  background: #333333;
   #user-panel {
     #user-img {
       background-color: $orange;
@@ -174,5 +174,49 @@ main {
         margin-top: 0.1rem;
       }
     }
+  }
+}
+
+footer {
+  background: #4d4d4d;
+  font-size: 0.75rem;
+
+  .row {
+    width: 49rem;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  #picture img {
+    width: 5.5rem;
+    height: auto;
+    border-radius: 0.7rem;
+  }
+
+  .white-border {
+    border-left: 0.05rem #ffffff solid;
+  }
+
+  #social {
+    margin-top: 1rem;
+
+    .margin{
+      margin: 0 .12rem;
+    }
+
+    .margin-one{
+      margin-left: .12rem;
+    }
+
+    img {
+      width: 1.5rem;
+      height: auto;
+    }
+  }
+
+  p{
+    font-size: .75rem;
   }
 }
