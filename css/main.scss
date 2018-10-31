@@ -25,7 +25,7 @@ body {
   font-family: B Yekan;
   direction: ltr;
   text-align: left;
-  background: #333333;
+  background: $main;
 }
 
 #page {
@@ -77,31 +77,31 @@ menu {
 
 aside {
   right: 0;
-  background: #333333;
-  #user-panel {
-    #user-img {
-      background-color: $orange;
-      img {
-        width: 2.2rem;
-        height: auto;
-      }
-    }
+  width: 10.25rem;
 
-    #user-arrow {
-      margin-left: 3.7rem;
-      margin-right: 0.8rem;
-      img {
-        width: auto;
-        height: 0.6rem;
-      }
+  #user-img {
+    margin-right: 2rem;
+    img {
+      width: 2.2rem;
+      height: auto;
+    }
+  }
+
+  #user-arrow {
+    margin-right: 0.6rem;
+    margin-top: 0.2rem;
+    img {
+      width: auto;
+      height: 0.6rem;
     }
   }
 
   #buttons {
+    margin-right: 2rem;
     button {
-      font-size: 0.9rem;
-      width: 4.3rem;
+      width: 4rem;
       height: 1.5rem;
+      font-size: 0.9rem;
       @include border();
       @include transition();
 
@@ -115,11 +115,6 @@ aside {
     .img-one {
       height: 7rem;
       width: auto;
-    }
-
-    .img-two {
-      height: auto;
-      width: 10.25rem;
     }
   }
 
@@ -202,12 +197,12 @@ footer {
   #social {
     margin-top: 1rem;
 
-    .margin{
-      margin: 0 .12rem;
+    .margin {
+      margin: 0 0.12rem;
     }
 
-    .margin-one{
-      margin-left: .12rem;
+    .margin-one {
+      margin-left: 0.12rem;
     }
 
     img {
@@ -216,7 +211,7 @@ footer {
     }
   }
 
-  p{
-    font-size: .75rem;
+  p {
+    font-size: 0.75rem;
   }
 }

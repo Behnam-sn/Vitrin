@@ -36,6 +36,10 @@ html {
   background: #ffab00;
 }
 
+.bg-main {
+  background: #333333;
+}
+
 a,
 button {
   cursor: pointer;
@@ -93,27 +97,30 @@ menu input[type=text]:hover, menu input[type=text]:focus {
 
 aside {
   right: 0;
-  background: #333333;
+  width: 10.25rem;
 }
-aside #user-panel #user-img {
-  background-color: #ffab00;
+aside #user-img {
+  margin-right: 2rem;
 }
-aside #user-panel #user-img img {
+aside #user-img img {
   width: 2.2rem;
   height: auto;
 }
-aside #user-panel #user-arrow {
-  margin-left: 3.7rem;
-  margin-right: 0.8rem;
+aside #user-arrow {
+  margin-right: 0.6rem;
+  margin-top: 0.2rem;
 }
-aside #user-panel #user-arrow img {
+aside #user-arrow img {
   width: auto;
   height: 0.6rem;
 }
+aside #buttons {
+  margin-right: 2rem;
+}
 aside #buttons button {
-  font-size: 0.9rem;
-  width: 4.3rem;
+  width: 4rem;
   height: 1.5rem;
+  font-size: 0.9rem;
   border: 0.1rem solid transparent;
   border-radius: 1rem;
   outline: none !important;
@@ -125,10 +132,6 @@ aside #buttons button:hover {
 aside #banner .img-one {
   height: 7rem;
   width: auto;
-}
-aside #banner .img-two {
-  height: auto;
-  width: 10.25rem;
 }
 aside #copyright {
   background: #4d4d4d;

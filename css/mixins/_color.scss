@@ -1,5 +1,6 @@
 $orange: #ffab00;
 $gray: #cccccc;
+$main:#333333;
 
 .text-orange {
   color: $orange;
@@ -11,4 +12,8 @@ $gray: #cccccc;
 
 .bg-orange {
   background: $orange;
+}
+
+.bg-main{
+  background: $main;
 }
