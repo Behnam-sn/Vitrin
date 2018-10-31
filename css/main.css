@@ -41,6 +41,10 @@ button {
   cursor: pointer;
 }
 
+.rtl {
+  direction: rtl;
+}
+
 body {
   font-family: B Yekan;
   direction: ltr;
@@ -48,8 +52,8 @@ body {
   background: #333333;
 }
 
-.rtl {
-  direction: rtl;
+#page {
+  width: 48rem;
 }
 
 nav .navbar-brand img {
@@ -75,7 +79,7 @@ menu .menu-item-border {
 }
 menu input[type=text] {
   font-size: 0.8rem;
-  width: 9rem;
+  width: 10rem;
   height: 1.5rem;
   background: #cccccc;
   border: 0.1rem solid transparent;
@@ -141,10 +145,35 @@ aside #copyright img {
   border: 0.1rem solid transparent;
   border-radius: 1rem;
   outline: none !important;
+  transition: background 0.3s linear;
+}
+#filter button:hover {
+  background: #5a5a5a;
 }
 #filter img {
   width: auto;
   height: 0.45rem;
+}
+
+main .item {
+  margin-bottom: 1rem;
+}
+main .item .body img {
+  height: 2.3rem;
+  width: auto;
+}
+main .item .title {
+  font-size: 0.8rem;
+}
+main .item .type {
+  font-size: 0.6rem;
+}
+main .item .price {
+  font-size: 0.5rem;
+}
+main .item .price .tag {
+  margin-right: 0.1rem;
+  margin-top: 0.1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

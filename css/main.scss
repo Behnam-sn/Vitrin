@@ -17,6 +17,10 @@ button {
   cursor: pointer;
 }
 
+.rtl {
+  direction: rtl;
+}
+
 body {
   font-family: B Yekan;
   direction: ltr;
@@ -24,8 +28,8 @@ body {
   background: #333333;
 }
 
-.rtl {
-  direction: rtl;
+#page {
+  width: 48rem;
 }
 
 nav {
@@ -58,7 +62,7 @@ menu {
 
   input[type="text"] {
     font-size: 0.8rem;
-    width: 9rem;
+    width: 10rem;
     height: 1.5rem;
     background: #cccccc;
     @include border();
@@ -134,9 +138,40 @@ aside {
     height: 1.7rem;
     font-size: 0.7rem;
     @include border();
+    @include transition();
+
+    &:hover {
+      background: darken(#808080, 15%);
+    }
   }
   img {
     width: auto;
     height: 0.45rem;
+  }
+}
+
+main {
+  .item {
+    margin-bottom: 1rem;
+    .body img {
+      height: 2.3rem;
+      width: auto;
+    }
+
+    .title {
+      font-size: 0.8rem;
+    }
+
+    .type {
+      font-size: 0.6rem;
+    }
+
+    .price {
+      font-size: 0.5rem;
+      .tag {
+        margin-right: 0.1rem;
+        margin-top: 0.1rem;
+      }
+    }
   }
 }
