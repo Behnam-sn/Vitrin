@@ -30,6 +30,7 @@ body {
 
 #page {
   width: 48rem;
+  // padding-right: 10rem;
 }
 
 nav {
@@ -141,7 +142,7 @@ aside {
     @include transition();
 
     &:hover {
-      background: darken(#808080, 15%);
+      background: lighten(#808080, 15%);
     }
   }
   img {

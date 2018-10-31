@@ -148,7 +148,7 @@ aside #copyright img {
   transition: background 0.3s linear;
 }
 #filter button:hover {
-  background: #5a5a5a;
+  background: #a6a6a6;
 }
 #filter img {
   width: auto;
