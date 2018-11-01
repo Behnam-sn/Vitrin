@@ -54,6 +54,7 @@ menu {
 
   .menu-item {
     padding: 0 0.7rem;
+    cursor: pointer;
     @include transition(filter);
 
     filter: grayscale(0.99);
