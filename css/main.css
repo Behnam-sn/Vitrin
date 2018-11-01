@@ -77,6 +77,14 @@ menu p {
 }
 menu .menu-item {
   padding: 0 0.7rem;
+  transition: filter 0.3s linear;
+  filter: grayscale(0.99);
+}
+menu .menu-item:hover {
+  filter: grayscale(0);
+}
+menu .active {
+  filter: grayscale(0);
 }
 menu .menu-item-border {
   border-right: 0.07rem solid #cccccc;

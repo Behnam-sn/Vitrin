@@ -54,6 +54,16 @@ menu {
 
   .menu-item {
     padding: 0 0.7rem;
+    @include transition(filter);
+
+    filter: grayscale(0.99);
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+
+  .active {
+    filter: grayscale(0);
   }
 
   .menu-item-border {
