@@ -91,10 +91,12 @@ menu .menu-item-border {
   border-right: 0.07rem solid #cccccc;
 }
 menu input[type=text] {
-  font-size: 0.8rem;
   width: 9rem;
   height: 1.5rem;
+  padding-right: 1.8rem;
+  padding-left: 0.5rem;
   background: #cccccc;
+  font-size: 0.8rem;
   border: 0.1rem solid transparent;
   border-radius: 1rem;
   outline: none !important;
@@ -102,6 +104,12 @@ menu input[type=text] {
 }
 menu input[type=text]:hover, menu input[type=text]:focus {
   background: white;
+}
+menu button {
+  all: unset;
+  cursor: pointer;
+  top: 0.05rem;
+  right: 0.6rem;
 }
 
 aside {

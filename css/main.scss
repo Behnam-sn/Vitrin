@@ -72,10 +72,14 @@ menu {
   }
 
   input[type="text"] {
-    font-size: 0.8rem;
     width: 9rem;
     height: 1.5rem;
+    padding-right: 1.8rem;
+    padding-left: 0.5rem;
+
     background: #cccccc;
+    font-size: 0.8rem;
+
     @include border();
     @include transition();
 
@@ -83,6 +87,13 @@ menu {
     &:focus {
       background: lighten(#cccccc, 30%);
     }
+  }
+
+  button {
+    all: unset;
+    cursor: pointer;
+    top: 0.05rem;
+    right: 0.6rem;
   }
 }
 
