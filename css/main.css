@@ -167,10 +167,6 @@ main .item {
   padding-bottom: 0.5rem;
   margin-bottom: 0.2rem;
   border-radius: 0.9rem;
-  transition: background 0.3s linear;
-}
-main .item:hover {
-  background: #737373;
 }
 main .item img {
   border-radius: 0.9rem;

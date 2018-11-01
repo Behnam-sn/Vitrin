@@ -156,11 +156,11 @@ main {
     padding-bottom: 0.5rem;
     margin-bottom: 0.2rem;
     border-radius: 0.9rem;
-    @include transition();
+    // @include transition();
     // transition: background 0.1s linear;
-    &:hover {
-      background: #737373;
-    }
+    // &:hover {
+    //   background: #737373;
+    // }
 
     img {
       border-radius: 0.9rem;
