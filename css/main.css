@@ -88,7 +88,7 @@ menu .active {
   filter: grayscale(0);
 }
 menu .menu-item-border {
-  border-right: 0.07rem solid #cccccc;
+  border-right: 0.07rem solid #b2b2b2;
 }
 menu input[type=text] {
   width: 9rem;
