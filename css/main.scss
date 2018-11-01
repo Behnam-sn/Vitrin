@@ -38,7 +38,7 @@ nav {
     height: 2.8rem;
   }
   #lang {
-    background: #4d4d4d;
+    background: $copyright;
   }
 }
 
@@ -158,7 +158,7 @@ aside {
   }
 
   #copyright {
-    background: #4d4d4d;
+    background: $copyright;
     img {
       height: 2.7rem;
       width: auto;
@@ -229,7 +229,7 @@ main {
 }
 
 footer {
-  background: #4d4d4d;
+  background: $copyright;
   font-size: 0.75rem;
 
   .row {
