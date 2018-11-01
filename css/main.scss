@@ -147,8 +147,25 @@ aside {
 }
 
 main {
+  .col-6 {
+    padding: 0.1rem !important;
+  }
+
   .item {
-    margin-bottom: 1rem;
+    padding: 0.25rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
+    border-radius: 0.9rem;
+    @include transition();
+    // transition: background 0.1s linear;
+    &:hover {
+      background: #737373;
+    }
+
+    img {
+      border-radius: 0.9rem;
+    }
+
     .body img {
       height: 2.3rem;
       width: auto;
@@ -185,7 +202,7 @@ footer {
   }
 
   #picture img {
-    width: 5.5rem;
+    width: 5rem;
     height: auto;
     border-radius: 0.7rem;
   }
