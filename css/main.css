@@ -108,26 +108,29 @@ aside {
   right: 0;
   width: 10.25rem;
 }
-aside #user-img {
+aside #image {
   margin-right: 2rem;
 }
-aside #user-img img {
-  width: 2.2rem;
+aside #image img {
+  width: 3.2rem;
   height: auto;
 }
-aside #user-arrow {
-  margin-right: 0.6rem;
-  margin-top: 0.2rem;
+aside #arrow,
+aside #star,
+aside #bell {
+  margin-right: 0.7rem;
+  cursor: pointer;
 }
-aside #user-arrow img {
-  width: auto;
-  height: 0.6rem;
+aside #arrow img,
+aside #star img,
+aside #bell img {
+  width: 1.1rem;
+  height: auto;
 }
 aside #buttons {
   margin-right: 2rem;
 }
 aside #buttons button {
-  width: 4rem;
   height: 1.5rem;
   font-size: 0.9rem;
   border: 0.1rem solid transparent;
@@ -137,6 +140,12 @@ aside #buttons button {
 }
 aside #buttons button:hover {
   background: #cc8900;
+}
+aside #buttons .button-one {
+  width: 4rem;
+}
+aside #buttons .button-two {
+  width: 8.6rem;
 }
 aside #banner .img-one {
   height: 7rem;

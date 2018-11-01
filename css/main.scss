@@ -90,27 +90,29 @@ aside {
   right: 0;
   width: 10.25rem;
 
-  #user-img {
+  #image {
     margin-right: 2rem;
     img {
-      width: 2.2rem;
+      width: 3.2rem;
       height: auto;
     }
   }
 
-  #user-arrow {
-    margin-right: 0.6rem;
-    margin-top: 0.2rem;
+  #arrow,
+  #star,
+  #bell {
+    margin-right: 0.7rem;
+    cursor: pointer;
     img {
-      width: auto;
-      height: 0.6rem;
+      width: 1.1rem;
+      height: auto;
     }
   }
 
   #buttons {
     margin-right: 2rem;
+
     button {
-      width: 4rem;
       height: 1.5rem;
       font-size: 0.9rem;
       @include border();
@@ -119,6 +121,14 @@ aside {
       &:hover {
         background: darken($orange, 10%);
       }
+    }
+
+    .button-one {
+      width: 4rem;
+    }
+
+    .button-two {
+      width: 8.6rem;
     }
   }
 
