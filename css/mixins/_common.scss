@@ -1,0 +1,18 @@
+.md-visible {
+  visibility: hidden;
+}
+
+@media (min-width: 1024px) {
+  .md-visible {
+    visibility: visible;
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.rtl {
+  direction: rtl;
+}

@@ -1,6 +1,7 @@
 @import "mixins/font";
 @import "mixins/FluidTypography";
 @import "mixins/color";
+@import "mixins/common";
 
 @mixin transition($property: background) {
   transition: $property 0.3s linear;
@@ -10,15 +11,6 @@
   border: 0.1rem solid transparent;
   border-radius: 1rem;
   outline: none !important;
-}
-
-a,
-button {
-  cursor: pointer;
-}
-
-.rtl {
-  direction: rtl;
 }
 
 body {
