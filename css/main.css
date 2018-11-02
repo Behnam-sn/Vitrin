@@ -69,7 +69,7 @@ nav #lang {
 }
 
 menu a {
-  all: unset;
+  color: #cccccc;
 }
 menu a:hover {
   color: #cccccc;
@@ -103,7 +103,7 @@ menu input[type=text] {
   padding-right: 1.8rem;
   padding-left: 0.5rem;
   background: #cccccc;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   border: 0.1rem solid transparent;
   border-radius: 1rem;
   outline: none !important;
@@ -113,8 +113,9 @@ menu input[type=text]:hover, menu input[type=text]:focus {
   background: white;
 }
 menu button {
-  all: unset;
-  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
   top: 0.05rem;
   right: 0.6rem;
 }

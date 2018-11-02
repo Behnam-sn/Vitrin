@@ -57,7 +57,7 @@ nav {
 
 menu {
   a {
-    all: unset;
+    color: $gray;
     &:hover {
       color: $gray;
       text-decoration: none;
@@ -98,7 +98,7 @@ menu {
     padding-left: 0.5rem;
 
     background: #cccccc;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 
     @include border();
     @include transition();
@@ -110,8 +110,9 @@ menu {
   }
 
   button {
-    all: unset;
-    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
     top: 0.05rem;
     right: 0.6rem;
   }
