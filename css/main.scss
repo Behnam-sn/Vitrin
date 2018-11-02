@@ -196,7 +196,7 @@ aside {
 }
 
 main {
-  .col-6 {
+  #home .col-6 {
     padding: 0.1rem !important;
   }
 
@@ -233,6 +233,28 @@ main {
       .tag {
         margin-right: 0.1rem;
         margin-top: 0.1rem;
+      }
+    }
+  }
+
+  // artists
+  #artists {
+    img {
+      width: 6rem;
+      height: auto;
+    }
+    .name {
+      font-size: 0.7rem;
+    }
+
+    .bio {
+      font-size: 0.45rem;
+    }
+
+    a {
+      color: #ffffff;
+      &:hover {
+        text-decoration: none;
       }
     }
   }

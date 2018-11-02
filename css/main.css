@@ -203,7 +203,7 @@ aside #copyright img {
   height: 0.45rem;
 }
 
-main .col-6 {
+main #home .col-6 {
   padding: 0.1rem !important;
 }
 main .item {
@@ -231,6 +231,22 @@ main .item .price {
 main .item .price .tag {
   margin-right: 0.1rem;
   margin-top: 0.1rem;
+}
+main #artists img {
+  width: 6rem;
+  height: auto;
+}
+main #artists .name {
+  font-size: 0.7rem;
+}
+main #artists .bio {
+  font-size: 0.45rem;
+}
+main #artists a {
+  color: #ffffff;
+}
+main #artists a:hover {
+  text-decoration: none;
 }
 
 footer {
