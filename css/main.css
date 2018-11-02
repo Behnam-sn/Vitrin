@@ -48,6 +48,14 @@ html {
   .md-visible {
     visibility: visible;
   }
+
+  .white-border {
+    border-left: 0.05rem #ffffff solid;
+  }
+
+  .pr-lg-x {
+    padding-right: 9rem;
+  }
 }
 a,
 button {
@@ -262,9 +270,6 @@ footer {
   background: #4d4d4d;
   font-size: 0.8rem;
 }
-footer .row {
-  width: 51rem;
-}
 footer a:hover {
   text-decoration: none;
 }
@@ -272,9 +277,6 @@ footer #picture img {
   width: 5rem;
   height: auto;
   border-radius: 0.7rem;
-}
-footer .white-border {
-  border-left: 0.05rem #ffffff solid;
 }
 footer #social {
   margin-top: 1.5rem;
