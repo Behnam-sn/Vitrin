@@ -1,3 +1,15 @@
+@font-face {
+  font-family: B Yekan;
+  src: url("../font/BYekan.ttf");
+}
+@font-face {
+  font-family: Myriad pro regular;
+  src: url("../font/MyriadProRegular.otf");
+}
+.font-myriad {
+  font-family: Myriad pro regular;
+}
+
 html {
   font-size: 16px;
 }
@@ -26,18 +38,6 @@ html {
 
 .bg-main {
   background: #333333;
-}
-
-@font-face {
-  font-family: B Yekan;
-  src: url("../font/BYekan.ttf");
-}
-@font-face {
-  font-family: Myriad pro regular;
-  src: url("../font/MyriadProRegular.otf");
-}
-.font-myriad {
-  font-family: Myriad pro regular;
 }
 
 a,

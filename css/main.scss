@@ -1,3 +1,4 @@
+@import "mixins/font";
 @import "mixins/FluidTypography";
 @import "mixins/color";
 
@@ -9,20 +10,6 @@
   border: 0.1rem solid transparent;
   border-radius: 1rem;
   outline: none !important;
-}
-
-@font-face {
-  font-family: B Yekan;
-  src: url("../font/BYekan.ttf");
-}
-
-@font-face {
-  font-family: Myriad pro regular;
-  src: url("../font/MyriadProRegular.otf");
-}
-
-.font-myriad {
-  font-family: Myriad pro regular;
 }
 
 a,
