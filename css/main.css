@@ -45,6 +45,10 @@ html {
 }
 
 @media (min-width: 1024px) {
+  #page {
+    width: 50rem;
+  }
+
   .md-visible {
     visibility: visible;
   }
@@ -71,10 +75,6 @@ body {
   direction: ltr;
   text-align: left;
   background: #333333;
-}
-
-#page {
-  width: 50rem;
 }
 
 nav .navbar-brand img {
@@ -230,6 +230,7 @@ main .item {
   border-radius: 0.9rem;
 }
 main .item img {
+  width: 10rem;
   border-radius: 0.9rem;
 }
 main .item .body img {

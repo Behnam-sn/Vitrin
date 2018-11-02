@@ -3,6 +3,10 @@
 }
 
 @media (min-width: 1024px) {
+  #page {
+    width: 50rem;
+  }
+
   .md-visible {
     visibility: visible;
   }
