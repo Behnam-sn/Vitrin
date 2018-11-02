@@ -1,4 +1,3 @@
-@import "mixins/font";
 @import "mixins/FluidTypography";
 @import "mixins/color";
 
@@ -10,6 +9,20 @@
   border: 0.1rem solid transparent;
   border-radius: 1rem;
   outline: none !important;
+}
+
+@font-face {
+  font-family: B Yekan;
+  src: url("../font/BYekan.ttf");
+}
+
+@font-face {
+  font-family: Myriad pro regular;
+  src: url("../font/MyriadProRegular.otf");
+}
+
+.font-myriad {
+  font-family: Myriad pro regular;
 }
 
 a,
@@ -29,7 +42,7 @@ body {
 }
 
 #page {
-  width: 47rem;
+  width: 50rem;
 }
 
 nav {
@@ -43,6 +56,13 @@ nav {
 }
 
 menu {
+  a {
+    all: unset;
+    &:hover {
+      color: $gray;
+      text-decoration: none;
+    }
+  }
   img {
     width: auto;
     height: 1.1rem;
@@ -72,7 +92,7 @@ menu {
   }
 
   input[type="text"] {
-    width: 9rem;
+    width: 11rem;
     height: 1.5rem;
     padding-right: 1.8rem;
     padding-left: 0.5rem;
@@ -129,6 +149,7 @@ aside {
 
   #buttons {
     margin-right: 2rem;
+    margin-top: 1.1rem;
 
     button {
       height: 1.5rem;
@@ -151,6 +172,7 @@ aside {
   }
 
   #banner {
+    margin-top: 1.4rem;
     .img-one {
       height: 7rem;
       width: auto;

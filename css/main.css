@@ -1,15 +1,3 @@
-@font-face {
-  font-family: B Yekan;
-  src: url("../../font/BYekan.ttf");
-}
-@font-face {
-  font-family: Myriad pro regular;
-  src: url("../../font/MyriadProRegular.otf");
-}
-.font-myriad {
-  font-family: Myriad pro regular;
-}
-
 html {
   font-size: 16px;
 }
@@ -40,6 +28,18 @@ html {
   background: #333333;
 }
 
+@font-face {
+  font-family: B Yekan;
+  src: url("../font/BYekan.ttf");
+}
+@font-face {
+  font-family: Myriad pro regular;
+  src: url("../font/MyriadProRegular.otf");
+}
+.font-myriad {
+  font-family: Myriad pro regular;
+}
+
 a,
 button {
   cursor: pointer;
@@ -57,7 +57,7 @@ body {
 }
 
 #page {
-  width: 47rem;
+  width: 50rem;
 }
 
 nav .navbar-brand img {
@@ -68,6 +68,13 @@ nav #lang {
   background: #4d4d4d;
 }
 
+menu a {
+  all: unset;
+}
+menu a:hover {
+  color: #cccccc;
+  text-decoration: none;
+}
 menu img {
   width: auto;
   height: 1.1rem;
@@ -91,7 +98,7 @@ menu .menu-item-border {
   border-right: 0.07rem solid #b2b2b2;
 }
 menu input[type=text] {
-  width: 9rem;
+  width: 11rem;
   height: 1.5rem;
   padding-right: 1.8rem;
   padding-left: 0.5rem;
@@ -143,6 +150,7 @@ aside #number {
 }
 aside #buttons {
   margin-right: 2rem;
+  margin-top: 1.1rem;
 }
 aside #buttons button {
   height: 1.5rem;
@@ -160,6 +168,9 @@ aside #buttons .button-one {
 }
 aside #buttons .button-two {
   width: 8.6rem;
+}
+aside #banner {
+  margin-top: 1.4rem;
 }
 aside #banner .img-one {
   height: 7rem;
