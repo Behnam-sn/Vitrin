@@ -255,6 +255,11 @@ aside #copyright img {
   height: 0.45rem;
 }
 
+@media screen and (max-width: 1023px) {
+  main {
+    margin-top: 5rem;
+  }
+}
 main #home .col-6 {
   padding: 0.1rem !important;
 }
@@ -305,6 +310,7 @@ main #artists a:hover {
 footer {
   background: #4d4d4d;
   font-size: 0.8rem;
+  margin-bottom: 3rem;
 }
 footer a:hover {
   text-decoration: none;
@@ -329,6 +335,47 @@ footer #social img {
 }
 footer p {
   font-size: 0.75rem;
+}
+
+#top-nav {
+  background: #333333;
+}
+#top-nav #bell img {
+  width: 1.7em;
+  height: auto;
+}
+#top-nav #number {
+  font-size: 0.9em;
+  padding: 0 0.4em;
+  top: 0.05em;
+  left: -0.5em;
+}
+#top-nav .navbar-toggler-icon {
+  background-image: url("../img/filter.svg");
+}
+#top-nav .navbar-toggler {
+  transition: filter 0.3s linear;
+  filter: grayscale(0.99);
+}
+#top-nav .navbar-toggler:focus {
+  filter: grayscale(0);
+  outline: none;
+}
+
+#bottom-nav {
+  background: #333333;
+}
+#bottom-nav #home {
+  width: 1.7em;
+  height: auto;
+}
+#bottom-nav #add {
+  width: 2em;
+  height: auto;
+}
+#bottom-nav #user {
+  width: 1.5em;
+  height: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

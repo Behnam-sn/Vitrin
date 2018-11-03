@@ -24,7 +24,7 @@
                             <img src="img/logo.svg" alt="">
                         </a>
 
-                        <h6 id="lang" class="text-white rounded-circle my-auto p-1 ml-4 font-myriad md-visible">En</h5>
+                        <h6 id="lang" class="text-white rounded-circle my-auto p-1 ml-4 font-myriad">En</h5>
                     </nav>
                     <!-- mneu -->
                     <menu class="p-0 md-visible">
@@ -128,7 +128,7 @@
                     </div>
                 </div>
                 <!-- main -->
-                <main class="px-2 mt-3">
+                <main class="px-2 mt-lg-3">
                     <div class="row" id="home">
                         <div class="col-4 col-sm-4 col-md-3 col-lg p-0">
                             <div class="item">
@@ -501,9 +501,50 @@
         </div>
     </footer>
 
-    <div id="footer-nav" class="fixed-bottom sm-visible text-center text-white">
-        <h2>fffffffff</h2>
+    <!-- mobile -->
+    <div class="container-fluid sm-visible">
+        <!-- top navbar -->
+        <nav class="fixed-top navbar navbar-expand-lg navbar-dark" id="top-nav">
+            <div id="bell" class="position-relative p-2">
+                <img src="img/bell.svg" alt="">
+                <div class="bg-orange text-white rounded-circle position-absolute" id="number">
+                    5
+                </div>
+            </div>
+
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img src="img/logo.svg" alt="">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Features</a>
+                    <a class="nav-item nav-link" href="#">Pricing</a>
+                    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                </div>
+            </div>
+        </nav>
+        <div class="fixed-bottom sm-visible text-center text-white" id="bottom-nav">
+            <div class="d-flex">
+                <div class="p-2 flex-fill">
+                    <img src="img/home.svg" alt="" id="home">
+                </div>
+                <div class="p-2 flex-fill">
+                    <img src="img/add.svg" alt="" class="p-1 bg-orange rounded-circle" id="add">
+                </div>
+                <div class="p-2 flex-fill">
+                    <img src="img/usery.svg" alt="" id="user">
+                </div>
+            </div>
+        </div>
     </div>
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>

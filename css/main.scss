@@ -206,6 +206,9 @@ aside {
 }
 
 main {
+  @include sm() {
+    margin-top: 5rem;
+  }
   #home .col-6 {
     padding: 0.1rem !important;
   }
@@ -275,6 +278,8 @@ footer {
   background: $copyright;
   font-size: 0.8rem;
 
+  margin-bottom: 3rem;
+
   a:hover {
     text-decoration: none;
   }
@@ -304,5 +309,53 @@ footer {
 
   p {
     font-size: 0.75rem;
+  }
+}
+
+#top-nav {
+  background: $main;
+  #bell {
+    img {
+      width: 1.7em;
+      height: auto;
+    }
+  }
+
+  #number {
+    font-size: 0.9em;
+    padding: 0 0.4em;
+    top: 0.05em;
+    left: -0.5em;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("../img/filter.svg");
+  }
+  .navbar-toggler {
+    @include transition(filter);
+    filter: grayscale(0.99);
+    &:focus {
+      filter: grayscale(0);
+      outline: none;
+    }
+  }
+}
+
+#bottom-nav {
+  background: $main;
+
+  #home {
+    width: 1.7em;
+    height: auto;
+  }
+
+  #add {
+    width: 2em;
+    height: auto;
+  }
+
+  #user {
+    width: 1.5em;
+    height: auto;
   }
 }
