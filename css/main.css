@@ -423,8 +423,12 @@ footer p {
   width: 2.2em;
   height: auto;
 }
-#bottom-nav #user {
+#bottom-nav #user-thumbnail {
   width: 1.7em;
+  height: auto;
+}
+#bottom-nav #user {
+  width: 2.2em;
   height: auto;
 }
 
