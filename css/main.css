@@ -394,6 +394,7 @@ footer p {
   height: auto;
 }
 #top-nav .nav-item {
+  width: 3.8rem;
   font-size: 0.65rem;
   color: #cccccc;
   filter: grayscale(0.99);
