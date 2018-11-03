@@ -316,11 +316,10 @@ footer {
 
 #top-nav {
   background: $main;
-  #bell {
-    img {
-      width: 1.7em;
-      height: auto;
-    }
+
+  #bell img {
+    width: 1.7em;
+    height: auto;
   }
 
   #number {
@@ -330,9 +329,6 @@ footer {
     left: -0.5em;
   }
 
-  .navbar-toggler-icon {
-    background-image: url("../img/filter.svg");
-  }
   .navbar-toggler {
     @include transition(filter);
     filter: grayscale(0.99);
@@ -340,6 +336,63 @@ footer {
       filter: grayscale(0);
       outline: none;
     }
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("../img/filter.svg");
+  }
+
+  .navbar-nav {
+    padding: 1rem 0.5rem;
+  }
+
+  input[type="text"] {
+    height: 2rem;
+    padding-right: 2.6rem;
+    padding-left: 0.6rem;
+
+    background: #cccccc;
+    font-size: 1rem;
+
+    @include border();
+    @include transition();
+
+    &:focus {
+      background: lighten(#cccccc, 30%);
+    }
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    top: 0.25rem;
+    right: 0.75rem;
+    img {
+      width: 1.6rem;
+      height: auto;
+    }
+  }
+
+  // items
+  .nav-item {
+    width: 4rem;
+    font-size: 0.7rem;
+    color: #cccccc;
+
+    filter: grayscale(0.99);
+    &:focus {
+      filter: grayscale(0);
+    }
+
+    img {
+      width: auto;
+      height: 1.8rem;
+    }
+  }
+
+  .nav-item-border {
+    border-right: 0.07rem solid #b2b2b2;
   }
 }
 

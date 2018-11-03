@@ -354,9 +354,6 @@ footer p {
   top: 0.05em;
   left: -0.5em;
 }
-#top-nav .navbar-toggler-icon {
-  background-image: url("../img/filter.svg");
-}
 #top-nav .navbar-toggler {
   transition: filter 0.3s linear;
   filter: grayscale(0.99);
@@ -364,6 +361,53 @@ footer p {
 #top-nav .navbar-toggler:focus {
   filter: grayscale(0);
   outline: none;
+}
+#top-nav .navbar-toggler-icon {
+  background-image: url("../img/filter.svg");
+}
+#top-nav .navbar-nav {
+  padding: 1rem 0.5rem;
+}
+#top-nav input[type=text] {
+  height: 2rem;
+  padding-right: 2.6rem;
+  padding-left: 0.6rem;
+  background: #cccccc;
+  font-size: 1rem;
+  border: 0.1rem solid transparent;
+  border-radius: 1rem;
+  outline: none !important;
+  transition: background 0.3s linear;
+}
+#top-nav input[type=text]:focus {
+  background: white;
+}
+#top-nav button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  top: 0.25rem;
+  right: 0.75rem;
+}
+#top-nav button img {
+  width: 1.6rem;
+  height: auto;
+}
+#top-nav .nav-item {
+  width: 4rem;
+  font-size: 0.7rem;
+  color: #cccccc;
+  filter: grayscale(0.99);
+}
+#top-nav .nav-item:focus {
+  filter: grayscale(0);
+}
+#top-nav .nav-item img {
+  width: auto;
+  height: 1.8rem;
+}
+#top-nav .nav-item-border {
+  border-right: 0.07rem solid #b2b2b2;
 }
 
 #bottom-nav {
