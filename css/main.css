@@ -297,8 +297,18 @@ main #artists img {
 main #artists .name {
   font-size: 0.7rem;
 }
+@media screen and (max-width: 1023px) {
+  main #artists .name {
+    font-size: 0.8rem;
+  }
+}
 main #artists .bio {
   font-size: 0.5rem;
+}
+@media screen and (max-width: 1023px) {
+  main #artists .bio {
+    font-size: 0.6rem;
+  }
 }
 main #artists a {
   color: #ffffff;

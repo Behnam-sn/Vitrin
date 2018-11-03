@@ -259,10 +259,16 @@ main {
     }
     .name {
       font-size: 0.7rem;
+      @include sm() {
+        font-size: 0.8rem;
+      }
     }
 
     .bio {
       font-size: 0.5rem;
+      @include sm() {
+        font-size: 0.6rem;
+      }
     }
 
     a {
