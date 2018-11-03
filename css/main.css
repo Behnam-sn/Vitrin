@@ -310,7 +310,11 @@ main #artists a:hover {
 footer {
   background: #4d4d4d;
   font-size: 0.8rem;
-  margin-bottom: 3rem;
+}
+@media screen and (max-width: 1023px) {
+  footer {
+    margin-bottom: 3rem;
+  }
 }
 footer a:hover {
   text-decoration: none;

@@ -278,7 +278,9 @@ footer {
   background: $copyright;
   font-size: 0.8rem;
 
-  margin-bottom: 3rem;
+  @include sm() {
+    margin-bottom: 3rem;
+  }
 
   a:hover {
     text-decoration: none;
