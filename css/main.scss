@@ -391,6 +391,10 @@ footer {
     }
   }
 
+  .active {
+    filter: grayscale(0);
+  }
+
   .nav-item-border {
     border-right: 0.07rem solid #b2b2b2;
   }

@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="img/icon.png" type="image/gif" sizes="16x16">
-    <title>ویترین</title>
+    <title>هنرمندان</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+
     <div class="container-fluid">
         <div class="d-flex">
             <!-- left side -->
-            <div id="page" class="ml-3">
-                <div class="sticky-top bg-main pt-3 pb-1">
+            <div id="page" class="ml-lg-3">
+                <div class="sticky-top bg-main pt-3 pb-1 md-visible">
                     <!-- navbar -->
                     <nav class="nav navbar-expand-md navbar-dark">
                         <a class="navbar-brand" href="index.html">
@@ -27,7 +27,7 @@
                         <h6 id="lang" class="text-white rounded-circle my-auto p-1 ml-4 font-myriad">En</h5>
                     </nav>
                     <!-- mneu -->
-                    <menu class="p-0">
+                    <menu class="p-0 md-visible">
                         <!-- menu items -->
                         <div class="d-flex text-center text-gray">
                             <a href="" class="menu-item menu-item-border pl-0">
@@ -36,7 +36,7 @@
                             </a>
                             <a href="" class="menu-item menu-item-border">
                                 <img src="img/m2.svg" alt="">
-                                <p class="m-0">دانلود آب</p>
+                                <p class="m-0">دانلود اپ</p>
                             </a>
                             <a href="" class="menu-item menu-item-border">
                                 <img src="img/m3.svg" alt="">
@@ -54,7 +54,7 @@
                                 <img src="img/m6.svg" alt="">
                                 <p class="m-0">ورکشاب ها</p>
                             </a>
-                            <a href="artists.html" class="menu-item menu-item-border active">
+                            <a href="artists.html" class="menu-item menu-item-border">
                                 <img src="img/m7.svg" alt="">
                                 <p class="m-0">هنرمندان</p>
                             </a>
@@ -70,7 +70,7 @@
                                 <img src="img/m10.svg" alt="">
                                 <p class="m-0">برنامه گالری ها</p>
                             </a>
-                            <a href="index.html" class="menu-item">
+                            <a href="index.html" class="menu-item active">
                                 <img src="img/m11.svg" alt="">
                                 <p class="m-0">خانه</p>
                             </a>
@@ -84,8 +84,51 @@
                         </div>
                     </menu>
                 </div>
+                <!-- filter -->
+                <div id="filter" class="d-flex">
+                    <div class="w-100 mx-1">
+                        <button class="text-white">
+                            <div class="d-flex justify-content-between align-items-center px-1">
+                                <img src="img/arrow.svg" alt="">
+                                بازه قیمت
+                            </div>
+                        </button>
+                    </div>
+                    <div class="w-100 mx-1">
+                        <button class="text-white">
+                            <div class="d-flex justify-content-between align-items-center px-1">
+                                <img src="img/arrow.svg" alt="">
+                                سبک
+                            </div>
+                        </button>
+                    </div>
+                    <div class="w-100 mx-1">
+                        <button class="text-white">
+                            <div class="d-flex justify-content-between align-items-center px-1">
+                                <img src="img/arrow.svg" alt="">
+                                تکنیک
+                            </div>
+                        </button>
+                    </div>
+                    <div class="w-100 mx-1">
+                        <button class="text-white">
+                            <div class="d-flex justify-content-between align-items-center px-1">
+                                <img src="img/arrow.svg" alt="">
+                                دسته بندی هنری
+                            </div>
+                        </button>
+                    </div>
+                    <div class="w-100 mx-1">
+                        <button class="text-white">
+                            <div class="d-flex justify-content-between align-items-center px-1">
+                                <img src="img/arrow.svg" alt="">
+                                مرتب سازی بر اساس
+                            </div>
+                        </button>
+                    </div>
+                </div>
                 <!-- main -->
-                <main class="container-fluid mt-3">
+                <main class="container-fluid mt-lg-3">
                     <div class="row text-center" id="artists">
                         <div class="col-4 col-md-3 col-lg-2">
                             <a href="">
@@ -286,9 +329,8 @@
                     </div>
                 </main>
             </div>
-
             <!-- right side -->
-            <aside class="position-fixed bg-main rtl">
+            <aside class="md-visible position-fixed bg-main rtl">
                 <!-- user panel -->
                 <div class="d-flex">
                     <!-- temporary link -->
@@ -337,6 +379,139 @@
             </aside>
         </div>
     </div>
+    <!-- footer -->
+    <footer class="container-fluid">
+        <div class="row py-4 pl-lg-3 pr-lg-x">
+            <div class="col-12 col-lg-7 order-lg-1 pr-md-5 text-lg-right text-center">
+                <!-- links -->
+                <div class="d-flex flex-column flex-lg-row flex-lg-row-reverse">
+                    <div class="py-2 py-md-1 pl-md-3 text-white white-border">قوانین و مقررات</div>
+                    <div class="py-2 py-md-1 px-md-3 text-white white-border">دانلود اپ</div>
+                    <div class="py-2 py-md-1 px-md-3 text-white white-border">درباره ما</div>
+                    <div class="py-2 py-md-1 px-md-3 text-white">ارتباط با ما</div>
+                </div>
+                <!-- socials -->
+                <div class="flex" id="social">
+                    <a href="" class="margin"><img src="img/soc4@4x.png" alt=""></a>
+                    <a href="" class="margin"><img src="img/soc3@4x.png" alt=""></a>
+                    <a href="" class="margin"><img src="img/soc2@4x.png" alt=""></a>
+                    <a href="" class="margin-one"><img src="img/soc1@4x.png" alt=""></a>
+                </div>
+                <!-- copyright -->
+                <p class="text-white my-3 p-0">.کلیه حقوق این سایت نزد <span class="text-orange">ویترین
+                        گالری</span>
+                    محفوظ بوده و استفاده از مطاللب با ذکر منبع بلامانع می باشد</p>
+            </div>
+
+            <div class="col-12 col-lg-5 order-lg-0 d-flex align-items-center justify-content-center" id="picture">
+                <div class="px-2">
+                    <img src="img/copy1@4x.png" alt="">
+                </div>
+                <div class="px-2">
+                    <img src="img/copy2@4x.png" alt="">
+                </div>
+                <div class="px-2">
+                    <img src="img/copy3@4x.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- mobile -->
+    <div class="container-fluid sm-visible">
+        <!-- top navbar -->
+        <nav class="fixed-top navbar navbar-expand-lg navbar-dark" id="top-nav">
+            <div id="bell" class="position-relative ml-2">
+                <img src="img/bell.svg" alt="">
+                <div class="bg-orange text-white rounded-circle position-absolute" id="number">
+                    5
+                </div>
+            </div>
+
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img src="img/logo.svg" alt="">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <!-- search -->
+                    <form action="" class="w-100 rtl text-right position-relative">
+                        <input type="text" class="w-100">
+                        <button type="submit" class="position-absolute">
+                            <img src="img/search.svg" alt="">
+                        </button>
+                    </form>
+                    <div class="d-flex justify-content-center align-items-center text-center mt-2">
+                        <a href="" class="nav-item nav-link flex-fill">
+                            <img src="img/m6.svg" alt="">
+                            <div class="mt-1">ورکشاب ها</div>
+                        </a>
+                        <a href="artists.html" class="nav-item nav-link flex-fill active">
+                            <img src="img/m7.svg" alt="">
+                            <div class="mt-1">هنرمندان</div>
+                        </a>
+                        <a href="" class="nav-item nav-link flex-fill">
+                            <img src="img/m8.svg" alt="">
+                            <div class="mt-1">مجموعه داران</div>
+                        </a>
+                        <a href="" class="nav-item nav-link flex-fill">
+                            <img src="img/m9.svg" alt="">
+                            <div class="mt-1">آثار هنری</div>
+                        </a>
+                        <a href="" class="nav-item nav-link flex-fill">
+                            <img src="img/m10.svg" alt="">
+                            <div class="mt-1">برنامه گالری ها</div>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center text-center mt-1">
+                        <a href="" class="nav-item nav-link flex-fill">
+                            <img src="img/m1.svg" alt="">
+                            <p class="m-0">اخبار و گزارش</p>
+                        </a>
+                        <a href="" class="nav-item nav-link flex-fill">
+                            <img src="img/m2.svg" alt="">
+                            <p class="m-0">دانلود اپ</p>
+                        </a>
+                        <a href="" class="nav-item nav-link flex-fill">
+                            <img src="img/m3.svg" alt="">
+                            <p class="m-0">فروشگاه</p>
+                        </a>
+                        <a href="" class="nav-item nav-link flex-fill">
+                            <img src="img/m4.svg" alt="">
+                            <p class="m-0">نمایشگاه مجازی</p>
+                        </a>
+                        <a href="" class="nav-item nav-link flex-fill">
+                            <img src="img/m5.svg" alt="">
+                            <p class="m-0">فراخوان ها</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- bottom navbar -->
+        <div class="fixed-bottom sm-visible text-center text-white" id="bottom-nav">
+            <div class="d-flex align-items-center">
+                <div class="p-2 flex-fill">
+                    <a href="index.html">
+                        <img src="img/home.svg" alt="" id="home">
+                    </a>
+                </div>
+                <div class="p-2 flex-fill">
+                    <img src="img/add.svg" alt="" class="p-1 bg-orange rounded-circle" id="add">
+                </div>
+                <div class="p-2 flex-fill">
+                    <a href="loggedin.html">
+                        <img src="img/usery.svg" alt="" id="user">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
