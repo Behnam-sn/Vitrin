@@ -151,9 +151,22 @@ menu button {
 
 aside {
   font-size: 1vw;
+  top: 2.4em;
   right: 0;
   width: 16em;
   height: 100em;
+}
+aside .mr-2 {
+  margin-right: 0.6em !important;
+}
+aside .mt-1 {
+  margin-top: 0.4em !important;
+}
+aside .ml-1 {
+  margin-left: 0.4em !important;
+}
+aside .py-1 {
+  padding: 0.6em 0 !important;
 }
 aside #image {
   margin-right: 3.1em;
@@ -165,20 +178,20 @@ aside #image img {
 aside #arrow,
 aside #star,
 aside #bell {
-  margin-right: 1.1em;
+  margin-right: 1em;
   cursor: pointer;
 }
 aside #arrow img,
 aside #star img,
 aside #bell img {
-  width: 1.1em;
+  width: 1.7em;
   height: auto;
 }
 aside #number {
-  font-size: 0.7rem;
-  padding: 0rem 0.2rem;
-  top: 0.2rem;
-  left: -0.3rem;
+  font-size: 0.9em;
+  padding: 0 0.4em;
+  top: 0.05em;
+  left: -0.5em;
 }
 aside #buttons {
   margin-right: 3.1em;
@@ -199,7 +212,7 @@ aside #buttons .button-one {
   width: 4.45em;
 }
 aside #buttons .button-two {
-  width: 8.6rem;
+  width: 9.4em;
 }
 aside #banner {
   margin-top: 2em;
@@ -212,7 +225,7 @@ aside #copyright {
   background: #4d4d4d;
 }
 aside #copyright img {
-  height: 4.4em;
+  height: 4em;
   width: auto;
 }
 

@@ -94,9 +94,26 @@ menu {
 
 aside {
   font-size: 1vw;
+  top: 2.4em;
   right: 0;
   width: 16em;
   height: 100em;
+
+  .mr-2 {
+    margin-right: 0.6em !important;
+  }
+
+  .mt-1 {
+    margin-top: 0.4em !important;
+  }
+
+  .ml-1 {
+    margin-left: 0.4em !important;
+  }
+
+  .py-1 {
+    padding: 0.6em 0 !important;
+  }
 
   #image {
     margin-right: 3.1em;
@@ -109,19 +126,19 @@ aside {
   #arrow,
   #star,
   #bell {
-    margin-right: 1.1em;
+    margin-right: 1em;
     cursor: pointer;
     img {
-      width: 1.1em;
+      width: 1.7em;
       height: auto;
     }
   }
 
   #number {
-    font-size: 0.7rem;
-    padding: 0rem 0.2rem;
-    top: 0.2rem;
-    left: -0.3rem;
+    font-size: 0.9em;
+    padding: 0 0.4em;
+    top: 0.05em;
+    left: -0.5em;
   }
 
   #buttons {
@@ -144,7 +161,7 @@ aside {
     }
 
     .button-two {
-      width: 8.6rem;
+      width: 9.4em;
     }
   }
 
@@ -159,7 +176,7 @@ aside {
   #copyright {
     background: $copyright;
     img {
-      height: 4.4em;
+      height: 4em;
       width: auto;
     }
   }
