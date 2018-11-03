@@ -1,0 +1,15 @@
+@mixin transition($property: background) {
+  transition: $property 0.3s linear;
+}
+
+@mixin border() {
+  border: 0.1rem solid transparent;
+  border-radius: 1rem;
+  outline: none !important;
+}
+
+@mixin md {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}

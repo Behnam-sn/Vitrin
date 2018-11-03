@@ -1,0 +1,36 @@
+@include md() {
+  .white-border {
+    border-left: 0.05rem #ffffff solid;
+  }
+
+  .pr-lg-x {
+    padding-right: 9rem;
+  }
+}
+
+.md-visible {
+  // visibility: hidden;
+  display: none;
+
+  @include md() {
+    // visibility: visible;
+    display: block;
+  }
+}
+
+.sm-visible {
+  display: block;
+
+  @include md() {
+    display: none;
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.rtl {
+  direction: rtl;
+}

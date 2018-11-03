@@ -1,23 +1,22 @@
 @import "mixins/font";
 @import "mixins/FluidTypography";
 @import "mixins/color";
-@import "mixins/common";
+@import "mixins/mixin";
+@import "mixins/extra";
 
-@mixin transition($property: background) {
-  transition: $property 0.3s linear;
-}
-
-@mixin border() {
-  border: 0.1rem solid transparent;
-  border-radius: 1rem;
-  outline: none !important;
-}
-
+//nested
 body {
   font-family: B Yekan;
   direction: ltr;
   text-align: left;
   background: $main;
+}
+
+#page {
+  @include md() {
+    width: 78vw;
+    // width: 50rem;
+  }
 }
 
 nav {
@@ -94,13 +93,15 @@ menu {
 }
 
 aside {
+  font-size: 1vw;
   right: 0;
-  width: 10.25rem;
+  width: 16em;
+  height: 100em;
 
   #image {
-    margin-right: 2rem;
+    margin-right: 3.1em;
     img {
-      width: 3.2rem;
+      width: 5em;
       height: auto;
     }
   }
@@ -108,10 +109,10 @@ aside {
   #arrow,
   #star,
   #bell {
-    margin-right: 0.7rem;
+    margin-right: 1.1em;
     cursor: pointer;
     img {
-      width: 1.1rem;
+      width: 1.1em;
       height: auto;
     }
   }
@@ -124,12 +125,12 @@ aside {
   }
 
   #buttons {
-    margin-right: 2rem;
-    margin-top: 1.1rem;
+    margin-right: 3.1em;
+    margin-top: 1.8em;
 
     button {
-      height: 1.5rem;
-      font-size: 0.9rem;
+      height: 1.7em;
+      font-size: 1.4em;
       @include border();
       @include transition();
 
@@ -139,7 +140,7 @@ aside {
     }
 
     .button-one {
-      width: 4rem;
+      width: 4.45em;
     }
 
     .button-two {
@@ -148,9 +149,9 @@ aside {
   }
 
   #banner {
-    margin-top: 1.4rem;
+    margin-top: 2em;
     .img-one {
-      height: 7rem;
+      height: 10.9em;
       width: auto;
     }
   }
@@ -158,13 +159,17 @@ aside {
   #copyright {
     background: $copyright;
     img {
-      height: 2.7rem;
+      height: 4.4em;
       width: auto;
     }
   }
 }
 
 #filter {
+  display: none !important;
+  @include md() {
+    display: flex !important;
+  }
   button {
     background: #808080;
     width: 100%;

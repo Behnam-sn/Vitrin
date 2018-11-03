@@ -40,19 +40,7 @@ html {
   background: #333333;
 }
 
-.md-visible {
-  visibility: hidden;
-}
-
-@media (min-width: 1024px) {
-  #page {
-    width: 50rem;
-  }
-
-  .md-visible {
-    visibility: visible;
-  }
-
+@media screen and (min-width: 1024px) {
   .white-border {
     border-left: 0.05rem #ffffff solid;
   }
@@ -61,6 +49,24 @@ html {
     padding-right: 9rem;
   }
 }
+.md-visible {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .md-visible {
+    display: block;
+  }
+}
+
+.sm-visible {
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .sm-visible {
+    display: none;
+  }
+}
+
 a,
 button {
   cursor: pointer;
@@ -75,6 +81,12 @@ body {
   direction: ltr;
   text-align: left;
   background: #333333;
+}
+
+@media screen and (min-width: 1024px) {
+  #page {
+    width: 78vw;
+  }
 }
 
 nav .navbar-brand img {
@@ -138,26 +150,28 @@ menu button {
 }
 
 aside {
+  font-size: 1vw;
   right: 0;
-  width: 10.25rem;
+  width: 16em;
+  height: 100em;
 }
 aside #image {
-  margin-right: 2rem;
+  margin-right: 3.1em;
 }
 aside #image img {
-  width: 3.2rem;
+  width: 5em;
   height: auto;
 }
 aside #arrow,
 aside #star,
 aside #bell {
-  margin-right: 0.7rem;
+  margin-right: 1.1em;
   cursor: pointer;
 }
 aside #arrow img,
 aside #star img,
 aside #bell img {
-  width: 1.1rem;
+  width: 1.1em;
   height: auto;
 }
 aside #number {
@@ -167,12 +181,12 @@ aside #number {
   left: -0.3rem;
 }
 aside #buttons {
-  margin-right: 2rem;
-  margin-top: 1.1rem;
+  margin-right: 3.1em;
+  margin-top: 1.8em;
 }
 aside #buttons button {
-  height: 1.5rem;
-  font-size: 0.9rem;
+  height: 1.7em;
+  font-size: 1.4em;
   border: 0.1rem solid transparent;
   border-radius: 1rem;
   outline: none !important;
@@ -182,26 +196,34 @@ aside #buttons button:hover {
   background: #cc8900;
 }
 aside #buttons .button-one {
-  width: 4rem;
+  width: 4.45em;
 }
 aside #buttons .button-two {
   width: 8.6rem;
 }
 aside #banner {
-  margin-top: 1.4rem;
+  margin-top: 2em;
 }
 aside #banner .img-one {
-  height: 7rem;
+  height: 10.9em;
   width: auto;
 }
 aside #copyright {
   background: #4d4d4d;
 }
 aside #copyright img {
-  height: 2.7rem;
+  height: 4.4em;
   width: auto;
 }
 
+#filter {
+  display: none !important;
+}
+@media screen and (min-width: 1024px) {
+  #filter {
+    display: flex !important;
+  }
+}
 #filter button {
   background: #808080;
   width: 100%;
