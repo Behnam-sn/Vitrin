@@ -287,6 +287,13 @@ main {
 
     .play-container {
       position: relative;
+      cursor: pointer;
+      opacity: 1.5;
+
+      @include transition(opacity);
+      &:hover {
+        opacity: 0.7;
+      }
     }
     .play {
       position: absolute;
@@ -298,14 +305,6 @@ main {
 
       width: 3rem;
       height: auto;
-
-      cursor: pointer;
-      opacity: 0.7;
-
-      @include transition(opacity);
-      &:hover {
-        opacity: 1;
-      }
     }
   }
 }
