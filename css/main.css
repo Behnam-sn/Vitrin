@@ -316,6 +316,28 @@ main #artists a {
 main #artists a:hover {
   text-decoration: none;
 }
+main #news .item {
+  padding-bottom: 0.25rem;
+}
+main #news .play-container {
+  position: relative;
+}
+main #news .play {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 3rem;
+  height: auto;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s linear;
+}
+main #news .play:hover {
+  opacity: 1;
+}
 
 footer {
   background: #4d4d4d;
