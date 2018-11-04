@@ -1,8 +1,22 @@
 @import "mixins/font";
-@import "mixins/FluidTypography";
+// @import "mixins/FluidTypography";
 @import "mixins/color";
 @import "mixins/mixin";
 @import "mixins/extra";
+
+html {
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 8 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 1.5vw;
+  }
+}
 
 //nested
 body {
@@ -93,32 +107,13 @@ menu {
 }
 
 aside {
-  font-size: 1vw;
-  top: 2.4em;
   right: 0;
-  width: 16em;
-  height: 100em;
-
-  .mr-2 {
-    margin-right: 0.6em !important;
-  }
-
-  .mt-1 {
-    margin-top: 0.4em !important;
-  }
-
-  .ml-1 {
-    margin-left: 0.4em !important;
-  }
-
-  .py-1 {
-    padding: 0.6em 0 !important;
-  }
+  width: 10.25rem;
 
   #image {
-    margin-right: 3.1em;
+    margin-right: 2rem;
     img {
-      width: 5em;
+      width: 3.2rem;
       height: auto;
     }
   }
@@ -126,28 +121,28 @@ aside {
   #arrow,
   #star,
   #bell {
-    margin-right: 1em;
+    margin-right: 0.7rem;
     cursor: pointer;
     img {
-      width: 1.7em;
+      width: 1.1rem;
       height: auto;
     }
   }
 
   #number {
-    font-size: 0.9em;
-    padding: 0 0.4em;
-    top: 0.05em;
-    left: -0.5em;
+    font-size: 0.7rem;
+    padding: 0rem 0.2rem;
+    top: 0.2rem;
+    left: -0.3rem;
   }
 
   #buttons {
-    margin-right: 3.1em;
-    margin-top: 1.8em;
+    margin-right: 2rem;
+    margin-top: 1.1rem;
 
     button {
-      height: 1.7em;
-      font-size: 1.4em;
+      height: 1.5rem;
+      font-size: 0.9rem;
       @include border();
       @include transition();
 
@@ -157,18 +152,18 @@ aside {
     }
 
     .button-one {
-      width: 4.45em;
+      width: 4rem;
     }
 
     .button-two {
-      width: 9.4em;
+      width: 8.6rem;
     }
   }
 
   #banner {
-    margin-top: 2em;
+    margin-top: 1.4rem;
     .img-one {
-      height: 10.9em;
+      height: 7rem;
       width: auto;
     }
   }
@@ -176,7 +171,7 @@ aside {
   #copyright {
     background: $copyright;
     img {
-      height: 4em;
+      height: 2.7rem;
       width: auto;
     }
   }
