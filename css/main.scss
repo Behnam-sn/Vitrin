@@ -18,6 +18,13 @@ html {
   }
 }
 
+// .col-4,
+// .col-sm-4,
+// .col-md-3,
+// .col-lg-2 {
+//   height: 100% !important;
+// }
+
 //nested
 body {
   font-family: B Yekan;
@@ -44,6 +51,7 @@ nav {
 }
 
 menu {
+  font-size: 0.48rem;
   a {
     color: $gray;
     &:hover {
@@ -54,10 +62,6 @@ menu {
   img {
     width: auto;
     height: 1.1rem;
-  }
-
-  p {
-    font-size: 0.48rem;
   }
 
   .menu-item {

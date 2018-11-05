@@ -97,6 +97,9 @@ nav #lang {
   background: #4d4d4d;
 }
 
+menu {
+  font-size: 0.48rem;
+}
 menu a {
   color: #cccccc;
 }
@@ -107,9 +110,6 @@ menu a:hover {
 menu img {
   width: auto;
   height: 1.1rem;
-}
-menu p {
-  font-size: 0.48rem;
 }
 menu .menu-item {
   padding: 0 0.7rem;
