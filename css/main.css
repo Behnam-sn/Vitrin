@@ -126,28 +126,6 @@ menu .active {
 menu .menu-item-border {
   border-right: 0.07rem solid #b2b2b2;
 }
-menu input[type=text] {
-  width: 11rem;
-  height: 1.5rem;
-  padding-right: 1.8rem;
-  padding-left: 0.5rem;
-  background: #cccccc;
-  font-size: 0.7rem;
-  border: 0.1rem solid transparent;
-  border-radius: 1rem;
-  outline: none !important;
-  transition: background 0.3s linear;
-}
-menu input[type=text]:hover, menu input[type=text]:focus {
-  background: white;
-}
-menu button {
-  background: transparent;
-  border: none;
-  padding: 0;
-  top: 0.2rem;
-  right: 0.6rem;
-}
 
 aside {
   right: 0;
@@ -222,7 +200,7 @@ aside #copyright img {
     display: flex !important;
   }
 }
-#filter button {
+#filter .button {
   background: #808080;
   width: 100%;
   height: 1.7rem;
@@ -232,12 +210,38 @@ aside #copyright img {
   outline: none !important;
   transition: background 0.3s linear;
 }
-#filter button:hover {
+#filter .button:hover {
   background: #a6a6a6;
 }
 #filter img {
   width: auto;
   height: 0.45rem;
+}
+#filter form input[type=text] {
+  width: 100%;
+  height: 1.5rem;
+  padding-right: 1.8rem;
+  padding-left: 0.5rem;
+  background: #cccccc;
+  font-size: 0.7rem;
+  border: 0.1rem solid transparent;
+  border-radius: 1rem;
+  outline: none !important;
+  transition: background 0.3s linear;
+}
+#filter form input[type=text]:hover, #filter form input[type=text]:focus {
+  background: white;
+}
+#filter form button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  top: 0.1rem;
+  right: 0.6rem;
+}
+#filter form button img {
+  width: 1rem;
+  height: auto;
 }
 
 @media screen and (max-width: 1023px) {
