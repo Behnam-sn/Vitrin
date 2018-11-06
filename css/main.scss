@@ -313,6 +313,20 @@ main {
       padding-bottom: 0.25rem;
     }
   }
+
+  #news-content {
+    .author,
+    .detail {
+      font-size: 0.6rem;
+      color: #b2b2b2;
+    }
+
+    .text {
+      font-size: 0.75rem;
+      color: #ffffff;
+      text-align: justify;
+    }
+  }
 }
 
 footer {

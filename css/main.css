@@ -335,6 +335,16 @@ main #news .play {
 main #store .item {
   padding-bottom: 0.25rem;
 }
+main #news-content .author,
+main #news-content .detail {
+  font-size: 0.6rem;
+  color: #b2b2b2;
+}
+main #news-content .text {
+  font-size: 0.75rem;
+  color: #ffffff;
+  text-align: justify;
+}
 
 footer {
   background: #4d4d4d;
