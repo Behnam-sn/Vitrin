@@ -26,13 +26,17 @@
   background: #333333;
 }
 
+.bg-footer {
+  background: #666666;
+}
+
 @media screen and (min-width: 1024px) {
   .white-border {
-    border-left: 0.05rem #ffffff solid;
+    border-left: 0.04rem #ffffff solid;
   }
 
   .pr-lg-x {
-    padding-right: 9rem;
+    padding-right: 11.5rem;
   }
 }
 .md-visible {
@@ -85,7 +89,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   #page {
-    width: 78vw;
+    width: 80vw;
   }
 }
 
@@ -194,6 +198,7 @@ aside #copyright img {
 
 #filter {
   display: none !important;
+  font-size: 0.7rem;
 }
 @media screen and (min-width: 1024px) {
   #filter {
@@ -204,7 +209,6 @@ aside #copyright img {
   background: #808080;
   width: 100%;
   height: 1.7rem;
-  font-size: 0.7rem;
   border: 0.1rem solid transparent;
   border-radius: 1rem;
   outline: none !important;
@@ -219,11 +223,10 @@ aside #copyright img {
 }
 #filter form input[type=text] {
   width: 100%;
-  height: 1.5rem;
+  height: 1.7rem;
   padding-right: 1.8rem;
   padding-left: 0.5rem;
   background: #cccccc;
-  font-size: 0.7rem;
   border: 0.1rem solid transparent;
   border-radius: 1rem;
   outline: none !important;
@@ -236,7 +239,7 @@ aside #copyright img {
   background: transparent;
   border: none;
   padding: 0;
-  top: 0.1rem;
+  top: 0.3rem;
   right: 0.6rem;
 }
 #filter form button img {
@@ -248,9 +251,6 @@ aside #copyright img {
   main {
     margin-top: 5rem;
   }
-}
-main #home .col-6 {
-  padding: 0.1rem !important;
 }
 main .item {
   padding: 0.25rem;
@@ -330,7 +330,7 @@ main #news .play {
 
 footer {
   background: #4d4d4d;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
 }
 @media screen and (max-width: 1023px) {
   footer {
@@ -340,26 +340,37 @@ footer {
 footer a:hover {
   text-decoration: none;
 }
-footer #picture img {
-  width: 5rem;
-  height: auto;
-  border-radius: 0.7rem;
-}
-footer #social {
-  margin-top: 1.5rem;
-}
-footer #social .margin {
-  margin: 0 0.12rem;
-}
-footer #social .margin-one {
-  margin-left: 0.12rem;
-}
 footer #social img {
-  width: 1.5rem;
+  width: 1.8rem;
   height: auto;
 }
 footer p {
-  font-size: 0.75rem;
+  font-size: 0.6rem;
+}
+footer #pros {
+  font-size: 0.55rem;
+}
+footer #pros img {
+  height: 1.1rem;
+  width: auto;
+}
+footer #app-pic img {
+  bottom: 0;
+  right: -3rem;
+  width: 6.5rem;
+  height: auto;
+}
+@media screen and (max-width: 1023px) {
+  footer #app-pic img {
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+footer #app-download img {
+  width: 4.5rem;
+  height: auto;
+  padding: 0.1rem 0;
 }
 
 #top-nav {
@@ -415,7 +426,7 @@ footer p {
   height: auto;
 }
 #top-nav .nav-item {
-  width: 3.8rem;
+  width: 100%;
   font-size: 0.65rem;
   color: #cccccc;
   filter: grayscale(0.99);

@@ -8,7 +8,7 @@
   outline: none !important;
 }
 
-@mixin md {
+@mixin lg {
   @media screen and (min-width: 1024px) {
     @content;
   }

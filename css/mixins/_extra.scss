@@ -1,10 +1,10 @@
-@include md() {
+@include lg() {
   .white-border {
-    border-left: 0.05rem #ffffff solid;
+    border-left: 0.04rem #ffffff solid;
   }
 
   .pr-lg-x {
-    padding-right: 9rem;
+    padding-right: 11.5rem;
   }
 }
 
@@ -12,7 +12,7 @@
   // visibility: hidden;
   display: none;
 
-  @include md() {
+  @include lg() {
     // visibility: visible;
     display: block;
   }
@@ -21,7 +21,7 @@
 .sm-visible {
   display: block;
 
-  @include md() {
+  @include lg() {
     display: none;
   }
 }
