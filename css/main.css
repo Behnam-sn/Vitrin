@@ -332,6 +332,9 @@ main #news .play {
   width: 3rem;
   height: auto;
 }
+main #store .item {
+  padding-bottom: 0.25rem;
+}
 
 footer {
   background: #4d4d4d;
