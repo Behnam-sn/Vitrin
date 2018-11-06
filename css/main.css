@@ -315,7 +315,6 @@ main #news .item {
 }
 main #news .play-container {
   position: relative;
-  cursor: pointer;
   opacity: 0.8;
   transition: opacity 0.3s linear;
 }

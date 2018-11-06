@@ -286,7 +286,6 @@ main {
 
     .play-container {
       position: relative;
-      cursor: pointer;
       opacity: 0.8;
 
       @include transition(opacity);
