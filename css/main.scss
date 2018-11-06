@@ -332,7 +332,7 @@ footer {
   #pros {
     font-size: 0.55rem;
     img {
-      height: 1.1rem;
+      height: 1.4rem;
       width: auto;
     }
   }
@@ -354,8 +354,12 @@ footer {
 
   #app-download {
     img {
-      width: 4.5rem;
+      width: 6rem;
       height: auto;
+
+      @include lg() {
+        width: 4.5rem;
+      }
 
       padding: 0.1rem 0;
     }

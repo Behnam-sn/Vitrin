@@ -1,6 +1,10 @@
 @include lg() {
-  .white-border {
-    border-left: 0.04rem #ffffff solid;
+  .link {
+    border-right: 0.02rem #ffffff solid;
+    padding: 0 0.7rem;
+  }
+  .link-x {
+    padding-left: 0.7rem;
   }
 
   .pr-lg-x {

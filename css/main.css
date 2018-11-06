@@ -31,8 +31,13 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .white-border {
-    border-left: 0.04rem #ffffff solid;
+  .link {
+    border-right: 0.02rem #ffffff solid;
+    padding: 0 0.7rem;
+  }
+
+  .link-x {
+    padding-left: 0.7rem;
   }
 
   .pr-lg-x {
@@ -351,7 +356,7 @@ footer #pros {
   font-size: 0.55rem;
 }
 footer #pros img {
-  height: 1.1rem;
+  height: 1.4rem;
   width: auto;
 }
 footer #app-pic img {
@@ -368,9 +373,14 @@ footer #app-pic img {
   }
 }
 footer #app-download img {
-  width: 4.5rem;
+  width: 6rem;
   height: auto;
   padding: 0.1rem 0;
+}
+@media screen and (min-width: 1024px) {
+  footer #app-download img {
+    width: 4.5rem;
+  }
 }
 
 #top-nav {
