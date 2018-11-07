@@ -7,11 +7,13 @@
 html {
   font-size: 16px;
 }
+
 @media screen and (min-width: 320px) {
   html {
     font-size: calc(16px + 8 * ((100vw - 320px) / 880));
   }
 }
+
 @media screen and (min-width: 1200px) {
   html {
     font-size: 1.5vw;
@@ -38,6 +40,7 @@ nav {
     width: auto;
     height: 2.8rem;
   }
+
   #lang {
     background: $copyright;
   }
@@ -45,13 +48,16 @@ nav {
 
 menu {
   font-size: 0.48rem;
+
   a {
     color: $gray;
+
     &:hover {
       color: $gray;
       text-decoration: none;
     }
   }
+
   img {
     width: auto;
     height: 1.1rem;
@@ -63,6 +69,7 @@ menu {
     @include transition(filter);
 
     filter: grayscale(0.99);
+
     &:hover {
       filter: grayscale(0);
     }
@@ -83,6 +90,7 @@ aside {
 
   #image {
     margin-right: 2rem;
+
     img {
       width: 3.2rem;
       height: auto;
@@ -94,6 +102,7 @@ aside {
   #bell {
     margin-right: 0.7rem;
     cursor: pointer;
+
     img {
       width: 1.1rem;
       height: auto;
@@ -133,6 +142,7 @@ aside {
 
   #banner {
     margin-top: 1.4rem;
+
     .img-one {
       height: 7rem;
       width: auto;
@@ -141,6 +151,7 @@ aside {
 
   #copyright {
     background: $copyright;
+
     img {
       height: 2.7rem;
       width: auto;
@@ -150,6 +161,7 @@ aside {
 
 #filter {
   display: none !important;
+
   @include lg() {
     display: flex !important;
   }
@@ -167,6 +179,7 @@ aside {
       background: lighten(#808080, 15%);
     }
   }
+
   img {
     width: auto;
     height: 0.45rem;
@@ -197,6 +210,7 @@ aside {
       padding: 0;
       top: 0.3rem;
       right: 0.6rem;
+
       img {
         width: 1rem;
         height: auto;
@@ -243,6 +257,7 @@ main {
 
     .price {
       font-size: 0.5rem;
+
       .tag {
         margin-right: 0.1rem;
         margin-top: 0.1rem;
@@ -256,8 +271,10 @@ main {
       width: 6rem;
       height: auto;
     }
+
     .name {
       font-size: 0.7rem;
+
       @include sm() {
         font-size: 0.8rem;
       }
@@ -265,6 +282,7 @@ main {
 
     .bio {
       font-size: 0.5rem;
+
       @include sm() {
         font-size: 0.6rem;
       }
@@ -272,6 +290,7 @@ main {
 
     a {
       color: #ffffff;
+
       &:hover {
         text-decoration: none;
       }
@@ -289,10 +308,12 @@ main {
       opacity: 0.8;
 
       @include transition(opacity);
+
       &:hover {
         opacity: 1;
       }
     }
+
     .play {
       position: absolute;
       margin: auto;
@@ -314,6 +335,7 @@ main {
   }
 
   #news-content {
+
     .author,
     .detail {
       font-size: 0.6rem;
@@ -351,6 +373,7 @@ footer {
 
   #pros {
     font-size: 0.55rem;
+
     img {
       height: 1.4rem;
       width: auto;
@@ -361,6 +384,7 @@ footer {
     img {
       bottom: 0;
       right: -3rem;
+
       @include sm() {
         right: 0;
         left: 0;
@@ -404,6 +428,7 @@ footer {
   .navbar-toggler {
     @include transition(filter);
     filter: grayscale(0.99);
+
     &:focus {
       filter: grayscale(0);
       outline: none;
@@ -440,6 +465,7 @@ footer {
     padding: 0;
     top: 0.25rem;
     right: 0.75rem;
+
     img {
       width: 1.6rem;
       height: auto;
@@ -453,6 +479,7 @@ footer {
     color: #cccccc;
 
     filter: grayscale(0.99);
+
     &:focus {
       filter: grayscale(0);
     }
