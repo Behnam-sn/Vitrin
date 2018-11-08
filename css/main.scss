@@ -357,9 +357,10 @@ main {
     .carousel-item img {
       width: 15rem;
       height: auto;
+      border-radius: 0.8rem;
 
       @include lg() {
-        width: 20rem;
+        width: 25rem;
       }
     }
 
@@ -378,6 +379,20 @@ main {
         background: $orange;
         transform: scale(1);
       }
+    }
+  }
+
+  #thumbnail {
+    img {
+      height: 4rem;
+      width: auto;
+      border-radius: 0.8rem;
+    }
+  }
+
+  #similar {
+    img {
+      border-radius: 0.9rem;
     }
   }
 

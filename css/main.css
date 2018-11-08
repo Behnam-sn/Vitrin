@@ -351,10 +351,11 @@ main #news-content p {
 #product #carousel .carousel-item img {
   width: 15rem;
   height: auto;
+  border-radius: 0.8rem;
 }
 @media screen and (min-width: 1024px) {
   #product #carousel .carousel-item img {
-    width: 20rem;
+    width: 25rem;
   }
 }
 #product #carousel .carousel-indicators li {
@@ -368,6 +369,14 @@ main #news-content p {
 #product #carousel .carousel-indicators .active {
   background: #ffab00;
   transform: scale(1);
+}
+#product #thumbnail img {
+  height: 4rem;
+  width: auto;
+  border-radius: 0.8rem;
+}
+#product #similar img {
+  border-radius: 0.9rem;
 }
 #product .border-taki {
   border-bottom: 0.03rem solid #ffffff;
