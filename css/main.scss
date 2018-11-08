@@ -353,6 +353,34 @@ main {
 #product {
   font-size: 0.9rem;
 
+  #carousel {
+    .carousel-item img {
+      width: 15rem;
+      height: auto;
+
+      @include lg() {
+        width: 20rem;
+      }
+    }
+
+    .carousel-indicators {
+      li {
+        background: #ffffff;
+        top: 3rem;
+        height: 0.7rem;
+        width: 0.7rem;
+        border-radius: 50%;
+        @include transition(all);
+        // transition: all 0.6s ease;
+      }
+
+      .active {
+        background: $orange;
+        transform: scale(1);
+      }
+    }
+  }
+
   .border-taki {
     border-bottom: 0.03rem solid #ffffff;
   }

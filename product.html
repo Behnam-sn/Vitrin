@@ -89,7 +89,7 @@
           <img src="img/m10.svg" alt="">
           <div class="mt-1">برنامه گالری ها</div>
         </a>
-        <a href="index.html" class="menu-item active">
+        <a href="index.html" class="menu-item">
           <img src="img/m11.svg" alt="">
           <div class="mt-1">خانه</div>
         </a>
@@ -98,10 +98,45 @@
 
     </menu>
   </div>
-  <div class="container-fluid text-white px-lg-4 mt-lg-3 pb-5" id="product">
+  <main class="container-fluid text-white px-lg-4 mt-lg-3 pb-5" id="product">
     <div class="row pr-lg-2">
-      <div class="col-lg-8">
+      <div class="col-lg-8 justify-content-center" id="carousel">
+        <!-- carousel -->
+        <div id="csl" class="carousel slide" data-ride="carousel" data-interval="false">
 
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#csl" data-slide-to="0" class="active"></li>
+            <li data-target="#csl" data-slide-to="1"></li>
+            <li data-target="#csl" data-slide-to="2"></li>
+            <li data-target="#csl" data-slide-to="3"></li>
+          </ul>
+
+          <!-- The slideshow -->
+          <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+              <img src="img/product@4x.png" alt="" class="img-fluid">
+            </div>
+            <div class="carousel-item">
+              <img src="img/product@4x.png" alt="" class="img-fluid">
+            </div>
+            <div class="carousel-item">
+              <img src="img/product@4x.png" alt="" class="img-fluid">
+            </div>
+            <div class="carousel-item">
+              <img src="img/product@4x.png" alt="" class="img-fluid">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#csl" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#csl" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+
+        </div>
       </div>
 
       <div class="col-lg-4 text-right rtl">
@@ -179,7 +214,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </main>
   <!-- footer -->
   <footer class="container-fluid mt-lg-5">
     <!-- first -->
