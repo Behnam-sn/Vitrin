@@ -345,6 +345,48 @@ main #news-content .text {
   text-align: justify;
 }
 
+#product {
+  font-size: 0.9rem;
+}
+#product .border-taki {
+  border-bottom: 0.03rem solid #ffffff;
+}
+#product .icon img {
+  width: auto;
+  height: 1.3rem;
+  padding-left: 1rem;
+}
+#product .like img {
+  width: 0.7rem;
+  height: auto;
+  top: 25%;
+}
+#product .price {
+  font-size: 1.1rem;
+}
+#product .price button {
+  font-size: 0.9rem;
+  border-radius: 30rem;
+  padding: 0.3rem 0.5rem;
+}
+#product .detail {
+  font-size: 0.8rem;
+}
+#product .detail h6 {
+  font-size: 1.1rem;
+}
+#product .detail h5 {
+  font-size: 0.9rem;
+}
+#product .detail p {
+  margin-bottom: 0.4rem;
+}
+#product .detail img {
+  height: 1rem;
+  width: auto;
+  padding-left: 0.4rem;
+}
+
 footer {
   background: #4d4d4d;
   font-size: 0.65rem;
