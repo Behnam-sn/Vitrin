@@ -71,6 +71,42 @@ button {
   direction: rtl;
 }
 
+#search {
+  width: 100%;
+  height: 1.7rem;
+  padding: 0 1.6rem;
+  background: #cccccc;
+  border: 0.1rem solid transparent;
+  border-radius: 1rem;
+  outline: none !important;
+  transition: background 0.3s linear;
+}
+#search:hover, #search:focus {
+  background: white;
+}
+
+#magnifier {
+  background: transparent;
+  border: none;
+  padding: 0;
+  top: 0.3rem;
+  right: 0.6rem;
+}
+#magnifier img {
+  width: 1rem !important;
+  height: auto !important;
+}
+
+#clear {
+  background: transparent;
+  padding: 0;
+  top: 0.45rem;
+  left: 0.6rem;
+  cursor: pointer;
+  width: 0.8rem !important;
+  height: auto !important;
+}
+
 html {
   font-size: 16px;
 }
@@ -225,39 +261,6 @@ aside #copyright img {
 #filter img {
   width: auto;
   height: 0.45rem;
-}
-#filter form input[type=text] {
-  width: 100%;
-  height: 1.7rem;
-  padding: 0 1.6rem;
-  background: #cccccc;
-  border: 0.1rem solid transparent;
-  border-radius: 1rem;
-  outline: none !important;
-  transition: background 0.3s linear;
-}
-#filter form input[type=text]:hover, #filter form input[type=text]:focus {
-  background: white;
-}
-#filter form #magnifier {
-  background: transparent;
-  border: none;
-  padding: 0;
-  top: 0.3rem;
-  right: 0.6rem;
-}
-#filter form #magnifier img {
-  width: 1rem;
-  height: auto;
-}
-#filter form #clear {
-  background: transparent;
-  padding: 0;
-  top: 0.45rem;
-  left: 0.6rem;
-  cursor: pointer;
-  width: 0.8rem;
-  height: auto;
 }
 
 @media screen and (max-width: 1023px) {
