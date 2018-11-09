@@ -229,8 +229,7 @@ aside #copyright img {
 #filter form input[type=text] {
   width: 100%;
   height: 1.7rem;
-  padding-right: 1.8rem;
-  padding-left: 0.5rem;
+  padding: 0 1.6rem;
   background: #cccccc;
   border: 0.1rem solid transparent;
   border-radius: 1rem;
@@ -240,15 +239,24 @@ aside #copyright img {
 #filter form input[type=text]:hover, #filter form input[type=text]:focus {
   background: white;
 }
-#filter form button {
+#filter form #magnifier {
   background: transparent;
   border: none;
   padding: 0;
   top: 0.3rem;
   right: 0.6rem;
 }
-#filter form button img {
+#filter form #magnifier img {
   width: 1rem;
+  height: auto;
+}
+#filter form #clear {
+  background: transparent;
+  padding: 0;
+  top: 0.45rem;
+  left: 0.6rem;
+  cursor: pointer;
+  width: 0.8rem;
   height: auto;
 }
 

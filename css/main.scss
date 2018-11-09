@@ -190,8 +190,7 @@ aside {
       width: 100%;
       height: 1.7rem;
 
-      padding-right: 1.8rem;
-      padding-left: 0.5rem;
+      padding: 0 1.6rem;
 
       background: #cccccc;
 
@@ -204,7 +203,7 @@ aside {
       }
     }
 
-    button {
+    #magnifier {
       background: transparent;
       border: none;
       padding: 0;
@@ -215,6 +214,18 @@ aside {
         width: 1rem;
         height: auto;
       }
+    }
+
+    #clear {
+      background: transparent;
+      padding: 0;
+      top: 0.45rem;
+      left: 0.6rem;
+
+      cursor: pointer;
+
+      width: 0.8rem;
+      height: auto;
     }
   }
 }
