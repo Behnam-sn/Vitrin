@@ -434,6 +434,11 @@ main .item .price .tag {
   padding-left: 0.3rem;
 }
 
+.form {
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+  margin-top: 2rem;
+}
 .form .title {
   display: table;
   white-space: nowrap;

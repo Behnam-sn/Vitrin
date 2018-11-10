@@ -342,6 +342,7 @@ main {
 
 // new content
 #news-content {
+
   .author,
   .detail {
     font-size: 0.6rem;
@@ -468,6 +469,10 @@ main {
 }
 
 .form {
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+  margin-top: 2rem;
+
   .title {
     display: table;
     white-space: nowrap;
