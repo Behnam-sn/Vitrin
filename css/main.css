@@ -356,7 +356,7 @@ main .item .price .tag {
 }
 
 #product {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 #product #carousel .carousel-item img {
   width: 15rem;
@@ -365,7 +365,7 @@ main .item .price .tag {
 }
 @media screen and (min-width: 1024px) {
   #product #carousel .carousel-item img {
-    width: 25rem;
+    width: 20rem;
   }
 }
 #product #carousel .carousel-indicators li {
@@ -381,7 +381,7 @@ main .item .price .tag {
   transform: scale(1);
 }
 #product #thumbnail img {
-  height: 4rem;
+  height: 3.3rem;
   width: auto;
   border-radius: 0.8rem;
 }
@@ -393,38 +393,42 @@ main .item .price .tag {
 }
 #product .icon img {
   width: auto;
-  height: 1.3rem;
-  padding-left: 1rem;
+  height: 1rem;
+  padding-left: 0.7rem;
 }
 #product .like img {
-  width: 0.7rem;
+  width: 0.5rem;
   height: auto;
   top: 25%;
 }
 #product .price {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 #product .price button {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   border-radius: 30rem;
   padding: 0.3rem 0.5rem;
+  transition: background 0.3s linear;
+}
+#product .price button:hover {
+  background: #cc8900;
 }
 #product .detail {
-  font-size: 0.8rem;
+  font-size: 0.65rem;
 }
 #product .detail h6 {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 #product .detail h5 {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 #product .detail p {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 #product .detail img {
-  height: 1rem;
+  height: 0.8rem;
   width: auto;
-  padding-left: 0.4rem;
+  padding-left: 0.3rem;
 }
 
 footer {

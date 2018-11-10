@@ -361,7 +361,7 @@ main {
 
 // product
 #product {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 
   #carousel {
     .carousel-item img {
@@ -370,7 +370,7 @@ main {
       border-radius: 0.8rem;
 
       @include lg() {
-        width: 25rem;
+        width: 20rem;
       }
     }
 
@@ -382,7 +382,6 @@ main {
         width: 0.7rem;
         border-radius: 50%;
         @include transition(all);
-        // transition: all 0.6s ease;
       }
 
       .active {
@@ -394,7 +393,7 @@ main {
 
   #thumbnail {
     img {
-      height: 4rem;
+      height: 3.3rem;
       width: auto;
       border-radius: 0.8rem;
     }
@@ -413,48 +412,54 @@ main {
   .icon {
     img {
       width: auto;
-      height: 1.3rem;
-      padding-left: 1rem;
+      height: 1rem;
+      padding-left: .7rem;
     }
   }
 
   .like {
     img {
-      width: 0.7rem;
+      width: 0.5rem;
       height: auto;
       top: 25%;
     }
   }
 
   .price {
-    font-size: 1.1rem;
+    font-size: .9rem;
 
     button {
-      font-size: 0.9rem;
+      font-size: .7rem;
       border-radius: 30rem;
       padding: 0.3rem 0.5rem;
+
+      @include transition();
+
+      &:hover {
+        background: darken($orange, 10%)
+      }
     }
   }
 
   .detail {
-    font-size: 0.8rem;
+    font-size: .65rem;
 
     h6 {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     h5 {
-      font-size: 0.9rem;
+      font-size: .8rem;
     }
 
     p {
-      margin-bottom: .4rem;
+      margin-bottom: .3rem;
     }
 
     img {
-      height: 1rem;
+      height: .8rem;
       width: auto;
-      padding-left: 0.4rem;
+      padding-left: .3rem;
     }
   }
 }
