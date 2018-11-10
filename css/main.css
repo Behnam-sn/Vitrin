@@ -144,8 +144,8 @@ aside #image {
   margin-right: 2rem;
 }
 aside #image img {
-  width: 3.2rem;
-  height: auto;
+  height: 3.2rem;
+  width: auto;
 }
 aside #arrow,
 aside #star,
@@ -187,7 +187,7 @@ aside #buttons .button-two {
   width: 8.6rem;
 }
 aside #banner {
-  margin-top: 1.4rem;
+  margin-top: 0.7rem;
 }
 aside #banner .img-one {
   height: 7rem;
@@ -195,6 +195,9 @@ aside #banner .img-one {
 }
 aside #copyright {
   background: #4d4d4d;
+}
+aside #copyright div {
+  padding: 1.2rem 0;
 }
 aside #copyright img {
   height: 2.7rem;
