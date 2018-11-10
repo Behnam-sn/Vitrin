@@ -464,6 +464,31 @@ main {
   }
 }
 
+.form {
+  .title {
+    display: table;
+    white-space: nowrap;
+
+    &:before,
+    &:after {
+      border-top: 1px solid #ffffff;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.5em;
+      width: 45%;
+    }
+
+    &:before {
+      right: 1.5%;
+    }
+
+    &:after {
+      left: 1.5%;
+    }
+  }
+}
+
 footer {
   background: $copyright;
   font-size: 0.65rem;

@@ -431,6 +431,25 @@ main .item .price .tag {
   padding-left: 0.3rem;
 }
 
+.form .title {
+  display: table;
+  white-space: nowrap;
+}
+.form .title:before, .form .title:after {
+  border-top: 1px solid #ffffff;
+  content: "";
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 45%;
+}
+.form .title:before {
+  right: 1.5%;
+}
+.form .title:after {
+  left: 1.5%;
+}
+
 footer {
   background: #4d4d4d;
   font-size: 0.65rem;
