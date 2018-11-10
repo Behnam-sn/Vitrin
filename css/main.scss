@@ -185,47 +185,46 @@ aside {
     height: 0.45rem;
   }
 
+  form {
+    input[type="text"] {
+      width: 100%;
+      height: 1.7rem;
 
-  #search {
-    width: 100%;
-    height: 1.7rem;
+      padding: 0 1.6rem;
 
-    padding: 0 1.6rem;
+      background: #cccccc;
 
-    background: #cccccc;
+      @include border();
+      @include transition();
 
-    @include border();
-    @include transition();
-
-    &:hover,
-    &:focus {
-      background: lighten(#cccccc, 30%);
+      &:hover,
+      &:focus {
+        background: lighten(#cccccc, 30%);
+      }
     }
-  }
 
-  #magnifier {
-    background: transparent;
-    border: none;
-    padding: 0;
-    top: 0.3rem;
-    right: 0.6rem;
+    button {
+      background: transparent;
+      border: none;
+      padding: 0;
+      top: 0.3rem;
+      right: 0.6rem;
 
-    img {
-      width: 1rem;
+      img {
+        width: 1rem;
+        height: auto;
+      }
+    }
+
+    #clear {
+      cursor: pointer;
+
+      top: 0.5rem;
+      left: 0.6rem;
+
+      width: 0.7rem;
       height: auto;
     }
-  }
-
-  #clear {
-    background: transparent;
-    padding: 0;
-    top: 0.5rem;
-    left: 0.6rem;
-
-    cursor: pointer;
-
-    width: 0.7rem;
-    height: auto;
   }
 }
 
@@ -552,31 +551,41 @@ footer {
     padding: 1rem 0.5rem;
   }
 
-  input[type="text"] {
-    height: 2rem;
-    padding-right: 2.6rem;
-    padding-left: 0.6rem;
+  form {
+    input[type="text"] {
+      height: 2rem;
+      padding-right: 2.6rem;
+      padding-left: 2rem;
 
-    background: #cccccc;
-    font-size: 1rem;
+      background: #cccccc;
+      font-size: 1rem;
 
-    @include border();
-    @include transition();
+      @include border();
+      @include transition();
 
-    &:focus {
-      background: lighten(#cccccc, 30%);
+      &:focus {
+        background: lighten(#cccccc, 30%);
+      }
     }
-  }
 
-  button {
-    background: transparent;
-    border: none;
-    padding: 0;
-    top: 0.25rem;
-    right: 0.75rem;
+    button {
+      background: transparent;
+      border: none;
+      padding: 0;
+      top: 0.25rem;
+      right: 0.75rem;
 
-    img {
-      width: 1.6rem;
+      img {
+        width: 1.6rem;
+        height: auto;
+      }
+    }
+
+    #mobile-clear {
+      top: 0.5rem;
+      left: 0.6rem;
+
+      width: 1rem;
       height: auto;
     }
   }

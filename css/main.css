@@ -226,7 +226,7 @@ aside #copyright img {
   width: auto;
   height: 0.45rem;
 }
-#filter #search {
+#filter form input[type=text] {
   width: 100%;
   height: 1.7rem;
   padding: 0 1.6rem;
@@ -236,26 +236,24 @@ aside #copyright img {
   outline: none !important;
   transition: background 0.3s linear;
 }
-#filter #search:hover, #filter #search:focus {
+#filter form input[type=text]:hover, #filter form input[type=text]:focus {
   background: white;
 }
-#filter #magnifier {
+#filter form button {
   background: transparent;
   border: none;
   padding: 0;
   top: 0.3rem;
   right: 0.6rem;
 }
-#filter #magnifier img {
+#filter form button img {
   width: 1rem;
   height: auto;
 }
-#filter #clear {
-  background: transparent;
-  padding: 0;
+#filter form #clear {
+  cursor: pointer;
   top: 0.5rem;
   left: 0.6rem;
-  cursor: pointer;
   width: 0.7rem;
   height: auto;
 }
@@ -502,10 +500,10 @@ footer #app-download img {
 #top-nav .navbar-nav {
   padding: 1rem 0.5rem;
 }
-#top-nav input[type=text] {
+#top-nav form input[type=text] {
   height: 2rem;
   padding-right: 2.6rem;
-  padding-left: 0.6rem;
+  padding-left: 2rem;
   background: #cccccc;
   font-size: 1rem;
   border: 0.1rem solid transparent;
@@ -513,18 +511,24 @@ footer #app-download img {
   outline: none !important;
   transition: background 0.3s linear;
 }
-#top-nav input[type=text]:focus {
+#top-nav form input[type=text]:focus {
   background: white;
 }
-#top-nav button {
+#top-nav form button {
   background: transparent;
   border: none;
   padding: 0;
   top: 0.25rem;
   right: 0.75rem;
 }
-#top-nav button img {
+#top-nav form button img {
   width: 1.6rem;
+  height: auto;
+}
+#top-nav form #mobile-clear {
+  top: 0.5rem;
+  left: 0.6rem;
+  width: 1rem;
   height: auto;
 }
 #top-nav .nav-item {

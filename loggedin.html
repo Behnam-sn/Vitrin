@@ -637,8 +637,9 @@
                 <div class="navbar-nav">
                     <!-- search -->
                     <form action="" class="w-100 rtl text-right position-relative">
-                        <input type="text" class="w-100">
-                        <button type="submit" class="position-absolute">
+                        <img src="img/clear.svg" alt="" class="position-absolute invisible" id="mobile-clear">
+                        <input type="text" class="w-100" id="mobile-search">
+                        <button type="submit" class="position-absolute" id="mobile-magnifier">
                             <img src="img/search.svg" alt="">
                         </button>
                     </form>
@@ -714,6 +715,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="js/search.js"></script>
+    <script src="js/mobile-search.js"></script>
 </body>
 
 </html>

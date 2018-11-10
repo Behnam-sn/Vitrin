@@ -1,21 +1,21 @@
 var search = document.querySelector("#search");
-var magnifierbtn = document.querySelector("#magnifier");
+var magnifier = document.querySelector("#magnifier");
 var clearbtn = document.querySelector("#clear");
 
-search.addEventListener("input", func);
+search.addEventListener("input", vanish);
 clearbtn.addEventListener("click", clear);
 
-function func() {
+function vanish() {
     if (search.value == "") {
         clearbtn.classList.add("invisible");
-        magnifierbtn.classList.remove("invisible");
+        magnifier.classList.remove("invisible");
     } else {
         clearbtn.classList.remove("invisible");
-        magnifierbtn.classList.add("invisible");
+        magnifier.classList.add("invisible");
     }
 }
 
 function clear() {
     search.value = "";
-    func();
+    vanish();
 }
