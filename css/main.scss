@@ -184,6 +184,49 @@ aside {
     width: auto;
     height: 0.45rem;
   }
+
+
+  #search {
+    width: 100%;
+    height: 1.7rem;
+
+    padding: 0 1.6rem;
+
+    background: #cccccc;
+
+    @include border();
+    @include transition();
+
+    &:hover,
+    &:focus {
+      background: lighten(#cccccc, 30%);
+    }
+  }
+
+  #magnifier {
+    background: transparent;
+    border: none;
+    padding: 0;
+    top: 0.3rem;
+    right: 0.6rem;
+
+    img {
+      width: 1rem;
+      height: auto;
+    }
+  }
+
+  #clear {
+    background: transparent;
+    padding: 0;
+    top: 0.5rem;
+    left: 0.6rem;
+
+    cursor: pointer;
+
+    width: 0.7rem;
+    height: auto;
+  }
 }
 
 main {
