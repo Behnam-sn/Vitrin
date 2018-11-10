@@ -430,10 +430,10 @@ main {
   }
 
   .price {
-    font-size: 0.9rem;
+    font-size: 1rem;
 
     button {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       border-radius: 30rem;
       padding: 0.3rem 0.5rem;
 
@@ -465,6 +465,26 @@ main {
       width: auto;
       padding-left: 0.3rem;
     }
+  }
+
+  .color::before {
+    content: "رنگ: ";
+  }
+
+  .volume::before {
+    content: "حجم: ";
+  }
+
+  .type::before {
+    content: "نوع بسته بندی: ";
+  }
+
+  .usable::before {
+    content: "قابل استفاده بر روی: ";
+  }
+
+  .available-color::before {
+    content: "- رنگ های موجود: ";
   }
 }
 

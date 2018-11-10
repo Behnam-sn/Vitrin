@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: B Yekan;
   src: url("../font/BYekan.ttf");
@@ -405,10 +406,10 @@ main .item .price .tag {
   top: 25%;
 }
 #product .price {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 #product .price button {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   border-radius: 30rem;
   padding: 0.3rem 0.5rem;
   transition: background 0.3s linear;
@@ -432,6 +433,21 @@ main .item .price .tag {
   height: 0.8rem;
   width: auto;
   padding-left: 0.3rem;
+}
+#product .color::before {
+  content: "رنگ: ";
+}
+#product .volume::before {
+  content: "حجم: ";
+}
+#product .type::before {
+  content: "نوع بسته بندی: ";
+}
+#product .usable::before {
+  content: "قابل استفاده بر روی: ";
+}
+#product .available-color::before {
+  content: "- رنگ های موجود: ";
 }
 
 .form {
