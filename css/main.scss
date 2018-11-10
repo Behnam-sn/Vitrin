@@ -20,7 +20,6 @@ html {
   }
 }
 
-//nested
 body {
   font-family: B Yekan;
   direction: ltr;
@@ -273,92 +272,94 @@ main {
       }
     }
   }
+}
 
-  // artists
-  #artists {
-    img {
-      width: 6rem;
-      height: auto;
-    }
+// artists
+#artists {
+  img {
+    width: 6rem;
+    height: auto;
+  }
 
-    .name {
-      font-size: 0.7rem;
+  .name {
+    font-size: 0.7rem;
 
-      @include sm() {
-        font-size: 0.8rem;
-      }
-    }
-
-    .bio {
-      font-size: 0.5rem;
-
-      @include sm() {
-        font-size: 0.6rem;
-      }
-    }
-
-    a {
-      color: #ffffff;
-
-      &:hover {
-        text-decoration: none;
-      }
+    @include sm() {
+      font-size: 0.8rem;
     }
   }
 
-  // news
-  #news {
-    .item {
-      padding-bottom: 0.25rem;
-    }
+  .bio {
+    font-size: 0.5rem;
 
-    .play-container {
-      position: relative;
-      opacity: 0.8;
-
-      @include transition(opacity);
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-
-    .play {
-      position: absolute;
-      margin: auto;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-
-      width: 3rem;
-      height: auto;
-    }
-  }
-
-  // store
-  #store {
-    .item {
-      padding-bottom: 0.25rem;
-    }
-  }
-
-  #news-content {
-
-    .author,
-    .detail {
+    @include sm() {
       font-size: 0.6rem;
-      color: #b2b2b2;
     }
+  }
 
-    p {
-      font-size: 0.75rem;
-      color: #ffffff;
-      text-align: justify;
+  a {
+    color: #ffffff;
+
+    &:hover {
+      text-decoration: none;
     }
   }
 }
 
+// news
+#news {
+  .item {
+    padding-bottom: 0.25rem;
+  }
+
+  .play-container {
+    position: relative;
+    opacity: 0.8;
+
+    @include transition(opacity);
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .play {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 3rem;
+    height: auto;
+  }
+}
+
+// new content
+#news-content {
+
+  .author,
+  .detail {
+    font-size: 0.6rem;
+    color: #b2b2b2;
+  }
+
+  p {
+    font-size: 0.75rem;
+    color: #ffffff;
+    text-align: justify;
+  }
+}
+
+// store
+#store {
+  .item {
+    padding-bottom: 0.25rem;
+  }
+}
+
+// product
 #product {
   font-size: 0.9rem;
 
@@ -620,7 +621,7 @@ footer {
 #bottom-nav {
   background: $main;
 
-  #home {
+  #home-btn {
     width: 2.1em;
     height: auto;
   }

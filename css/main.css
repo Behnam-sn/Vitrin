@@ -290,44 +290,46 @@ main .item .price .tag {
   margin-right: 0.1rem;
   margin-top: 0.1rem;
 }
-main #artists img {
+
+#artists img {
   width: 6rem;
   height: auto;
 }
-main #artists .name {
+#artists .name {
   font-size: 0.7rem;
 }
 @media screen and (max-width: 1023px) {
-  main #artists .name {
+  #artists .name {
     font-size: 0.8rem;
   }
 }
-main #artists .bio {
+#artists .bio {
   font-size: 0.5rem;
 }
 @media screen and (max-width: 1023px) {
-  main #artists .bio {
+  #artists .bio {
     font-size: 0.6rem;
   }
 }
-main #artists a {
+#artists a {
   color: #ffffff;
 }
-main #artists a:hover {
+#artists a:hover {
   text-decoration: none;
 }
-main #news .item {
+
+#news .item {
   padding-bottom: 0.25rem;
 }
-main #news .play-container {
+#news .play-container {
   position: relative;
   opacity: 0.8;
   transition: opacity 0.3s linear;
 }
-main #news .play-container:hover {
+#news .play-container:hover {
   opacity: 1;
 }
-main #news .play {
+#news .play {
   position: absolute;
   margin: auto;
   left: 0;
@@ -337,18 +339,20 @@ main #news .play {
   width: 3rem;
   height: auto;
 }
-main #store .item {
-  padding-bottom: 0.25rem;
-}
-main #news-content .author,
-main #news-content .detail {
+
+#news-content .author,
+#news-content .detail {
   font-size: 0.6rem;
   color: #b2b2b2;
 }
-main #news-content p {
+#news-content p {
   font-size: 0.75rem;
   color: #ffffff;
   text-align: justify;
+}
+
+#store .item {
+  padding-bottom: 0.25rem;
 }
 
 #product {
@@ -554,7 +558,7 @@ footer #app-download img {
 #bottom-nav {
   background: #333333;
 }
-#bottom-nav #home {
+#bottom-nav #home-btn {
   width: 2.1em;
   height: auto;
 }
