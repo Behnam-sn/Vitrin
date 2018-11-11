@@ -488,41 +488,41 @@ main {
   }
 }
 
+.title {
+  display: table;
+  white-space: nowrap;
+
+  &::before,
+  &::after {
+    border-top: 1px solid #ffffff;
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 0.5em;
+    width: 45%;
+  }
+
+  &::before {
+    left: 1.5%;
+  }
+
+  &::after {
+    right: 1.5%;
+  }
+}
+
 .form {
   font-size: 0.8rem;
   color: #CBCBCB;
 
-  margin-right: 2.5rem;
-  margin-left: 2.5rem;
-  margin-top: 1rem;
+  @include lg() {
+    padding-right: 10rem;
+    padding-left: 10rem;
+    margin-top: 1rem;
+  }
+
   margin-bottom: 5rem;
 
-  .container {
-    padding: 0 3rem;
-  }
-
-  .title {
-    display: table;
-    white-space: nowrap;
-
-    &::before,
-    &::after {
-      border-top: 1px solid #ffffff;
-      content: '';
-      display: table-cell;
-      position: relative;
-      top: 0.5em;
-      width: 45%;
-    }
-
-    &::before {
-      left: 1.5%;
-    }
-
-    &::after {
-      right: 1.5%;
-    }
-  }
 
   .price {
     font-size: 1rem;

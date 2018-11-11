@@ -450,22 +450,11 @@ main .item .price .tag {
   content: "- رنگ های موجود: ";
 }
 
-.form {
-  font-size: 0.8rem;
-  color: #CBCBCB;
-  margin-right: 2.5rem;
-  margin-left: 2.5rem;
-  margin-top: 1rem;
-  margin-bottom: 5rem;
-}
-.form .container {
-  padding: 0 3rem;
-}
-.form .title {
+.title {
   display: table;
   white-space: nowrap;
 }
-.form .title::before, .form .title::after {
+.title::before, .title::after {
   border-top: 1px solid #ffffff;
   content: "";
   display: table-cell;
@@ -473,11 +462,24 @@ main .item .price .tag {
   top: 0.5em;
   width: 45%;
 }
-.form .title::before {
+.title::before {
   left: 1.5%;
 }
-.form .title::after {
+.title::after {
   right: 1.5%;
+}
+
+.form {
+  font-size: 0.8rem;
+  color: #CBCBCB;
+  margin-bottom: 5rem;
+}
+@media screen and (min-width: 1024px) {
+  .form {
+    padding-right: 10rem;
+    padding-left: 10rem;
+    margin-top: 1rem;
+  }
 }
 .form .price {
   font-size: 1rem;
