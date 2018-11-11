@@ -451,15 +451,21 @@ main .item .price .tag {
 }
 
 .form {
+  font-size: 0.8rem;
+  color: #CBCBCB;
   margin-right: 2.5rem;
   margin-left: 2.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+.form .container {
+  padding: 0 3rem;
 }
 .form .title {
   display: table;
   white-space: nowrap;
 }
-.form .title:before, .form .title:after {
+.form .title::before, .form .title::after {
   border-top: 1px solid #ffffff;
   content: "";
   display: table-cell;
@@ -467,11 +473,70 @@ main .item .price .tag {
   top: 0.5em;
   width: 45%;
 }
-.form .title:before {
+.form .title::before {
+  left: 1.5%;
+}
+.form .title::after {
   right: 1.5%;
 }
-.form .title:after {
-  left: 1.5%;
+.form .price {
+  font-size: 1rem;
+}
+.form form input[type=text] {
+  color: #808080;
+  background: #CBCBCB;
+  text-align: center;
+  border: none;
+  padding: 0.1rem 0.3rem;
+  border-radius: 1rem;
+}
+.form form button {
+  color: #ffffff;
+  background: #ffab00;
+  border: none;
+  padding: 0.1rem 0.6rem;
+  border-radius: 1rem;
+}
+.form .w-35 {
+  width: 35%;
+}
+.form .table-container {
+  height: 22rem;
+  overflow-y: auto;
+  padding-left: 0.5rem;
+}
+.form .table-container::-webkit-scrollbar {
+  width: 0.3rem;
+  background: #4D4D4D;
+  border-radius: 2rem;
+}
+.form .table-container::-webkit-scrollbar-thumb {
+  background-color: #808080;
+  border-radius: 2rem;
+}
+.form th {
+  background-color: #B1B1B1;
+  color: #000;
+  border: #000 0.1rem solid;
+}
+.form tr {
+  background-color: #333333;
+  font-size: 0.6rem;
+}
+.form tr:nth-child(odd) {
+  background-color: #4D4D4D;
+}
+.form td {
+  height: 2rem;
+}
+.form .end {
+  background-color: #B1B1B1 !important;
+  color: #000 !important;
+}
+.form .export img {
+  height: 1.3rem;
+  width: auto;
+  cursor: pointer;
 }
 
 footer {

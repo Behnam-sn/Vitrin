@@ -489,16 +489,24 @@ main {
 }
 
 .form {
+  font-size: 0.8rem;
+  color: #CBCBCB;
+
   margin-right: 2.5rem;
   margin-left: 2.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+
+  .container {
+    padding: 0 3rem;
+  }
 
   .title {
     display: table;
     white-space: nowrap;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       border-top: 1px solid #ffffff;
       content: '';
       display: table-cell;
@@ -507,12 +515,89 @@ main {
       width: 45%;
     }
 
-    &:before {
-      right: 1.5%;
+    &::before {
+      left: 1.5%;
     }
 
-    &:after {
-      left: 1.5%;
+    &::after {
+      right: 1.5%;
+    }
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  form {
+    input[type="text"] {
+      color: #808080;
+      background: #CBCBCB;
+      text-align: center;
+      border: none;
+      padding: .1rem .3rem;
+      border-radius: 1rem;
+    }
+
+    button {
+      color: #ffffff;
+      background: $orange;
+      border: none;
+      padding: .1rem .6rem;
+      border-radius: 1rem;
+    }
+  }
+
+  .w-35 {
+    width: 35%;
+  }
+
+  .table-container {
+    height: 22rem;
+    overflow-y: auto;
+    padding-left: .5rem;
+  }
+
+  .table-container::-webkit-scrollbar {
+    width: .3rem;
+    background: #4D4D4D;
+    border-radius: 2rem;
+  }
+
+  .table-container::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    border-radius: 2rem;
+  }
+
+
+  th {
+    background-color: #B1B1B1;
+    color: #000;
+    border: #000 .1rem solid;
+  }
+
+  tr {
+    background-color: #333333;
+    font-size: .6rem;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #4D4D4D;
+  }
+
+  td {
+    height: 2rem;
+  }
+
+  .end {
+    background-color: #B1B1B1 !important;
+    color: #000 !important;
+  }
+
+  .export {
+    img {
+      height: 1.3rem;
+      width: auto;
+      cursor: pointer;
     }
   }
 }
