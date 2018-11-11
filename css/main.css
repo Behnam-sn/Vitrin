@@ -142,7 +142,7 @@ aside {
   width: 10.25rem;
 }
 aside #image {
-  margin-right: 2rem;
+  margin-right: 1.5rem;
 }
 aside #image img {
   height: 3.2rem;
@@ -167,7 +167,7 @@ aside #number {
   left: -0.3rem;
 }
 aside #buttons {
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   margin-top: 1.1rem;
 }
 aside #buttons button {
@@ -198,7 +198,7 @@ aside #copyright {
   background: #4d4d4d;
 }
 aside #copyright div {
-  padding: 1.2rem 0;
+  padding: 0.4rem 0;
 }
 aside #copyright img {
   height: 2.7rem;
@@ -450,25 +450,6 @@ main .item .price .tag {
   content: "- رنگ های موجود: ";
 }
 
-.title {
-  display: table;
-  white-space: nowrap;
-}
-.title::before, .title::after {
-  border-top: 1px solid #ffffff;
-  content: "";
-  display: table-cell;
-  position: relative;
-  top: 0.5em;
-  width: 45%;
-}
-.title::before {
-  left: 1.5%;
-}
-.title::after {
-  right: 1.5%;
-}
-
 .form {
   font-size: 0.8rem;
   color: #CBCBCB;
@@ -480,6 +461,24 @@ main .item .price .tag {
     padding-left: 10rem;
     margin-top: 1rem;
   }
+}
+.form .title {
+  display: table;
+  white-space: nowrap;
+}
+.form .title::before, .form .title::after {
+  border-top: 1px solid #ffffff;
+  content: "";
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 45%;
+}
+.form .title::before {
+  left: 1.5%;
+}
+.form .title::after {
+  right: 1.5%;
 }
 .form .price {
   font-size: 1rem;

@@ -88,7 +88,7 @@ aside {
   width: 10.25rem;
 
   #image {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
 
     img {
       height: 3.2rem;
@@ -116,7 +116,7 @@ aside {
   }
 
   #buttons {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     margin-top: 1.1rem;
 
     button {
@@ -152,7 +152,7 @@ aside {
     background: $copyright;
 
     div {
-      padding: 1.2rem 0;
+      padding: .4rem 0;
     }
 
     img {
@@ -488,28 +488,6 @@ main {
   }
 }
 
-.title {
-  display: table;
-  white-space: nowrap;
-
-  &::before,
-  &::after {
-    border-top: 1px solid #ffffff;
-    content: '';
-    display: table-cell;
-    position: relative;
-    top: 0.5em;
-    width: 45%;
-  }
-
-  &::before {
-    left: 1.5%;
-  }
-
-  &::after {
-    right: 1.5%;
-  }
-}
 
 .form {
   font-size: 0.8rem;
@@ -523,6 +501,28 @@ main {
 
   margin-bottom: 5rem;
 
+  .title {
+    display: table;
+    white-space: nowrap;
+
+    &::before,
+    &::after {
+      border-top: 1px solid #ffffff;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.5em;
+      width: 45%;
+    }
+
+    &::before {
+      left: 1.5%;
+    }
+
+    &::after {
+      right: 1.5%;
+    }
+  }
 
   .price {
     font-size: 1rem;
