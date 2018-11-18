@@ -450,23 +450,20 @@ main .item .price .tag {
   content: "- رنگ های موجود: ";
 }
 
-.form {
-  font-size: 0.8rem;
-  color: #CBCBCB;
-  margin-bottom: 5rem;
-}
-@media screen and (min-width: 1024px) {
-  .form {
-    padding-right: 10rem;
-    padding-left: 10rem;
-    margin-top: 1rem;
-  }
-}
-.form .title {
+.form-title {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   display: table;
   white-space: nowrap;
 }
-.form .title::before, .form .title::after {
+@media screen and (min-width: 1024px) {
+  .form-title {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+}
+.form-title::before, .form-title::after {
   border-top: 1px solid #ffffff;
   content: "";
   display: table-cell;
@@ -474,11 +471,26 @@ main .item .price .tag {
   top: 0.5em;
   width: 45%;
 }
-.form .title::before {
+.form-title::before {
   left: 1.5%;
 }
-.form .title::after {
+.form-title::after {
   right: 1.5%;
+}
+
+.form {
+  font-size: 0.8rem;
+  color: #CBCBCB;
+  margin-top: 1.5rem;
+  margin-bottom: 7rem;
+}
+@media screen and (min-width: 1024px) {
+  .form {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
 }
 .form .price {
   font-size: 1rem;
@@ -538,6 +550,41 @@ main .item .price .tag {
   height: 1.3rem;
   width: auto;
   cursor: pointer;
+}
+
+#down {
+  font-size: 0.7rem;
+  background: #3C3C3C;
+  color: #CBCBCB;
+  margin-bottom: 3rem;
+  padding-top: 0.7rem;
+  padding-bottom: 1.5rem;
+}
+#down h6 {
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 1024px) {
+  #down {
+    margin-bottom: 0;
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+}
+#down .special-border {
+  border-bottom: 1px solid #dee2e6;
+}
+@media screen and (min-width: 1024px) {
+  #down .special-border {
+    border-width: 0;
+  }
+}
+#down button {
+  font-size: 0.8rem;
+  border-radius: 1rem;
+  transition: background 0.3s linear;
+}
+#down button:hover {
+  background: #cc8900;
 }
 
 footer {
