@@ -72,6 +72,10 @@ button {
   direction: rtl;
 }
 
+.ltr {
+  direction: ltr;
+}
+
 html {
   font-size: 16px;
 }
@@ -585,6 +589,28 @@ main .item .price .tag {
 }
 #down button:hover {
   background: #cc8900;
+}
+#down .w-a {
+  width: 50%;
+}
+#down .w-b {
+  width: 100% !important;
+}
+#down label {
+  margin-bottom: 0 !important;
+}
+#down input[type=text] {
+  width: 100%;
+  padding: 0.06rem 0.4rem;
+  background: #CBCBCB;
+  transition: background 0.3s linear;
+  border-radius: 1rem;
+  border: 0.1rem solid transparent;
+  border-radius: 1rem;
+  outline: none !important;
+}
+#down input[type=text]:hover, #down input[type=text]:focus {
+  background: white;
 }
 
 footer {

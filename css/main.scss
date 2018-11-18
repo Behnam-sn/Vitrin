@@ -624,7 +624,6 @@ main {
 
   background: #3C3C3C;
   color: #CBCBCB;
-  // #CBCBCB
 
   margin-bottom: 3rem;
 
@@ -654,6 +653,34 @@ main {
     &:hover {
       background: darken($orange, 10%);
     }
+  }
+
+  .w-a {
+    width: 50%;
+  }
+
+  .w-b {
+    width: 100% !important;
+  }
+
+  label {
+    margin-bottom: 0 !important;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: .06rem .4rem;
+    background: #CBCBCB;
+
+    @include transition();
+
+    &:hover,
+    &:focus {
+      background: lighten(#CBCBCB, 30%);
+    }
+
+    border-radius: 1rem;
+    @include border();
   }
 }
 

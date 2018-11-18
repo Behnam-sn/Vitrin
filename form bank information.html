@@ -245,22 +245,49 @@
                 <div><img src="img/pdf.svg" alt=""></div>
             </div>
         </div>
-        <div class="container-fluid" id="down">
-            <h6 class="text-orange text-right">اطلاعات بانکی به منظور واریز وجه اثر هنری:</h6>
+        <div class="container-fluid text-right" id="down">
+            <h6 class="text-orange">اطلاعات بانکی به منظور واریز وجه اثر هنری:</h6>
             <div class="row">
-                <form action="">
-                    <div class="d-flex">
-                        <div class="col-lg-4">
-
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center py-1">
+                        <label class="w-100" for="">نام بانک:</label>
+                        <input type="text">
+                    </div>
+                    <div class="d-flex align-items-center py-1">
+                        <label class="w-100" for="">نام صاحب حساب:</label>
+                        <input type="text">
+                    </div>
+                    <div class="d-flex align-items-center py-1">
+                        <label class="w-100" for="">کد شعبه:</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center justify-content-between py-1">
+                        <div class="w-a">
+                            <label class="w-100" for="">شماره کارت عضو شتاب:</label>
                         </div>
-                        <div class="col-lg-7">
-
-                        </div>
-                        <div class="col-lg-1">
-
+                        <div class="d-flex ltr w-b">
+                            <input class="mr-1" type="text">
+                            <input class="mx-1" type="text">
+                            <input class="mx-1" type="text">
+                            <input class="ml-1" type="text">
                         </div>
                     </div>
-                </form>
+                    <div class="d-flex align-items-center py-1">
+                        <label class="w-a" for="">شماره حساب:</label>
+                        <input class="w-b ltr" type="text">
+                    </div>
+                    <div class="d-flex align-items-center py-1">
+                        <label class="w-a" for="">شماره شبا:</label>
+                        <input class="w-b ltr" type="text">
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="d-flex h-100 align-items-end">
+                        <Button class="bg-orange text-white border-0 px-3 my-1">ذخیره</Button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -342,7 +369,7 @@
         </nav>
         <!-- bottom navbar -->
         <div class="fixed-bottom sm-visible text-center text-white" id="bottom-nav">
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center py-1">
                 <div class="p-2 flex-fill">
                     <a href="index.html">
                         <img src="img/home.svg" alt="" id="home-btn">
