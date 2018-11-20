@@ -99,7 +99,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   #page {
-    width: 80vw;
+    width: 81.5vw;
   }
 }
 
@@ -219,16 +219,27 @@ aside #copyright img {
   }
 }
 #filter .button {
-  background: #808080;
+  background: #4D4D4D;
+  color: #ffffff;
   width: 100%;
-  height: 1.7rem;
   border: 0.1rem solid transparent;
   border-radius: 1rem;
   outline: none !important;
   transition: background 0.3s linear;
 }
 #filter .button:hover {
-  background: #a6a6a6;
+  background: #737373;
+}
+#filter button {
+  height: 1.8rem;
+}
+#filter a,
+#filter a:hover,
+#filter a:focus {
+  text-decoration: none;
+}
+#filter .active {
+  background: #ffab00 !important;
 }
 #filter img {
   width: auto;
@@ -236,7 +247,7 @@ aside #copyright img {
 }
 #filter form input[type=text] {
   width: 100%;
-  height: 1.7rem;
+  height: 1.65rem;
   padding: 0 1.6rem;
   background: #cccccc;
   border: 0.1rem solid transparent;
@@ -248,6 +259,7 @@ aside #copyright img {
   background: white;
 }
 #filter form button {
+  height: 0;
   background: transparent;
   border: none;
   padding: 0;
