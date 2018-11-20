@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/icon.png" type="image/gif" sizes="16x16">
+    <title>پیگیری سفارشات</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="sticky-top md-visible bg-main pt-3 pb-1 px-4">
+        <!-- right side -->
+        <aside class="md-visible position-fixed bg-main rtl">
+            <!-- user panel -->
+            <div class="d-flex mt-2">
+                <!-- temporary link -->
+                <a href="loggedin.html">
+                    <div id="image" class="rounded-circle bg-orange">
+                        <img src="img/userx.png" alt="" class="rounded-circle">
+                    </div>
+                </a>
+                <div id="arrow" class="align-self-center">
+                    <img src="img/arrow.svg" alt="">
+                </div>
+            </div>
+            <!-- login and signup -->
+            <div id="buttons" class="d-flex">
+                <div>
+                    <button class="button-one bg-orange text-white p-0">ورود</button>
+                </div>
+                <div>
+                    <button class="button-one bg-orange text-white p-0 mr-2">عضویت</button>
+                </div>
+            </div>
+        </aside>
+        <!-- navbar -->
+        <nav class="nav navbar-expand-md navbar-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.svg" alt="">
+            </a>
+
+            <h6 id="lang" class="text-white rounded-circle my-auto p-1 ml-4 font-myriad">En</h6>
+        </nav>
+        <!-- mneu -->
+        <menu class="md-visible p-0 mt-lg-3">
+            <!-- menu items -->
+            <div class="d-flex text-center text-gray">
+                <a href="news.html" class="menu-item menu-item-border pl-0">
+                    <img src="img/m1.svg" alt="">
+                    <div class="mt-1">اخبار و گزارش</div>
+                </a>
+                <a href="" class="menu-item menu-item-border">
+                    <img src="img/m2.svg" alt="">
+                    <div class="mt-1">دانلود اپ</div>
+                </a>
+                <a href="store.html" class="menu-item menu-item-border">
+                    <img src="img/m3.svg" alt="">
+                    <div class="mt-1">فروشگاه</div>
+                </a>
+                <a href="" class="menu-item menu-item-border">
+                    <img src="img/m4.svg" alt="">
+                    <div class="mt-1">نمایشگاه مجازی</div>
+                </a>
+                <a href="" class="menu-item menu-item-border">
+                    <img src="img/m5.svg" alt="">
+                    <div class="mt-1">فراخوان ها</div>
+                </a>
+                <a href="" class="menu-item menu-item-border">
+                    <img src="img/m6.svg" alt="">
+                    <div class="mt-1">ورکشاب ها</div>
+                </a>
+                <a href="artists.html" class="menu-item menu-item-border">
+                    <img src="img/m7.svg" alt="">
+                    <div class="mt-1">هنرمندان</div>
+                </a>
+                <a href="" class="menu-item menu-item-border">
+                    <img src="img/m8.svg" alt="">
+                    <div class="mt-1">مجموعه داران</div>
+                </a>
+                <a href="artworks.html" class="menu-item menu-item-border">
+                    <img src="img/m9.svg" alt="">
+                    <div class="mt-1">آثار هنری</div>
+                </a>
+                <a href="" class="menu-item menu-item-border">
+                    <img src="img/m10.svg" alt="">
+                    <div class="mt-1">برنامه گالری ها</div>
+                </a>
+                <a href="index.html" class="menu-item">
+                    <img src="img/m11.svg" alt="">
+                    <div class="mt-1">خانه</div>
+                </a>
+
+            </div>
+
+        </menu>
+    </div>
+    <!-- main -->
+    <main class="text-center rtl">
+        <h6 class="form-title text-white">پیگیری سفارشات</h6>
+        <div class="container-fluid" id="orders">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <img src="img/order pic@3x.png" class="img-fluid" alt="">
+                    <div class="pt-2 pb-4">
+                        <div class="d-flex justify-content-between border-bottom py-1">
+                            <div>مبادا:</div>
+                            <div>اصفهان</div>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-1">
+                            <div>دفتر ویترین:</div>
+                            <div>تهران</div>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-1">
+                            <div>مقصد:</div>
+                            <div>تبریز</div>
+                        </div>
+                        <div class="d-flex py-1">
+                            <div>
+                                <img src="img/tick.svg" class="tick ml-1" alt="">
+                            </div>
+                            <div>ارسال از مبدا</div>
+                        </div>
+                        <div class="d-flex py-1">
+                            <div>
+                                <img src="img/tick.svg" class="tick ml-1" alt="">
+                            </div>
+                            <div>تحویل و بررسی اثر توسط ویترین</div>
+                        </div>
+                        <div class="d-flex py-1">
+                            <div>
+                                <img src="img/tick.svg" class="tick ml-1" alt="">
+                            </div>
+                            <div>تاییدیه ویترین</div>
+                        </div>
+                        <div class="d-flex py-1">
+                            <div>
+                                <img src="img/untick.svg" class="tick ml-1" alt="">
+                            </div>
+                            <div>ارسال از ویترین</div>
+                        </div>
+                        <div class="d-flex py-1">
+                            <div>
+                                <img src="img/untick.svg" class="tick ml-1" alt="">
+                            </div>
+                            <div>تحویل به مقصد</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="img/order pic@3x.png" class="img-fluid" alt="">
+                    <div class="pt-2 pb-4">
+                        <div class="d-flex justify-content-between border-bottom py-1">
+                            <div>مبادا:</div>
+                            <div>تهران</div>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-1">
+                            <div>دفتر ویترین:</div>
+                            <div>تهران</div>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-1">
+                            <div>مقصد:</div>
+                            <div>تهران</div>
+                        </div>
+                        <div class="d-flex py-1">
+                            <div>
+                                <img src="img/tick.svg" class="tick ml-1" alt="">
+                            </div>
+                            <div>ارسال از مبدا</div>
+                        </div>
+                        <div class="d-flex py-1">
+                            <div>
+                                <img src="img/tick.svg" class="tick ml-1" alt="">
+                            </div>
+                            <div>تحویل و بررسی اثر توسط ویترین</div>
+                        </div>
+                        <div class="d-flex py-1">
+                            <div>
+                                <img src="img/tick.svg" class="tick ml-1" alt="">
+                            </div>
+                            <div>تاییدیه ویترین</div>
+                        </div>
+                        <div class="d-flex py-1">
+                            <div>
+                                <img src="img/tick.svg" class="tick ml-1" alt="">
+                            </div>
+                            <div>ارسال از ویترین</div>
+                        </div>
+                        <div class="d-flex py-1">
+                            <div>
+                                <img src="img/tick.svg" class="tick ml-1" alt="">
+                            </div>
+                            <div>تحویل به مقصد</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="img/order pic@3x.png" class="img-fluid" alt="">
+                    <div class="pt-2 pb-4">
+                        <div class="d-flex justify-content-between border-bottom py-1">
+                            <div>مبادا:</div>
+                            <div>سیستان و بلوچستان</div>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-1">
+                            <div>دفتر ویترین:</div>
+                            <div>تهران</div>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-1">
+                            <div>مقصد:</div>
+                            <div>شیراز</div>
+                        </div>
+                        <div class="d-flex py-1">
+                            <div>
+                                <img src="img/tick.svg" class="tick ml-1" alt="">
+                            </div>
+                            <div>ارسال از مبدا</div>
+                        </div>
+                        <div class="d-flex py-1">
+                            <div>
+                                <img src="img/tick.svg" class="tick ml-1" alt="">
+                            </div>
+                            <div>تحویل و بررسی اثر توسط ویترین</div>
+                        </div>
+                        <div class="d-flex py-1">
+                            <div>
+                                <img src="img/untick.svg" class="tick ml-1" alt="">
+                            </div>
+                            <div>تاییدیه ویترین</div>
+                        </div>
+                        <div class="d-flex py-1">
+                            <div>
+                                <img src="img/untick.svg" class="tick ml-1" alt="">
+                            </div>
+                            <div>ارسال از ویترین</div>
+                        </div>
+                        <div class="d-flex py-1">
+                            <div>
+                                <img src="img/untick.svg" class="tick ml-1" alt="">
+                            </div>
+                            <div>تحویل به مقصد</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- mobile -->
+    <div class="container-fluid sm-visible">
+        <!-- top navbar -->
+        <nav class="fixed-top navbar navbar-expand-lg navbar-dark" id="top-nav">
+            <div id="bell" class="position-relative ml-2">
+                <img src="img/bell.svg" alt="">
+                <div class="bg-orange text-white rounded-circle position-absolute" id="number">
+                    5
+                </div>
+            </div>
+
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img src="img/logo.svg" alt="">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <!-- search -->
+                    <form action="" class="w-100 rtl text-right position-relative">
+                        <img src="img/clear.svg" alt="" class="position-absolute invisible" id="mobile-clear">
+                        <input type="text" class="w-100" id="mobile-search">
+                        <button type="submit" class="position-absolute" id="mobile-magnifier">
+                            <img src="img/search.svg" alt="">
+                        </button>
+                    </form>
+                    <div class="d-flex justify-content-center align-items-center text-center mt-2">
+                        <a href="" class="nav-item nav-link">
+                            <img src="img/m6.svg" alt="">
+                            <div class="mt-1">ورکشاب ها</div>
+                        </a>
+                        <a href="artists.html" class="nav-item nav-link">
+                            <img src="img/m7.svg" alt="">
+                            <div class="mt-1">هنرمندان</div>
+                        </a>
+                        <a href="" class="nav-item nav-link">
+                            <img src="img/m8.svg" alt="">
+                            <div class="mt-1">مجموعه داران</div>
+                        </a>
+                        <a href="artworks.html" class="nav-item nav-link">
+                            <img src="img/m9.svg" alt="">
+                            <div class="mt-1">آثار هنری</div>
+                        </a>
+                        <a href="" class="nav-item nav-link">
+                            <img src="img/m10.svg" alt="">
+                            <div class="mt-1">برنامه گالری ها</div>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center text-center mt-1">
+                        <a href="news.html" class="nav-item nav-link">
+                            <img src="img/m1.svg" alt="">
+                            <div class="mt-1">اخبار و گزارش</div>
+                        </a>
+                        <a href="" class="nav-item nav-link">
+                            <img src="img/m2.svg" alt="">
+                            <div class="mt-1">دانلود اپ</div>
+                        </a>
+                        <a href="store.html" class="nav-item nav-link">
+                            <img src="img/m3.svg" alt="">
+                            <div class="mt-1">فروشگاه</div>
+                        </a>
+                        <a href="" class="nav-item nav-link">
+                            <img src="img/m4.svg" alt="">
+                            <div class="mt-1">نمایشگاه مجازی</div>
+                        </a>
+                        <a href="" class="nav-item nav-link">
+                            <img src="img/m5.svg" alt="">
+                            <div class="mt-1">فراخوان ها</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- bottom navbar -->
+        <div class="fixed-bottom sm-visible text-center text-white" id="bottom-nav">
+            <div class="d-flex align-items-center py-1">
+                <div class="p-2 flex-fill">
+                    <a href="index.html">
+                        <img src="img/home.svg" alt="" id="home-btn">
+                    </a>
+                </div>
+                <div class="p-2 flex-fill">
+                    <img src="img/add.svg" alt="" class="p-1 bg-orange rounded-circle" id="add">
+                </div>
+                <div class="p-2 flex-fill">
+                    <a href="loggedin.html">
+                        <img src="img/usery.svg" alt="" id="user-thumbnail">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/mobile-search.js"></script>
+</body>
+
+</html>

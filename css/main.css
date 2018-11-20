@@ -476,10 +476,20 @@ main .item .price .tag {
   width: 45%;
 }
 .form-title::before {
-  left: 1.5%;
+  left: 5%;
+}
+@media screen and (min-width: 1024px) {
+  .form-title::before {
+    left: 2%;
+  }
 }
 .form-title::after {
-  right: 1.5%;
+  right: 5%;
+}
+@media screen and (min-width: 1024px) {
+  .form-title::after {
+    right: 2%;
+  }
 }
 
 .form {
@@ -611,6 +621,74 @@ main .item .price .tag {
 }
 #down input[type=text]:hover, #down input[type=text]:focus {
   background: white;
+}
+
+#status {
+  font-size: 0.6rem;
+  color: #CBCBCB;
+  margin-top: 1.5rem;
+  margin-bottom: 7rem;
+}
+@media screen and (min-width: 1024px) {
+  #status {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+}
+#status th,
+#status td {
+  border-width: 0.1rem;
+}
+#status th {
+  background-color: #B1B1B1;
+  color: #000;
+  border-style: solid;
+  border-color: #000 !important;
+  border-bottom-color: #808080 !important;
+  border-top-color: #808080 !important;
+}
+#status td {
+  vertical-align: middle;
+  border-color: #808080 !important;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+#status img {
+  height: 4rem;
+}
+#status .big {
+  width: 35%;
+}
+
+#orders {
+  font-size: 0.6rem;
+  color: #ffffff;
+  margin-top: 1.5rem;
+  margin-bottom: 7rem;
+}
+@media screen and (min-width: 1024px) {
+  #orders {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+}
+#orders .col-lg-4 {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  #orders .col-lg-4 {
+    padding-right: 2.7rem;
+    padding-left: 2.7rem;
+  }
+}
+#orders .tick {
+  height: 0.6rem;
+  width: auto;
 }
 
 footer {

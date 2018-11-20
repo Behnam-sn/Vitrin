@@ -19,3 +19,15 @@
     @content;
   }
 }
+
+@mixin space {
+  @include lg() {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+
+  margin-top: 1.5rem;
+  margin-bottom: 7rem;
+}
