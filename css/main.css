@@ -677,11 +677,13 @@ main .item .price .tag {
   }
 }
 #orders .col-lg-4 {
-  padding-right: 2rem;
-  padding-left: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 @media screen and (min-width: 1024px) {
   #orders .col-lg-4 {
+    margin-right: 0rem;
+    margin-left: 0rem;
     padding-right: 2.7rem;
     padding-left: 2.7rem;
   }
