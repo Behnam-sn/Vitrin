@@ -126,7 +126,7 @@ menu img {
   height: 1.2rem;
 }
 menu .menu-item {
-  padding: 0 0.7rem;
+  padding: 0 0.9rem;
   cursor: pointer;
   transition: filter 0.3s linear;
   filter: grayscale(0.99);
