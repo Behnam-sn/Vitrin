@@ -330,17 +330,17 @@ main .status {
 #artists .name {
   font-size: 0.7rem;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 1024px) {
   #artists .name {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
 #artists .bio {
   font-size: 0.5rem;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 1024px) {
   #artists .bio {
-    font-size: 0.6rem;
+    font-size: 0.4rem;
   }
 }
 #artists a {

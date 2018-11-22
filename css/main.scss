@@ -320,16 +320,16 @@ main {
   .name {
     font-size: 0.7rem;
 
-    @include sm() {
-      font-size: 0.8rem;
+    @include lg() {
+      font-size: 0.6rem;
     }
   }
 
   .bio {
     font-size: 0.5rem;
 
-    @include sm() {
-      font-size: 0.6rem;
+    @include lg() {
+      font-size: 0.4rem;
     }
   }
 
