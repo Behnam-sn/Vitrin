@@ -350,8 +350,28 @@ main .status {
   text-decoration: none;
 }
 
+#news {
+  font-size: 0.6rem;
+}
 #news .item {
-  padding-bottom: 0.25rem;
+  padding: 0.25rem;
+}
+#news img {
+  width: auto;
+  height: auto;
+  border-radius: 0.3rem;
+}
+#news .news-btn {
+  font-size: 0.55rem;
+  background: #ffab00;
+  color: #ffffff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  transition: background 0.3s linear;
+}
+#news .news-btn:hover {
+  background: #cc8900;
+  text-decoration: none;
 }
 #news .play-container {
   position: relative;
@@ -368,7 +388,7 @@ main .status {
   right: 0;
   top: 0;
   bottom: 0;
-  width: 3rem;
+  width: 2rem;
   height: auto;
 }
 

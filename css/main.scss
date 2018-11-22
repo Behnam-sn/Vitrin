@@ -344,8 +344,34 @@ main {
 
 // news
 #news {
+  font-size: .6rem;
+
   .item {
-    padding-bottom: 0.25rem;
+    padding: 0.25rem;
+    // margin-bottom: .25rem;
+  }
+
+  img {
+    width: auto;
+    height: auto;
+    border-radius: .3rem;
+  }
+
+  .news-btn {
+    font-size: .55rem;
+
+    background: $orange;
+    color: #ffffff;
+
+    padding: .2rem .5rem;
+    border-radius: 1rem;
+
+    @include transition();
+
+    &:hover {
+      background: darken($orange, 10%);
+      text-decoration: none;
+    }
   }
 
   .play-container {
@@ -367,7 +393,7 @@ main {
     top: 0;
     bottom: 0;
 
-    width: 3rem;
+    width: 2rem;
     height: auto;
   }
 }
