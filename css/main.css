@@ -359,7 +359,7 @@ main .status {
 #news img {
   width: auto;
   height: auto;
-  border-radius: 0.3rem;
+  border-radius: 0.4rem !important;
 }
 #news .news-btn {
   font-size: 0.55rem;
@@ -372,6 +372,9 @@ main .status {
 #news .news-btn:hover {
   background: #cc8900;
   text-decoration: none;
+}
+#news .hfz {
+  font-size: 0.8rem;
 }
 #news .play-container {
   position: relative;

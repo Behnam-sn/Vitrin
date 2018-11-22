@@ -354,7 +354,7 @@ main {
   img {
     width: auto;
     height: auto;
-    border-radius: .3rem;
+    border-radius: .4rem !important;
   }
 
   .news-btn {
@@ -373,6 +373,14 @@ main {
       text-decoration: none;
     }
   }
+
+  .hfz {
+    font-size: .8rem;
+  }
+
+  // p {
+  //   white-space: pre-line;
+  // }
 
   .play-container {
     position: relative;
