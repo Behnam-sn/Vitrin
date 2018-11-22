@@ -292,6 +292,22 @@ main {
       }
     }
   }
+
+  .status-container {
+    position: relative;
+  }
+
+  .status {
+    position: absolute;
+    margin: auto;
+    left: 0.25rem;
+    top: 0.25rem;
+
+    border-radius: 0 !important;
+
+    width: 2.5rem !important;
+    height: auto;
+  }
 }
 
 // artists

@@ -310,6 +310,18 @@ main .item .price .tag {
   margin-right: 0.1rem;
   margin-top: 0.1rem;
 }
+main .status-container {
+  position: relative;
+}
+main .status {
+  position: absolute;
+  margin: auto;
+  left: 0.25rem;
+  top: 0.25rem;
+  border-radius: 0 !important;
+  width: 2.5rem !important;
+  height: auto;
+}
 
 #artists img {
   width: 6rem;
