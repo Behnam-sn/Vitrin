@@ -294,17 +294,17 @@ main .item img {
   border-radius: 0.9rem;
 }
 main .item .body img {
-  height: 2.3rem;
+  height: 1.9rem;
   width: auto;
 }
 main .item .title {
-  font-size: 0.8rem;
-}
-main .item .type {
   font-size: 0.6rem;
 }
+main .item .type {
+  font-size: 0.4rem;
+}
 main .item .price {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
 }
 main .item .price .tag {
   margin-right: 0.1rem;
