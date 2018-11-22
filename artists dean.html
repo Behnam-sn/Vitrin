@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="img/icon.png" type="image/gif" sizes="16x16">
-    <title>فروشگاه</title>
+    <title>هنرمندان - پیشکسوتان</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -28,12 +28,12 @@
                 </div>
             </div>
             <!-- login and signup -->
-            <div id="buttons" class="d-flex">
+            <div id="buttons" class="d-flex justify-content-between">
                 <div>
                     <button class="button-one bg-orange text-white p-0">ورود</button>
                 </div>
                 <div>
-                    <button class="button-one bg-orange text-white p-0 mr-2">عضویت</button>
+                    <button class="button-one bg-orange text-white p-0">عضویت</button>
                 </div>
             </div>
             <!-- banner -->
@@ -42,9 +42,15 @@
                     <img src="img/Asset 1@4x.png" alt="" class="img-one ml-1">
                     <img src="img/Asset 1@4x.png" alt="" class="img-one">
                 </div>
-                <div class="d-flex mt-1">
+                <!-- <div class="d-flex mt-1">
                     <img src="img/Asset 1@4x.png" alt="" class="img-one ml-1">
                     <img src="img/Asset 1@4x.png" alt="" class="img-one">
+                </div> -->
+                <div class="mt-1">
+                    <img src="img/Asset 3@4x.png" alt="" class="w-100 ml-1">
+                </div>
+                <div class="mt-1">
+                    <img src="img/Asset 3@4x.png" alt="" class="w-100 ml-1">
                 </div>
                 <div class="mt-1">
                     <img src="img/Asset 3@4x.png" alt="" class="w-100 ml-1">
@@ -81,7 +87,7 @@
                     <img src="img/m2.svg" alt="">
                     <div class="mt-1">دانلود اپ</div>
                 </a>
-                <a class="menu-item menu-item-border active" href="store.html">
+                <a class="menu-item menu-item-border" href="store.html">
                     <img src="img/m3.svg" alt="">
                     <div class="mt-1">فروشگاه</div>
                 </a>
@@ -97,7 +103,7 @@
                     <img src="img/m6.svg" alt="">
                     <div class="mt-1">ورکشاپ ها</div>
                 </a>
-                <a class="menu-item menu-item-border" href="artists.html">
+                <a class="menu-item menu-item-border active" href="artists.html">
                     <img src="img/m7.svg" alt="">
                     <div class="mt-1">هنرمندان</div>
                 </a>
@@ -121,111 +127,255 @@
 
         </menu>
     </div>
-    <div class="container-fluid ml-lg-3 pb-5" id="page">
+    <div class="container-fluid ml-lg-3" id="page">
+        <!-- filter -->
+        <div id="filter" class="d-flex mt-lg-2 text-right">
+            <div class="w-100 mx-1">
+                <button class="text-white button">
+                    <div class="d-flex justify-content-between align-items-center px-1">
+                        <img src="img/arrow.svg" alt="">
+                        تعداد اثر
+                    </div>
+                </button>
+            </div>
+            <div class="w-100 mx-1">
+                <button class="text-white button">
+                    <div class="d-flex justify-content-between align-items-center px-1">
+                        <img src="img/arrow.svg" alt="">
+                        سال تولد
+                    </div>
+                </button>
+            </div>
+            <a class="w-100 mx-1" href="artists.html">
+                <div class="px-2 py-1 button active">
+                    پیشکسوتان
+                </div>
+            </a>
+            <div class="w-100 mx-1">
+                <button class="text-white button">
+                    <div class="d-flex justify-content-between align-items-center px-1">
+                        <img src="img/arrow.svg" alt="">
+                        دسته بندی هنری
+                    </div>
+                </button>
+            </div>
+            <div class="w-100 mx-1">
+                <button class="text-white button">
+                    <div class="d-flex justify-content-between align-items-center px-1">
+                        <img src="img/arrow.svg" alt="">
+                        مرتب سازی بر اساس
+                    </div>
+                </button>
+            </div>
+            <!-- search -->
+            <div class="w-100 mx-1">
+                <form action="" class="text-right rtl ml-auto mr-1 position-relative">
+                    <img src="img/clear.svg" alt="" class="position-absolute invisible" id="clear">
+                    <input type="text" id="search">
+                    <button type="submit" class="position-absolute" id="magnifier">
+                        <img src="img/search.svg" alt="">
+                    </button>
+                </form>
+            </div>
+        </div>
         <!-- main -->
-        <main class="px-2 mb-lg-5 mt-lg-3">
-            <div class="row" id="store">
-                <div class="col-4 col-md-3 col-lg-2 p-0">
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l1@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l2@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l3@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
+        <main class="px-lg-2 mt-lg-3 pb-5">
+            <div class="row text-center" id="artists">
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
                 </div>
-                <div class="col-4 col-md-3 col-lg-2 p-0">
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l4@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l2@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l3@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
                 </div>
-                <div class="col-4 col-md-3 col-lg-2 p-0">
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l3@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l4@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l2@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
                 </div>
-                <div class="col-4 col-md-3 col-lg-2 p-0">
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l3@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l2@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l1@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
                 </div>
-                <div class="col-4 col-md-3 col-lg-2 p-0">
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l2@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l4@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l3@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
                 </div>
-                <div class="col-4 col-md-3 col-lg-2 p-0">
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l1@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l3@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="product.html">
-                            <img src="img/l2@2x.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="">
+                        <img src="img/user-4@4x.png" alt="" class="img-fluid rounded-circle">
+                        <div class="name mt-2">علی اسماعیل زاده</div>
+                        <div class="bio mb-4">نقاش و استاد دانشگاه هنرهای زیبا</div>
+                    </a>
                 </div>
             </div>
         </main>
@@ -358,7 +508,7 @@
                             <img src="img/m6.svg" alt="">
                             <div class="mt-1">ورکشاب ها</div>
                         </a>
-                        <a href="artists.html" class="nav-item nav-link">
+                        <a href="artists.html" class="nav-item nav-link active">
                             <img src="img/m7.svg" alt="">
                             <div class="mt-1">هنرمندان</div>
                         </a>
@@ -384,7 +534,7 @@
                             <img src="img/m2.svg" alt="">
                             <div class="mt-1">دانلود اپ</div>
                         </a>
-                        <a href="store.html" class="nav-item nav-link active">
+                        <a href="store.html" class="nav-item nav-link">
                             <img src="img/m3.svg" alt="">
                             <div class="mt-1">فروشگاه</div>
                         </a>
@@ -424,6 +574,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/search.js"></script>
     <script src="js/mobile-search.js"></script>
 </body>
 
