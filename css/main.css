@@ -384,7 +384,7 @@ main .status {
 #news .play-container:hover {
   opacity: 1;
 }
-#news .play {
+#news .play-container .play {
   position: absolute;
   margin: auto;
   left: 0;
@@ -393,6 +393,13 @@ main .status {
   bottom: 0;
   width: 2rem;
   height: auto;
+}
+#news .play-container .text {
+  position: absolute;
+  margin: auto;
+  right: 0.7rem;
+  left: 0.7rem;
+  bottom: 0.5rem;
 }
 
 #news-content .author,

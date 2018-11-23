@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/icon.png" type="image/gif" sizes="16x16">
+    <title>اخبار و گزارش - رویدادهای هنری</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="sticky-top md-visible bg-main pt-3 pb-1 px-4">
+        <!-- right side -->
+        <aside class="md-visible position-fixed bg-main rtl">
+            <!-- user panel -->
+            <div class="d-flex mt-2">
+                <!-- temporary link -->
+                <a href="loggedin.html">
+                    <div id="image" class="rounded-circle bg-orange">
+                        <img src="img/userx.png" alt="" class="rounded-circle">
+                    </div>
+                </a>
+                <div id="arrow" class="align-self-center">
+                    <img src="img/arrow.svg" alt="">
+                </div>
+            </div>
+            <!-- login and signup -->
+            <div id="buttons" class="d-flex">
+                <div>
+                    <button class="button-one bg-orange text-white p-0">ورود</button>
+                </div>
+                <div>
+                    <button class="button-one bg-orange text-white p-0 mr-2">عضویت</button>
+                </div>
+            </div>
+            <!-- banner -->
+            <div id="banner" class="d-flex flex-column">
+                <div class="d-flex mt-1">
+                    <img src="img/Asset 1@4x.png" alt="" class="img-one ml-1">
+                    <img src="img/Asset 1@4x.png" alt="" class="img-one">
+                </div>
+                <div class="d-flex mt-1">
+                    <img src="img/Asset 1@4x.png" alt="" class="img-one ml-1">
+                    <img src="img/Asset 1@4x.png" alt="" class="img-one">
+                </div>
+                <div class="mt-1">
+                    <img src="img/Asset 3@4x.png" alt="" class="w-100 ml-1">
+                </div>
+                <!-- copyright -->
+                <div id="copyright" class="d-flex justify-content-center">
+                    <div>
+                        <img src="img/c0.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- navbar -->
+        <nav class="nav navbar-expand-md navbar-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.svg" alt="">
+            </a>
+
+            <h6 id="lang" class="text-white rounded-circle my-auto p-1 ml-4 font-myriad">En</h6>
+        </nav>
+        <!-- mneu -->
+        <menu class="md-visible p-0 mt-lg-3">
+            <!-- menu items -->
+            <div class="d-flex text-center text-gray">
+                <a class="menu-item menu-item-border pl-0" href="ads.html">
+                    <img src="img/m0.svg" alt="">
+                    <div class="mt-1">تبلیغات</div>
+                </a>
+                <a class="menu-item menu-item-border active" href="news.html">
+                    <img src="img/m1.svg" alt="">
+                    <div class="mt-1">اخبار و گزارش</div>
+                </a>
+                <a class="menu-item menu-item-border" href="download app.html">
+                    <img src="img/m2.svg" alt="">
+                    <div class="mt-1">دانلود اپ</div>
+                </a>
+                <a class="menu-item menu-item-border" href="store.html">
+                    <img src="img/m3.svg" alt="">
+                    <div class="mt-1">فروشگاه</div>
+                </a>
+                <a class="menu-item menu-item-border" href="virtual gallery.html">
+                    <img src="img/m4.svg" alt="">
+                    <div class="mt-1">نمایشگاه مجازی</div>
+                </a>
+                <a class="menu-item menu-item-border" href="invitations.html">
+                    <img src="img/m5.svg" alt="">
+                    <div class="mt-1">فراخوان ها</div>
+                </a>
+                <a class="menu-item menu-item-border" href="workshops.html">
+                    <img src="img/m6.svg" alt="">
+                    <div class="mt-1">ورکشاپ ها</div>
+                </a>
+                <a class="menu-item menu-item-border" href="artists.html">
+                    <img src="img/m7.svg" alt="">
+                    <div class="mt-1">هنرمندان</div>
+                </a>
+                <a class="menu-item menu-item-border" href="collectionner.html">
+                    <img src="img/m8.svg" alt="">
+                    <div class="mt-1">مجموعه داران</div>
+                </a>
+                <a class="menu-item menu-item-border" href="artworks.html">
+                    <img src="img/m9.svg" alt="">
+                    <div class="mt-1">آثار هنری</div>
+                </a>
+                <a class="menu-item menu-item-border" href="gallery schedule.html">
+                    <img src="img/m10.svg" alt="">
+                    <div class="mt-1">برنامه گالری ها</div>
+                </a>
+                <a class="menu-item" href="index.html">
+                    <img src="img/m11.svg" alt="">
+                    <div class="mt-1">خانه</div>
+                </a>
+            </div>
+        </menu>
+    </div>
+    <div class="container-fluid ml-lg-3 pb-5" id="page">
+        <!-- filter -->
+        <div id="filter" class="d-flex mt-lg-2 text-right">
+            <a class="w-100 mx-1" href="introduce artists.html">
+                <div class="px-2 py-1 button">
+                    آشنایی با هنرمند
+                </div>
+            </a>
+            <a class="w-100 mx-1" href="art articles.html">
+                <div class="px-2 py-1 button">
+                    مقالات هنری
+                </div>
+            </a>
+            <a class="w-100 mx-1" href="art events.html">
+                <div class="px-2 py-1 button">
+                    رویدادهای هنری
+                </div>
+            </a>
+            <a class="w-100 mx-1" href="art videos.html">
+                <div class="px-2 py-1 button active">
+                    مستند های هنری
+                </div>
+            </a>
+            <div class="w-100 mx-1">
+                <button class="text-white button">
+                    <div class="d-flex justify-content-between align-items-center px-1">
+                        <img src="img/arrow.svg" alt="">
+                        مرتب سازی بر اساس
+                    </div>
+                </button>
+            </div>
+            <!-- search -->
+            <div class="w-100 mx-1">
+                <form action="" class="w-100 rtl ml-auto mr-1 position-relative">
+                    <img src="img/clear.svg" alt="" class="position-absolute invisible" id="clear">
+                    <input type="text" id="search">
+                    <button type="submit" class="position-absolute" id="magnifier">
+                        <img src="img/search.svg" alt="">
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- main -->
+        <main class="px-2 mb-lg-5 mt-lg-3 rtl text-right text-white">
+            <div class="row" id="news">
+                <div class="col-12 col-md-6 col-lg-6 p-0">
+                    <div class="item play-container">
+                        <a href="">
+                            <img src="img/n3@3x.png" alt="" class="img-fluid">
+                            <img src="img/play.svg" alt="" class="play">
+                        </a>
+                        <div class="text">
+                            چگونه در فروش و ارائه آثار عکاسی، پرفورمنس، اینستالیشن و ویدئوآرت موفق عملی کنیم
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 p-0">
+                    <div class="item play-container">
+                        <a href="">
+                            <img src="img/n3@3x.png" alt="" class="img-fluid">
+                            <img src="img/play.svg" alt="" class="play">
+                        </a>
+                        <div class="text">
+                            چگونه در فروش و ارائه آثار عکاسی، پرفورمنس، اینستالیشن و ویدئوآرت موفق عملی کنیم
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 p-0">
+                    <div class="item play-container">
+                        <a href="">
+                            <img src="img/n2@3x.png" alt="" class="img-fluid">
+                            <img src="img/play.svg" alt="" class="play">
+                        </a>
+                        <div class="text">
+                            چگونه در فروش و ارائه آثار عکاسی، پرفورمنس، اینستالیشن و ویدئوآرت موفق عملی کنیم
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 p-0">
+                    <div class="item play-container">
+                        <a href="">
+                            <img src="img/n2@3x.png" alt="" class="img-fluid">
+                            <img src="img/play.svg" alt="" class="play">
+                        </a>
+                        <div class="text">
+                            چگونه در فروش و ارائه آثار عکاسی، پرفورمنس، اینستالیشن و ویدئوآرت موفق عملی کنیم
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 p-0">
+                    <div class="item play-container">
+                        <a href="">
+                            <img src="img/n2@3x.png" alt="" class="img-fluid">
+                            <img src="img/play.svg" alt="" class="play">
+                        </a>
+                        <div class="text">
+                            چگونه در فروش و ارائه آثار عکاسی، پرفورمنس، اینستالیشن و ویدئوآرت موفق عملی کنیم
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 p-0">
+                    <div class="item play-container">
+                        <a href="">
+                            <img src="img/n2@3x.png" alt="" class="img-fluid">
+                            <img src="img/play.svg" alt="" class="play">
+                        </a>
+                        <div class="text">
+                            چگونه در فروش و ارائه آثار عکاسی، پرفورمنس، اینستالیشن و ویدئوآرت موفق عملی کنیم
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 p-0">
+                    <div class="item play-container">
+                        <a href="">
+                            <img src="img/n2@3x.png" alt="" class="img-fluid">
+                            <img src="img/play.svg" alt="" class="play">
+                        </a>
+                        <div class="text">
+                            چگونه در فروش و ارائه آثار عکاسی، پرفورمنس، اینستالیشن و ویدئوآرت موفق عملی کنیم
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 p-0">
+                    <div class="item play-container">
+                        <a href="">
+                            <img src="img/n2@3x.png" alt="" class="img-fluid">
+                            <img src="img/play.svg" alt="" class="play">
+                        </a>
+                        <div class="text">
+                            چگونه در فروش و ارائه آثار عکاسی، پرفورمنس، اینستالیشن و ویدئوآرت موفق عملی کنیم
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 p-0">
+                    <div class="item play-container">
+                        <a href="">
+                            <img src="img/n2@3x.png" alt="" class="img-fluid">
+                            <img src="img/play.svg" alt="" class="play">
+                        </a>
+                        <div class="text">
+                            چگونه در فروش و ارائه آثار عکاسی، پرفورمنس، اینستالیشن و ویدئوآرت موفق عملی کنیم
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 p-0">
+                    <div class="item play-container">
+                        <a href="">
+                            <img src="img/n2@3x.png" alt="" class="img-fluid">
+                            <img src="img/play.svg" alt="" class="play">
+                        </a>
+                        <div class="text">
+                            چگونه در فروش و ارائه آثار عکاسی، پرفورمنس، اینستالیشن و ویدئوآرت موفق عملی کنیم
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- footer -->
+    <footer class="container-fluid mt-lg-5">
+        <!-- first -->
+        <div class="row bg-footer pr-lg-x">
+            <!-- pros -->
+            <div class="col-12 col-lg-8 px-lg-4">
+                <div class="d-flex align-items-center h-100 text-center text-white" id="pros">
+                    <div class="w-100 d-flex align-items-start flex-column flex-lg-row">
+                        <div class="w-100 mt-3 mt-lg-0">
+                            <img src="img/a1@4x.png" alt="">
+                            <div class="mt-1">گارانتی اصالت و سلامت</div>
+                            <div>فیزیکی اثر / کالا</div>
+                        </div>
+                        <div class="w-100 mt-3 mt-lg-0">
+                            <img src="img/a2@4x.png" alt="">
+                            <div class="mt-1">بسته بندی و بررسی</div>
+                            <div>اثر / کالا</div>
+                        </div>
+                    </div>
+                    <div class="w-100 d-flex align-items-start flex-column flex-lg-row">
+                        <div class="w-100 mt-3 mt-lg-0">
+                            <img src="img/a3@4x.png" alt="">
+                            <div class="mt-1">ارسال اثر / کالا</div>
+                            <div>و هزینه آن</div>
+                        </div>
+                        <div class="w-100 mt-3 mt-lg-0">
+                            <img src="img/a4@4x.png" alt="">
+                            <div class="mt-1">ضمانت بازگشت</div>
+                            <div>و شرایط آن</div>
+                        </div>
+                    </div>
+                    <div class="w-100 d-flex align-items-start flex-column flex-lg-row">
+                        <div class="w-100 mt-3 mt-lg-0">
+                            <img src="img/a5@4x.png" alt="">
+                            <div class="mt-1">پشتیبانی</div>
+                        </div>
+                        <div class="w-100 mt-3 mt-lg-0">
+                            <img src="img/a6@4x.png" alt="">
+                            <div class="mt-1">امکان پرداخت </div>
+                            <div>در محل</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- app -->
+            <div class="col-12 col-lg-4 pt-4 pt-lg-0">
+                <div class="row">
+                    <div class="col-6 position-relative" id="app-pic">
+                        <img src="img/Phone pic.png" alt="" class="position-absolute">
+                    </div>
+                    <div class="col-6 text-right py-2" id="app-download">
+                        <div class="d-flex flex-column align-items-center align-items-lg-end">
+                            <img src="img/cj1@4x.png" alt="">
+                            <img src="img/cj2@4x.png" alt="">
+                            <img src="img/cj3@4x.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- second -->
+        <div class="row pl-lg-3 pr-lg-x">
+            <div class="col-12 col-lg-7 order-lg-1 py-0 text-lg-right text-white text-center">
+                <!-- links -->
+                <div class="d-flex flex-column flex-lg-row flex-lg-row-reverse my-3">
+                    <div class="py-2 py-lg-0 link-x">قوانین و مقررات</div>
+                    <div class="py-2 py-lg-0 link">دانلود اپ</div>
+                    <div class="py-2 py-lg-0 link">درباره ما</div>
+                    <div class="py-2 py-lg-0 link ">ارتباط با ما</div>
+                </div>
+                <!-- copyright -->
+                <p class="my-2 pb-2">.کلیه حقوق این سایت نزد <span class="text-orange">ویترین
+                        گالری</span>
+                    محفوظ بوده و استفاده از مطاللب با ذکر منبع بلامانع می باشد</p>
+            </div>
+            <!-- social -->
+            <div class="col-12 col-lg-5 order-lg-0" id="social">
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start h-100 pb-3 pb-lg-0">
+                    <div class="px-1">
+                        <img src="img/soc4@4x.png" alt="">
+                    </div>
+                    <div class="px-1">
+                        <img src="img/soc3@4x.png" alt="">
+                    </div>
+                    <div class="px-1">
+                        <img src="img/soc2@4x.png" alt="">
+                    </div>
+                    <div class="px-1">
+                        <img src="img/soc1@4x.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- mobile -->
+    <div class="container-fluid sm-visible">
+        <!-- top navbar -->
+        <nav class="fixed-top navbar navbar-expand-lg navbar-dark" id="top-nav">
+            <div id="bell" class="position-relative ml-2">
+                <img src="img/bell.svg" alt="">
+                <div class="bg-orange text-white rounded-circle position-absolute" id="number">
+                    5
+                </div>
+            </div>
+
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img src="img/logo.svg" alt="">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <!-- search -->
+                    <form action="" class="w-100 rtl text-right position-relative">
+                        <img src="img/clear.svg" alt="" class="position-absolute invisible" id="mobile-clear">
+                        <input type="text" class="w-100" id="mobile-search">
+                        <button type="submit" class="position-absolute" id="mobile-magnifier">
+                            <img src="img/search.svg" alt="">
+                        </button>
+                    </form>
+                    <div class="d-flex justify-content-center align-items-center text-center mt-2">
+                        <a href="" class="nav-item nav-link">
+                            <img src="img/m6.svg" alt="">
+                            <div class="mt-1">ورکشاپ ها</div>
+                        </a>
+                        <a href="artists.html" class="nav-item nav-link">
+                            <img src="img/m7.svg" alt="">
+                            <div class="mt-1">هنرمندان</div>
+                        </a>
+                        <a href="" class="nav-item nav-link">
+                            <img src="img/m8.svg" alt="">
+                            <div class="mt-1">مجموعه داران</div>
+                        </a>
+                        <a href="artworks.html" class="nav-item nav-link">
+                            <img src="img/m9.svg" alt="">
+                            <div class="mt-1">آثار هنری</div>
+                        </a>
+                        <a href="" class="nav-item nav-link">
+                            <img src="img/m10.svg" alt="">
+                            <div class="mt-1">برنامه گالری ها</div>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center text-center mt-1">
+                        <a href="news.html" class="nav-item nav-link active">
+                            <img src="img/m1.svg" alt="">
+                            <div class="mt-1">اخبار و گزارش</div>
+                        </a>
+                        <a href="" class="nav-item nav-link">
+                            <img src="img/m2.svg" alt="">
+                            <div class="mt-1">دانلود اپ</div>
+                        </a>
+                        <a href="store.html" class="nav-item nav-link">
+                            <img src="img/m3.svg" alt="">
+                            <div class="mt-1">فروشگاه</div>
+                        </a>
+                        <a href="" class="nav-item nav-link">
+                            <img src="img/m4.svg" alt="">
+                            <div class="mt-1">نمایشگاه مجازی</div>
+                        </a>
+                        <a href="" class="nav-item nav-link">
+                            <img src="img/m5.svg" alt="">
+                            <div class="mt-1">فراخوان ها</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- bottom navbar -->
+        <div class="fixed-bottom sm-visible text-center text-white" id="bottom-nav">
+            <div class="d-flex align-items-center">
+                <div class="p-2 flex-fill">
+                    <a href="index.html">
+                        <img src="img/home.svg" alt="" id="home-btn">
+                    </a>
+                </div>
+                <div class="p-2 flex-fill">
+                    <img src="img/add.svg" alt="" class="p-1 bg-orange rounded-circle" id="add">
+                </div>
+                <div class="p-2 flex-fill">
+                    <a href="loggedin.html">
+                        <img src="img/usery.svg" alt="" id="user-thumbnail">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/mobile-search.js"></script>
+</body>
+
+</html>

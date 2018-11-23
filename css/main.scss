@@ -391,18 +391,26 @@ main {
     &:hover {
       opacity: 1;
     }
-  }
 
-  .play {
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    .play {
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
 
-    width: 2rem;
-    height: auto;
+      width: 2rem;
+      height: auto;
+    }
+
+    .text {
+      position: absolute;
+      margin: auto;
+      right: .7rem;
+      left: .7rem;
+      bottom: .5rem;
+    }
   }
 }
 
