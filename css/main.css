@@ -409,13 +409,18 @@ main .status {
 }
 #news #u-pic {
   background: #333333;
-  width: 29%;
+  height: 6.4rem;
   margin: auto;
   top: 0;
   left: 0;
   border: 0.5rem #333333 solid;
   border-top-right-radius: 8rem;
   border-bottom-right-radius: 8rem;
+}
+@media screen and (min-width: 1024px) {
+  #news #u-pic {
+    height: 15.15rem;
+  }
 }
 #news #u-pic img {
   height: 100%;

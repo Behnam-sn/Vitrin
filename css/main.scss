@@ -415,8 +415,12 @@ main {
 
   #u-pic {
     background: $main;
-    // for firefox sake
-    width: 29%;
+
+    height: 6.4rem;
+
+    @include lg() {
+      height: 15.15rem;
+    }
 
     margin: auto;
     top: 0;
