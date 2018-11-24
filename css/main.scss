@@ -413,6 +413,25 @@ main {
     height: 14.6rem;
   }
 
+  #u-pic {
+    background: $main;
+    // for firefox sake
+    width: 29%;
+
+    margin: auto;
+    top: 0;
+    left: 0;
+
+    border: .5rem $main solid;
+    border-top-right-radius: 8rem;
+    border-bottom-right-radius: 8rem;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
   .play-container {
     position: relative;
     opacity: 0.8;
