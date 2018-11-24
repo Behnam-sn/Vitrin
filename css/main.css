@@ -376,6 +376,37 @@ main .status {
 #news .hc-1 {
   font-size: 0.8rem;
 }
+@media screen and (min-width: 1024px) {
+  #news .vp-x {
+    padding: 1rem 7rem;
+  }
+}
+#news .up,
+#news .down {
+  cursor: pointer;
+  width: 1.2rem;
+  height: auto;
+}
+#news .up {
+  transform: rotate(270deg);
+}
+@media screen and (min-width: 1024px) {
+  #news .up {
+    transform: rotate(180deg);
+  }
+}
+#news .down {
+  transform: rotate(90deg);
+}
+@media screen and (min-width: 1024px) {
+  #news .down {
+    transform: rotate(0deg);
+  }
+}
+#news .video {
+  width: 100%;
+  height: 14.6rem;
+}
 #news .play-container {
   position: relative;
   opacity: 0.8;
