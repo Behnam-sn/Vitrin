@@ -497,6 +497,33 @@ main {
 #product {
   font-size: 0.6rem;
 
+  #comment {
+    font-size: .5rem;
+    color: #CBCBCB;
+
+    img {
+      height: 2rem;
+      width: auto;
+    }
+
+    .list-unstyled {
+      height: 11rem;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        width: .2rem;
+        background: #000000;
+        border-radius: 2rem;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $second;
+        border-radius: 2rem;
+      }
+    }
+
+  }
+
   .disappear {
     display: none;
   }
@@ -671,6 +698,8 @@ main {
   .available-color::before {
     content: "- رنگ های موجود: ";
   }
+
+
 }
 
 .form-title {

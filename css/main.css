@@ -470,6 +470,27 @@ main .status {
 #product {
   font-size: 0.6rem;
 }
+#product #comment {
+  font-size: 0.5rem;
+  color: #CBCBCB;
+}
+#product #comment img {
+  height: 2rem;
+  width: auto;
+}
+#product #comment .list-unstyled {
+  height: 11rem;
+  overflow-y: scroll;
+}
+#product #comment .list-unstyled::-webkit-scrollbar {
+  width: 0.2rem;
+  background: #000000;
+  border-radius: 2rem;
+}
+#product #comment .list-unstyled::-webkit-scrollbar-thumb {
+  background-color: #4d4d4d;
+  border-radius: 2rem;
+}
 #product .disappear {
   display: none;
 }
