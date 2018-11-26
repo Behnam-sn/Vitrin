@@ -22,5 +22,4 @@ function showC() {
 
     infoIcon.classList.add("icon-deactive");
     commentIcon.classList.remove("icon-deactive");
-
 }
