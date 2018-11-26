@@ -497,6 +497,9 @@ main .status {
 #product .appear {
   display: block;
 }
+#product .icon-deactive {
+  filter: brightness(0) invert(1);
+}
 #product #carousel {
   margin-right: 4.5rem;
 }
