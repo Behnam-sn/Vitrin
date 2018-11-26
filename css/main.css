@@ -219,7 +219,7 @@ aside #copyright img {
   }
 }
 #filter .button {
-  background: #4D4D4D;
+  background: #4d4d4d;
   color: #ffffff;
   width: 100%;
   border: 0.1rem solid transparent;
@@ -468,71 +468,121 @@ main .status {
 }
 
 #product {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
-#product #carousel .carousel-item img {
-  width: 15rem;
-  height: auto;
-  border-radius: 0.8rem;
+#product .disappear {
+  display: none;
+}
+#product .appear {
+  display: block;
+}
+#product #carousel {
+  margin-right: 4.5rem;
 }
 @media screen and (min-width: 1024px) {
-  #product #carousel .carousel-item img {
-    width: 20rem;
+  #product #carousel {
+    margin-right: 14rem;
+    margin-left: 4rem;
   }
 }
-#product #carousel .carousel-indicators li {
-  background: #ffffff;
-  top: 3rem;
-  height: 0.7rem;
-  width: 0.7rem;
-  border-radius: 50%;
-  transition: all 0.3s linear;
-}
-#product #carousel .carousel-indicators .active {
-  background: #ffab00;
-  transform: scale(1);
-}
-#product #thumbnail img {
-  height: 3.3rem;
-  width: auto;
+#product #carousel .carousel-item img {
   border-radius: 0.8rem;
 }
+#product #carousel #fullscreen {
+  cursor: pointer;
+  bottom: 1.2rem;
+  left: 1.2rem;
+}
+#product #carousel #fullscreen img {
+  width: 1.4rem;
+  height: auto;
+}
+#product #carousel .indicators {
+  top: 0;
+  right: -4.3rem;
+  height: auto;
+  width: 3.9rem;
+}
+@media screen and (min-width: 1024px) {
+  #product #carousel .indicators {
+    right: -7rem;
+    width: 6.44rem;
+  }
+}
+#product #carousel .indicators div {
+  cursor: pointer;
+}
+#product #carousel .indicators img {
+  border-radius: 0.3rem;
+}
 #product #similar img {
-  border-radius: 0.9rem;
+  border-radius: 0.6rem;
 }
 #product .border-taki {
-  border-bottom: 0.03rem solid #ffffff;
+  border-bottom: 0.02rem solid #ffffff;
 }
-#product .icon img {
+#product .rating > input {
+  display: none;
+}
+#product .rating > label {
+  content: url(../img/rate1.svg);
+  cursor: pointer;
+  margin-top: 0.3rem;
+  margin-left: 0.1rem;
+  margin-bottom: 0;
+  width: 0.8rem;
+  height: auto;
+}
+#product .rating > input:checked ~ label,
+#product .rating:not(:checked) > label:hover,
+#product .rating:not(:checked) > label:hover ~ label {
+  content: url(../img/rate2.svg);
+}
+#product .icon-img {
+  cursor: pointer;
   width: auto;
-  height: 1rem;
-  padding-left: 0.7rem;
+  height: 0.8rem;
+  padding-left: 0.5rem;
 }
-#product .like img {
+#product .like-img {
   width: 0.5rem;
   height: auto;
   top: 25%;
 }
-#product .price {
-  font-size: 1rem;
+#product #price {
+  background: #4d4d4d;
+  font-size: 0.7rem;
+  border-radius: 5rem;
 }
-#product .price button {
-  font-size: 0.8rem;
-  border-radius: 30rem;
-  padding: 0.3rem 0.5rem;
+#product #price button {
+  font-size: 0.55rem;
+  border-radius: 5rem;
+  padding: 0.2rem 0.3rem;
   transition: background 0.3s linear;
 }
-#product .price button:hover {
+#product #price button:hover {
   background: #cc8900;
 }
+#product #price button:focus {
+  box-shadow: 0 0 0 0.2rem #454545;
+}
+#product .price-off {
+  color: #808080;
+  text-decoration: line-through;
+}
+#product .off {
+  background: #FF0000;
+  border-radius: 5rem;
+  padding: 0.1rem 0.5rem;
+}
 #product .detail {
-  font-size: 0.65rem;
+  font-size: 0.55rem;
 }
 #product .detail h6 {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 #product .detail h5 {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 #product .detail p {
   margin-bottom: 0.3rem;
@@ -638,7 +688,7 @@ main .status {
 }
 .form .table-container::-webkit-scrollbar {
   width: 0.3rem;
-  background: #4D4D4D;
+  background: #4d4d4d;
   border-radius: 2rem;
 }
 .form .table-container::-webkit-scrollbar-thumb {
@@ -655,7 +705,7 @@ main .status {
   font-size: 0.6rem;
 }
 .form tr:nth-child(odd) {
-  background-color: #4D4D4D;
+  background-color: #4d4d4d;
 }
 .form td {
   height: 2rem;

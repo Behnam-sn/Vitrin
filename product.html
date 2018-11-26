@@ -104,141 +104,200 @@
   <main class="container-fluid text-white px-lg-4 mt-lg-3 pb-5" id="product">
     <div class="row pr-lg-2">
       <!-- slideshow -->
-      <div class="col-lg-7 justify-content-center" id="carousel">
+      <div class="col-lg-9 justify-content-center pb-3">
         <!-- carousel -->
-        <div id="csl" class="carousel slide mb-5" data-ride="carousel" data-interval="false">
-
+        <div id="carousel" class="carousel slide position-relative" data-ride="carousel" data-interval="false">
           <!-- Indicators -->
-          <ul class="carousel-indicators">
-            <li data-target="#csl" data-slide-to="0" class="active"></li>
-            <li data-target="#csl" data-slide-to="1"></li>
-            <li data-target="#csl" data-slide-to="2"></li>
-            <li data-target="#csl" data-slide-to="3"></li>
-          </ul>
-
-          <!-- The slideshow -->
-          <div class="carousel-inner text-center">
-            <div class="carousel-item active">
-              <img src="img/product@4x.png" alt="" class="img-fluid">
+          <div class="indicators d-flex flex-column position-absolute">
+            <div class="active" data-target="#carousel" data-slide-to="0">
+              <img src="img/p1@3x.png" alt="" class="img-fluid mb-2 mt-1">
             </div>
-            <div class="carousel-item">
-              <img src="img/product@4x.png" alt="" class="img-fluid">
+            <div class="" data-target="#carousel" data-slide-to="1">
+              <img src="img/p1@3x.png" alt="" class="img-fluid mb-2">
             </div>
-            <div class="carousel-item">
-              <img src="img/product@4x.png" alt="" class="img-fluid">
+            <div class="" data-target="#carousel" data-slide-to="2">
+              <img src="img/p1@3x.png" alt="" class="img-fluid mb-2">
             </div>
-            <div class="carousel-item">
-              <img src="img/product@4x.png" alt="" class="img-fluid">
+            <div class="" data-target="#carousel" data-slide-to="3">
+              <img src="img/p1@3x.png" alt="" class="img-fluid">
             </div>
           </div>
 
-          <!-- Left and right controls -->
-          <a class="carousel-control-prev" href="#csl" data-slide="prev">
+          <!-- Slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="p-1 img-fluid" src="img/p1@3x.png" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="p-1 img-fluid" src="img/p1@3x.png" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="p-1 img-fluid" src="img/p1@3x.png" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="p-1 img-fluid" src="img/p1@3x.png" alt="">
+            </div>
+          </div>
+          <!-- fullscreen -->
+          <div class="position-absolute" id="fullscreen">
+            <img src="img/fsc.svg" alt="">
+          </div>
+          <!-- Controls -->
+          <!-- <a class="carousel-control-prev" href="#carousel" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
           </a>
-          <a class="carousel-control-next" href="#csl" data-slide="next">
+          <a class="carousel-control-next" href="#carousel" data-slide="next">
             <span class="carousel-control-next-icon"></span>
-          </a>
-
-        </div>
-        <!-- thumbnail -->
-        <div class="d-flex justify-content-center mb-5 mb-lg-0" id="thumbnail">
-          <img src="img/product-t@4x.png" alt="" class="mx-2">
-          <img src="img/product-t@4x.png" alt="" class="mx-2">
-          <img src="img/product-t@4x.png" alt="" class="mx-2">
-          <img src="img/product-t@4x.png" alt="" class="mx-2">
+          </a> -->
         </div>
       </div>
       <!-- content -->
-      <div class="col-lg-5 text-right rtl mx-1 mx-lg-0 px-lg-5">
-        <div class="icon">
+      <div class="col-lg-3 text-right rtl mx-1 mx-lg-0">
+        <!-- icons -->
+        <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex">
-            <img src="img/icon-1@4x.png" alt="">
-            <img src="img/icon-2@4x.png" alt="">
-            <img src="img/icon-3@4x.png" alt="">
-            <img src="img/icon-4@4x.png" alt="">
-            <img src="img/icon-5@4x.png" alt="">
+            <img src="img/icon-1@4x.png" alt="" class="icon-img">
+            <img src="img/icon-2@4x.png" alt="" class="icon-img">
+            <img src="img/icon-4@4x.png" alt="" class="icon-img">
+            <img src="img/icon-5@4x.png" alt="" class="icon-img" onclick="showI()">
+          </div>
+
+          <fieldset class="rating">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label class="full" for="star5"></label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label class="full" for="star4"></label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label class="full" for="star3"></label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label class="full" for="star2"></label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label class="full" for="star1"></label>
+          </fieldset>
+        </div>
+
+        <!-- likes & comments -->
+        <div class="d-flex justify-content-between mt-2">
+          <!-- likes -->
+          <div class="d-flex">
+            <div class="font-myriad">likes</div>
+            <div class="font-myriad px-1">508</div>
+            <div class="position-relative">
+              <img src="img/like.svg" alt="" class="position-absolute like-img">
+            </div>
+          </div>
+          <!-- comments -->
+          <div class="d-flex align-items-center" onclick="showC()">
+            <div class="px-1">نظر دهید</div>
+            <div>
+              <img src="img/icon-3@4x.png" alt="" class="icon-img p-0">
+            </div>
           </div>
         </div>
-        <div class="like font-myriad mt-2">
-          <div class="d-flex">
-            <div>likes</div>
-            <div class="px-1">508</div>
-            <div class="position-relative"><img src="img/like.svg" alt="" class="position-absolute"></div>
+
+        <div id="info" class="appear">
+          <!-- Price -->
+          <div class="d-flex justify-content-between align-items-center p-2 mt-3 " id="price">
+            <div class="text-orange">قیمت (تومان): 50,000,000</div>
+            <button class="btn bg-orange text-white">افزودن به سبد خرید</button>
           </div>
-        </div>
-        <div class="price py-3">
-          <div class="d-flex justify-content-between flex-column flex-lg-row text-center text-lg-right">
-            <div class="mb-3 mb-lg-0">
-              <div class="text-orange">
-                قیمت (تومان): 55,000,000
+          <div class="d-flex justify-content-between align-items-center p-2 mb-3">
+            <div class="price-off">قیمت (تومان): 55,000,000</div>
+            <div class="d-flex align-items-center">
+              <div>تخفیف</div>
+              <div class="off ml-1 mr-2">5 %</div>
+            </div>
+          </div>
+          <div class="detail">
+
+            <div class="d-flex justify-content-between mb-3">
+              <div>نام محصول:</div>
+              <div class="text-left">
+                <h6 class="text-orange mb-1">رنگ اکریلیک 10 رنگ وستا</h6>
+                <div class="font-myriad">Vesta 10 Color Acrylic 37ml</div>
               </div>
             </div>
+
+            <div class="d-flex justify-content-between py-1 border-taki">
+              <div>شناسه محصول</div>
+              <div class="text-orange font-myriad">PS3658</div>
+            </div>
+
+            <div class="d-flex justify-content-between py-1 border-taki">
+              <div>دسته بندی محصول:</div>
+              <div>نقاشی</div>
+            </div>
+
+            <div class="d-flex justify-content-between py-1 border-taki">
+              <div>برند محصول:</div>
+              <div>وستا</div>
+            </div>
+
+            <div class="d-flex justify-content-between py-1 border-taki">
+              <div>آماده ارسال:</div>
+              <div>نیست</div>
+            </div>
+
+            <div class="d-flex justify-content-between py-1 border-taki pb-4">
+              <div>میزان رضایتمندی:</div>
+              <div>68درصد</div>
+            </div>
+
+            <div class="d-flex align-items-center py-1 border-taki">
+              <img src="img/a1@4x.png" alt="">
+              <div>دارای گارانتی اصالت و سلامت فیزیکی کالا</div>
+            </div>
+
+            <div class="d-flex align-items-center py-1 border-taki">
+              <img src="img/a2@4x.png" alt="">
+              <div>بسته بندی و ارسال توسط ویترین</div>
+            </div>
+
+            <div class="d-flex align-items-center py-1 border-taki">
+              <img src="img/a3@4x.png" alt="">
+              <div>ارسال از 2 روز آینده (هزینه ارسال به عهده خریدار می باشد)</div>
+            </div>
+
+            <div class="border-taki">
+              <h5 class="text-orange pt-1">مشخصات فنی:</h5>
+              <p class="color">مشکی، سفید، آبی، قرمز، سبز</p>
+              <p class="volume">37 میلی متر</p>
+              <p class="type">تویپی</p>
+              <p class="usable">بوم نقاشی، چوب، کاغذ، مقوا، پارچه</p>
+            </div>
+
             <div>
-              <button class="btn bg-orange text-white">افزودن به سبد خرید</button>
+              <h5 class="text-orange pt-1">سایر مشخصات:</h5>
+              <p class="available-color">
+                سفید، زرد لیمومی، زرد اخرایی، شنگرفی، زرشکی، آبی آسمانی، آبی لاجوردی، سبز تیره، قهره ای
+                سیر، مشکلی
+                </>
             </div>
           </div>
         </div>
-        <div class="detail">
 
-          <div class="d-flex justify-content-between pb-1 mb-2 border-taki">
-            <div>شناسه محصول</div>
-            <div class="text-orange font-myriad">PS3658</div>
-          </div>
-
-          <div class="border-taki">
-            <h6 class="text-orange">رنگ اکریلیک 10 رنگ وستا حجم 37 میلی لیتر</h6>
-            <div class="font-myriad">Vesta 10 Color Acrylic 37ml</div>
-          </div>
-
-          <div class="d-flex align-items-center py-1 border-taki">
-            <img src="img/a1@4x.png" alt="">
-            <div>دارای گارانتی اصالت و سلامت فیزیکی کالا</div>
-          </div>
-
-          <div class="d-flex align-items-center py-1 border-taki">
-            <img src="img/a2@4x.png" alt="">
-            <div>بسته بندی و ارسال توسط ویترین</div>
-          </div>
-
-          <div class="d-flex align-items-center py-1 border-taki">
-            <img src="img/a3@4x.png" alt="">
-            <div>ارسال از 2 روز آینده (هزینه ارسال به عهده خریدار می باشد)</div>
-          </div>
-
-          <div class="pr-3 border-taki">
-            <h5 class="text-orange pt-2">مشخصات فنی:</h5>
-            <p class="color">مشکی، سفید، آبی، قرمز، سبز</p>
-            <p class="volume">37 میلی متر</p>
-            <p class="type">تویپی</p>
-            <p class="usable">بوم نقاشی، چوب، کاغذ، مقوا، پارچه</p>
-          </div>
-
-          <div class="pr-3">
-            <h5 class="text-orange pt-2">سایر مشخصات:</h5>
-            <p class="available-color">
-              سفید، زرد لیمومی، زرد اخرایی، شنگرفی، زرشکی، آبی آسمانی، آبی لاجوردی، سبز تیره، قهره ای
-              سیر، مشکلی
-              </>
-          </div>
+        <div id="comment" class="disappear">
 
         </div>
       </div>
       <!-- similar -->
-      <div class="col-lg-8 mt-5 justify-content-center text-center" id="similar">
-        <h6>:آثار مشابه</h6>
+      <div class="col-lg-9 justify-content-center text-center" id="similar">
+        <h6 class="mb-4">:آثار مشابه</h6>
         <div class="d-flex">
           <div class="px-1">
-            <img src="img/sim-1@4x.png" alt="" class="img-fluid">
+            <img src="img/t1@3x.png" alt="" class="img-fluid">
           </div>
           <div class="px-1">
-            <img src="img/sim-2@4x.png" alt="" class="img-fluid">
+            <img src="img/t2@3x.png" alt="" class="img-fluid">
           </div>
           <div class="px-1">
-            <img src="img/sim-3@4x.png" alt="" class="img-fluid">
+            <img src="img/t3@3x.png" alt="" class="img-fluid">
           </div>
           <div class="px-1">
-            <img src="img/sim-4@4x.png" alt="" class="img-fluid">
+            <img src="img/t1@3x.png" alt="" class="img-fluid">
+          </div>
+          <div class="px-1">
+            <img src="img/t2@3x.png" alt="" class="img-fluid">
           </div>
         </div>
       </div>
@@ -439,6 +498,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <script src="js/mobile-search.js"></script>
+  <script src="js/product.js"></script>
 </body>
 
 </html>
