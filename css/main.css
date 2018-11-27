@@ -87,7 +87,7 @@ html {
 }
 @media screen and (min-width: 1200px) {
   html {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
   }
 }
 body {
@@ -500,16 +500,15 @@ main .status {
 #product .icon-deactive {
   filter: brightness(0) invert(1);
 }
-#product #carousel {
-  margin-right: 4.5rem;
-}
 @media screen and (min-width: 1024px) {
   #product #carousel {
-    margin-right: 14rem;
+    margin-right: 9rem;
     margin-left: 4rem;
   }
 }
 #product #carousel .carousel-item img {
+  width: 27rem;
+  height: auto;
   border-radius: 0.8rem;
 }
 #product #carousel #fullscreen {
@@ -521,29 +520,21 @@ main .status {
   width: 1.4rem;
   height: auto;
 }
-#product #carousel .indicators {
-  top: 0;
-  right: -4.3rem;
-  height: auto;
-  width: 3.9rem;
-}
-@media screen and (min-width: 1024px) {
-  #product #carousel .indicators {
-    right: -7rem;
-    width: 6.44rem;
-  }
-}
 #product #carousel .indicators div {
   cursor: pointer;
 }
 #product #carousel .indicators img {
   border-radius: 0.3rem;
+  height: auto;
+  width: 4.5rem;
+}
+@media screen and (min-width: 1024px) {
+  #product #carousel .indicators img {
+    width: 7.6rem;
+  }
 }
 #product #similar img {
   border-radius: 0.6rem;
-}
-#product .border-taki {
-  border-bottom: 0.02rem solid #ffffff;
 }
 #product .rating > input {
   display: none;
@@ -632,6 +623,139 @@ main .status {
   content: "- رنگ های موجود: ";
 }
 
+#signup {
+  font-size: 0.6rem;
+  padding: 0 1rem;
+}
+@media screen and (min-width: 1024px) {
+  #signup {
+    padding: 0 6rem;
+  }
+}
+#signup small {
+  font-size: 0.5rem;
+}
+#signup label {
+  color: #CBCBCB;
+}
+#signup input {
+  transition: background 0.3s linear;
+  border: 0.1rem solid transparent;
+  border-radius: 1rem;
+  outline: none !important;
+  width: 55%;
+  color: #ffffff;
+  background: #4d4d4d;
+  border-radius: 5rem;
+  height: 1.5rem;
+}
+#signup input:hover {
+  background: #676767;
+}
+#signup .imp {
+  height: 0.5rem;
+  width: auto;
+}
+#signup .iks {
+  width: 45%;
+}
+#signup .c {
+  height: 0.3rem;
+  width: 0.3rem;
+  margin-left: 0.4rem;
+}
+#signup .address-label {
+  height: 3rem;
+}
+#signup .address,
+#signup .bio {
+  transition: background 0.3s linear;
+  border: 0.1rem solid transparent;
+  border-radius: 1rem;
+  outline: none !important;
+  width: 55%;
+  color: #ffffff;
+  background: #4d4d4d;
+  border-radius: 0.8rem;
+  height: 3rem;
+  resize: none;
+}
+#signup .address:hover,
+#signup .bio:hover {
+  background: #676767;
+}
+#signup .address::-webkit-scrollbar,
+#signup .bio::-webkit-scrollbar {
+  display: none;
+}
+#signup .address {
+  height: 3rem;
+}
+#signup .bio {
+  height: 10rem;
+}
+#signup .margin-taki {
+  margin-bottom: 0.3rem;
+}
+
+.btn-mf {
+  font-size: 0.85rem;
+  background: #ffab00;
+  padding: 0 0.8rem;
+  border: 0.1rem solid transparent;
+  border-radius: 1rem;
+  outline: none !important;
+  transition: background 0.3s linear;
+}
+.btn-mf:hover {
+  background: #cc8900;
+}
+.btn-mf:focus {
+  box-shadow: 0 0 0 0.2rem #454545;
+}
+
+.fuck-this {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: table;
+  white-space: nowrap;
+}
+@media screen and (min-width: 1024px) {
+  .fuck-this {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+}
+.fuck-this::before, .fuck-this::after {
+  border-top: 0.03rem solid #ffffff;
+  content: "";
+  display: table-cell;
+  position: relative;
+  top: 0.75rem;
+  width: 45%;
+}
+.fuck-this::before {
+  left: 5%;
+}
+@media screen and (min-width: 1024px) {
+  .fuck-this::before {
+    left: 3%;
+  }
+}
+.fuck-this::after {
+  right: 5%;
+}
+@media screen and (min-width: 1024px) {
+  .fuck-this::after {
+    right: 3%;
+  }
+}
+
+.border-taki {
+  border-bottom: 0.02rem solid #ffffff;
+}
+
 .form-title {
   margin-top: 1rem;
   margin-left: 1rem;
@@ -646,11 +770,11 @@ main .status {
   }
 }
 .form-title::before, .form-title::after {
-  border-top: 1px solid #ffffff;
+  border-top: 0.03rem solid #ffffff;
   content: "";
   display: table-cell;
   position: relative;
-  top: 0.5em;
+  top: 0.5rem;
   width: 45%;
 }
 .form-title::before {

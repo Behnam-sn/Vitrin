@@ -31,3 +31,16 @@
   margin-top: 1.5rem;
   margin-bottom: 7rem;
 }
+
+@mixin signupType {
+  @include transition(background);
+  @include border();
+  width: 55%;
+
+  color: #ffffff;
+  background: $second;
+
+  &:hover {
+    background: lighten($second, 10%);
+  }
+}
