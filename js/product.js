@@ -2,7 +2,7 @@ var info = document.querySelector("#info");
 var comment = document.querySelector("#comment");
 
 var infoIcon = document.querySelector("#info-icon");
-var commentIcon = document.querySelector("#comment-icon");
+var commentIcon = document.querySelector("#comment-icon img");
 
 function showI() {
     info.classList.add("appear");

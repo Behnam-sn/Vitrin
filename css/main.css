@@ -588,6 +588,9 @@ main .status {
 #product .rating:not(:checked) > label:hover ~ label {
   content: url(../img/rate2.svg);
 }
+#product #comment-icon {
+  cursor: pointer;
+}
 #product .icon-img {
   cursor: pointer;
   width: auto;
