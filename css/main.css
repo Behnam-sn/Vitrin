@@ -76,6 +76,39 @@ button {
   direction: ltr;
 }
 
+.masonry-layout {
+  column-count: 3;
+  column-gap: 0;
+}
+
+.masonry-layout__panel {
+  break-inside: avoid;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .masonry-layout {
+    column-count: 3;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .masonry-layout {
+    column-count: 4;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .masonry-layout {
+    column-count: 5;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .masonry-layout {
+    column-count: 6;
+  }
+}
 html {
   font-size: 16px;
 }
@@ -284,7 +317,9 @@ aside #copyright img {
   }
 }
 main .item {
+  text-align: center;
   padding: 0.25rem;
+  padding-top: 0;
   padding-bottom: 0.5rem;
   margin-bottom: 0.2rem;
   border-radius: 0.9rem;
@@ -316,8 +351,8 @@ main .status-container {
 main .status {
   position: absolute;
   margin: auto;
-  left: 0.25rem;
-  top: 0.25rem;
+  top: 0rem;
+  left: 0rem;
   border-radius: 0 !important;
   width: 2.5rem !important;
   height: auto;

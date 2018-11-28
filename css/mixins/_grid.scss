@@ -1,0 +1,42 @@
+.masonry-layout {
+    column-count: 3;
+    column-gap: 0;
+}
+
+.masonry-layout__panel {
+    break-inside: avoid;
+    // padding: 5px;
+}
+
+.masonry-layout__panel-content {
+    // padding: 10px;
+    // border-radius: 10px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .masonry-layout {
+        column-count: 3;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .masonry-layout {
+        column-count: 4;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .masonry-layout {
+        column-count: 5;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .masonry-layout {
+        column-count: 6;
+    }
+}
