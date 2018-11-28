@@ -500,6 +500,19 @@ main {
 #product {
   font-size: 0.6rem;
 
+  //switching
+  .disappear {
+    display: none;
+  }
+
+  .appear {
+    display: block;
+  }
+
+  .icon-deactive {
+    filter: brightness(0) invert(1);
+  }
+
   #comment {
     font-size: .5rem;
     color: #CBCBCB;
@@ -527,58 +540,47 @@ main {
 
   }
 
-  .disappear {
-    display: none;
-  }
-
-  .appear {
-    display: block;
-  }
-
-  .icon-deactive {
-    filter: brightness(0) invert(1);
-  }
-
   #carousel {
-    // margin-right: 4.5rem;
-
     @include lg() {
-      margin-right: 9rem;
+      margin-right: 6rem;
       margin-left: 4rem;
     }
+  }
+
+  .carousel-inner {
+    width: 80%;
 
     .carousel-item img {
-      width: 27rem;
-      height: auto;
       border-radius: 0.8rem;
     }
+  }
 
-    #fullscreen {
-      cursor: pointer;
+  #fullscreen {
+    cursor: pointer;
 
-      bottom: 1.2rem;
-      left: 1.2rem;
+    bottom: 1.2rem;
+    left: 1.2rem;
 
-      img {
-        width: 1.4rem;
-        height: auto;
-      }
+    img {
+      width: 1.4rem;
+      height: auto;
     }
+  }
 
-    .indicators {
-      div {
-        cursor: pointer;
+  .indicators {
+    width: 20%;
+
+    img {
+      cursor: pointer;
+      border-radius: 0.3rem;
+
+      height: auto;
+      width: 88%;
+
+      @include lg() {
+        width: 90%;
       }
 
-      img {
-        border-radius: 0.3rem;
-        height: auto;
-        width: 4.5rem;
-
-        @include lg() {
-          width: 7.6rem;
-        }
-      }
     }
   }
 
