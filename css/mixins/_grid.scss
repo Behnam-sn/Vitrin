@@ -7,6 +7,13 @@
     break-inside: avoid;
 }
 
+/* Extra Small devices (landscape phones, 320px and dwon) */
+@media (max-width: 324px) {
+    .masonry-layout {
+        column-count: 2;
+    }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .masonry-layout {
