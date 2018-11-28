@@ -317,9 +317,7 @@ aside #copyright img {
   }
 }
 main .item {
-  text-align: center;
   padding: 0.25rem;
-  padding-top: 0;
   padding-bottom: 0.5rem;
   margin-bottom: 0.2rem;
   border-radius: 0.9rem;
@@ -444,7 +442,7 @@ main .status {
 }
 #news #u-pic {
   background: #333333;
-  height: 6.4rem;
+  height: 5.8rem;
   margin: auto;
   top: 0;
   left: 0;
@@ -454,7 +452,7 @@ main .status {
 }
 @media screen and (min-width: 1024px) {
   #news #u-pic {
-    height: 15.15rem;
+    height: 14.55rem;
   }
 }
 #news #u-pic img {

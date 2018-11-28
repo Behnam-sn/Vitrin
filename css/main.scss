@@ -254,9 +254,8 @@ main {
   }
 
   .item {
-    text-align: center;
     padding: 0.25rem;
-    padding-top: 0;
+    // padding-top: 0;
     padding-bottom: 0.5rem;
     margin-bottom: 0.2rem;
     border-radius: 0.9rem;
@@ -264,6 +263,7 @@ main {
     //hover
     // @include transition();
     // transition: background 0.1s linear;
+
     // &:hover {
     //   background: #737373;
     // }
@@ -421,10 +421,10 @@ main {
   #u-pic {
     background: $main;
 
-    height: 6.4rem;
+    height: 5.8rem;
 
     @include lg() {
-      height: 15.15rem;
+      height: 14.55rem;
     }
 
     margin: auto;
@@ -759,10 +759,10 @@ main {
       // border-radius: 2rem;
     }
 
-    &::-webkit-scrollbar-thumb {
-      // background: #000000;
-      // border-radius: 2rem;
-    }
+    // &::-webkit-scrollbar-thumb {
+    //   background: #000000;
+    //   border-radius: 2rem;
+    // }
   }
 
   .address {
