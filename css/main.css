@@ -548,6 +548,54 @@ main .status {
   background-color: #4d4d4d;
   border-radius: 2rem;
 }
+#product #comment #user-commnet {
+  padding-right: 0.8rem;
+  padding-left: 2.5rem;
+}
+@media screen and (min-width: 1024px) {
+  #product #comment #user-commnet {
+    padding-left: 2.5rem;
+    padding-right: 0.8rem;
+  }
+}
+#product #comment #user-commnet #date {
+  background: #cbcbcb;
+  color: #666666;
+  border-top-right-radius: 0.4rem;
+  border-top-left-radius: 0.4rem;
+}
+#product #comment #user-commnet textarea {
+  background: #cbcbcb;
+  color: #666666;
+  display: block;
+  box-sizing: padding-box;
+  overflow: hidden;
+  border: 0;
+  border-bottom-right-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+#product #comment #user-commnet textarea:focus {
+  outline: 0;
+}
+#product #comment #user-commnet input[type=submit] {
+  cursor: pointer;
+  background: #ffab00;
+  color: #ffffff;
+  border-radius: 5rem;
+  font-size: 0.55rem;
+  width: 2.5rem;
+  height: 1rem;
+  border: 0.1rem solid transparent;
+  border-radius: 1rem;
+  outline: none !important;
+  transition: background 0.3s linear;
+}
+#product #comment #user-commnet input[type=submit]:hover {
+  background: #cc8900;
+}
+#product #comment #user-commnet input[type=submit]:focus {
+  box-shadow: 0 0 0 0.2rem #454545;
+}
 @media screen and (min-width: 1024px) {
   #product #carousel {
     margin-right: 6rem;

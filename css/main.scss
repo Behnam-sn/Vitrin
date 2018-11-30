@@ -547,6 +547,65 @@ main {
       }
     }
 
+    #user-commnet {
+      padding-right: .8rem;
+      padding-left: 2.5rem;
+
+      @include lg() {
+        padding-left: 2.5rem;
+        padding-right: .8rem;
+      }
+
+      #date {
+        background: #cbcbcb;
+        color: #666666;
+
+        border-top-right-radius: .4rem;
+        border-top-left-radius: .4rem;
+
+      }
+
+      textarea {
+        background: #cbcbcb;
+        color: #666666;
+
+        display: block;
+        box-sizing: padding-box;
+        overflow: hidden;
+        border: 0;
+
+        border-bottom-right-radius: .4rem;
+        border-bottom-left-radius: .4rem;
+
+        &:focus {
+          outline: 0;
+        }
+      }
+
+      input[type="submit"] {
+        cursor: pointer;
+        background: $orange;
+        color: #ffffff;
+        border-radius: 5rem;
+
+        font-size: 0.55rem;
+        width: 2.5rem;
+        height: 1rem;
+
+
+        @include border();
+        @include transition();
+
+        &:hover {
+          background: darken($orange, 10%);
+        }
+
+        &:focus {
+          box-shadow: 0 0 0 0.2rem darken($second, 3%);
+        }
+      }
+    }
+
   }
 
   #carousel {
