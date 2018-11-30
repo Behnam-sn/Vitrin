@@ -316,6 +316,68 @@ aside #copyright img {
   width: 0.7rem;
   height: auto;
 }
+#filter .filter-content {
+  overflow: hidden;
+  height: 0;
+}
+#filter .filter-content form {
+  height: 9rem;
+  overflow-y: scroll;
+}
+#filter .filter-content form::-webkit-scrollbar {
+  width: 0.3rem;
+  background: #4d4d4d;
+  border-radius: 2rem;
+}
+#filter .filter-content form::-webkit-scrollbar-thumb {
+  background-color: #808080;
+  border-radius: 2rem;
+}
+#filter .filter-content label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-right: 1rem;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: background 0.3s linear;
+}
+#filter .filter-content label:hover input ~ .checkmark {
+  background: #ccc;
+}
+#filter .filter-content input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  transition: background 0.3s linear;
+}
+#filter .filter-content input:checked ~ .checkmark:after {
+  display: block;
+}
+#filter .filter-content .checkmark {
+  position: absolute;
+  top: 0.21rem;
+  right: 0;
+  height: 0.6rem;
+  width: 0.6rem;
+  border: 0.05rem solid #eee;
+  border-radius: 50%;
+  transition: background 0.3s linear;
+}
+#filter .filter-content .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 0.05rem;
+  left: 0.05rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: #ffab00;
+}
 
 @media screen and (max-width: 1023px) {
   main {

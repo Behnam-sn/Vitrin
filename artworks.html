@@ -127,48 +127,468 @@
 
         </menu>
     </div>
-    <div class="container-fluid ml-lg-3 pb-5" id="page">
+    <div class="container-fluid px-2 ml-lg-3 pb-5" id="page">
         <!-- filter -->
         <div id="filter" class="d-flex mt-lg-2">
             <div class="w-100 mx-1">
-                <button class="text-white button">
+                <button class="text-white button" onclick="show(4)">
                     <div class="d-flex justify-content-between align-items-center px-1">
                         <img src="img/arrow.svg" alt="">
                         بازه قیمت
                     </div>
                 </button>
+                <div class="filter-content rtl text-right text-white px-2" id="f4">
+                    <form class="mt-2">
+                        <label>
+                            نقاشی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            تصویر سازی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            مجسمه سازی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            گرافیک
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            سفالگری و سرامیک
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            خوشنویسی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            عکاسی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            نقاشی خط
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            نقاشی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            تصویر سازی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            مجسمه سازی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            گرافیک
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            سفالگری و سرامیک
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            خوشنویسی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            عکاسی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            نقاشی خط
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </form>
+                </div>
             </div>
             <div class="w-100 mx-1">
-                <button class="text-white button">
+                <button class="text-white button" onclick="show(3)">
                     <div class="d-flex justify-content-between align-items-center px-1">
                         <img src="img/arrow.svg" alt="">
                         سبک
                     </div>
                 </button>
+                <div class="filter-content rtl text-right text-white px-2" id="f3">
+                    <form class="mt-2">
+                        <label>
+                            آبرنگ
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            رنگ روغن
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            آکریلیک
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            اچینگ
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            پاستل
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            ترکیب مواد
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            فتو مدیا
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            مداد رنگی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            آبرنگ
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            رنگ روغن
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            آکریلیک
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            اچینگ
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            پاستل
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            ترکیب مواد
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            فتو مدیا
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            مداد رنگی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </form>
+                </div>
             </div>
             <div class="w-100 mx-1">
-                <button class="text-white button">
+                <button class="text-white button" onclick="show(2)">
                     <div class="d-flex justify-content-between align-items-center px-1">
                         <img src="img/arrow.svg" alt="">
                         تکنیک
                     </div>
                 </button>
+                <div class="filter-content rtl text-right text-white px-2" id="f2">
+                    <form class="mt-2">
+                        <label>
+                            نقاشی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            تصویر سازی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            مجسمه سازی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            گرافیک
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            سفالگری و سرامیک
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            خوشنویسی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            عکاسی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            نقاشی خط
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            نقاشی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            تصویر سازی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            مجسمه سازی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            گرافیک
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            سفالگری و سرامیک
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            خوشنویسی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            عکاسی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            نقاشی خط
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </form>
+                </div>
             </div>
             <div class="w-100 mx-1">
-                <button class="text-white button">
+                <button class="text-white button" onclick="show(1)">
                     <div class="d-flex justify-content-between align-items-center px-1">
                         <img src="img/arrow.svg" alt="">
                         دسته بندی هنری
                     </div>
                 </button>
+                <div class="filter-content rtl text-right text-white px-2" id="f1">
+                    <form class="mt-2">
+                        <label>
+                            آبرنگ
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            رنگ روغن
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            آکریلیک
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            اچینگ
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            پاستل
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            ترکیب مواد
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            فتو مدیا
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            مداد رنگی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            آبرنگ
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            رنگ روغن
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            آکریلیک
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            اچینگ
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            پاستل
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            ترکیب مواد
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            فتو مدیا
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            مداد رنگی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </form>
+                </div>
             </div>
             <div class="w-100 mx-1">
-                <button class="text-white button">
+                <button class="text-white button" onclick="show(0)">
                     <div class="d-flex justify-content-between align-items-center px-1">
                         <img src="img/arrow.svg" alt="">
                         مرتب سازی بر اساس
                     </div>
                 </button>
+                <div class="filter-content rtl text-right text-white px-2" id="f0">
+                    <form class="mt-2">
+                        <label>
+                            نقاشی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            تصویر سازی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            مجسمه سازی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            گرافیک
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            سفالگری و سرامیک
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            خوشنویسی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            عکاسی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            نقاشی خط
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            نقاشی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            تصویر سازی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            مجسمه سازی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            گرافیک
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            سفالگری و سرامیک
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            خوشنویسی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            عکاسی
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>
+                            نقاشی خط
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </form>
+                </div>
             </div>
             <!-- search -->
             <div class="w-100 mx-1">
@@ -182,7 +602,7 @@
             </div>
         </div>
         <!-- main -->
-        <main class="mt-lg-3">
+        <main class="mt-lg-3 text-center">
             <div class="masonry-layout" id="home">
                 <div class="masonry-layout__panel">
                     <div class="item">
@@ -928,6 +1348,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/filter.js"></script>
     <script src="js/search.js"></script>
     <script src="js/mobile-search.js"></script>
 </body>
