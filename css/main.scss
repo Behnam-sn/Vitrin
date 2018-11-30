@@ -430,10 +430,10 @@ main {
   #u-pic {
     background: $main;
 
-    height: 5.8rem;
+    height: 100%;
 
     @include lg() {
-      height: 14.55rem;
+      height: 15.13rem;
     }
 
     margin: auto;
@@ -441,12 +441,13 @@ main {
     left: 0;
 
     border: .5rem $main solid;
-    border-top-right-radius: 8rem;
-    border-bottom-right-radius: 8rem;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
 
     img {
       height: 100%;
       width: auto;
+      border-radius: 100% !important;
     }
   }
 

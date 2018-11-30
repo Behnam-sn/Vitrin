@@ -457,22 +457,23 @@ main .status {
 }
 #news #u-pic {
   background: #333333;
-  height: 5.8rem;
+  height: 100%;
   margin: auto;
   top: 0;
   left: 0;
   border: 0.5rem #333333 solid;
-  border-top-right-radius: 8rem;
-  border-bottom-right-radius: 8rem;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
 }
 @media screen and (min-width: 1024px) {
   #news #u-pic {
-    height: 14.55rem;
+    height: 15.13rem;
   }
 }
 #news #u-pic img {
   height: 100%;
   width: auto;
+  border-radius: 100% !important;
 }
 #news .play-container {
   position: relative;
