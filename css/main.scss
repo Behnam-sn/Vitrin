@@ -398,7 +398,7 @@ main {
   }
 
   .up {
-    transform: rotate(270deg);
+    transform: rotate(90deg);
 
     @include lg() {
       transform: rotate(180deg);
@@ -406,11 +406,20 @@ main {
   }
 
   .down {
-    transform: rotate(90deg);
+    transform: rotate(270deg);
 
     @include lg() {
       transform: rotate(0deg);
     }
+  }
+
+  .car {
+    @include lg() {
+      font-size: .5rem;
+    }
+
+    min-width: 0 !important;
+    min-height: 0 !important;
   }
 
   .video {
