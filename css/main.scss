@@ -28,6 +28,13 @@ body {
   background: $main;
 }
 
+#stick {
+  -webkit-transition: box-shadow 0.5s ease;
+  -moz-transition: box-shadow 0.5s ease;
+  -o-transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+}
+
 #page {
   @include lg() {
     width: 81.5vw;
@@ -38,11 +45,17 @@ body {
 nav {
   .navbar-brand img {
     width: auto;
-    height: 2.8rem;
+    height: 2.7rem;
+
+    @include lg() {
+      height: 2.2rem;
+    }
   }
 
   #lang {
+    cursor: pointer;
     background: $second;
+    font-size: .8rem;
   }
 }
 
@@ -60,7 +73,7 @@ menu {
 
   img {
     width: auto;
-    height: 1.2rem;
+    height: 1rem;
   }
 
   .menu-item {
@@ -92,7 +105,7 @@ aside {
     margin-right: 1.5rem;
 
     img {
-      height: 3.2rem;
+      height: 2.6rem;
       width: auto;
     }
   }
@@ -104,7 +117,7 @@ aside {
     cursor: pointer;
 
     img {
-      width: 1.1rem;
+      width: .8rem;
       height: auto;
     }
   }
@@ -121,8 +134,8 @@ aside {
     margin-top: 1.1rem;
 
     button {
-      height: 1.5rem;
-      font-size: 0.9rem;
+      height: 1.3rem;
+      font-size: 0.7rem;
       @include border();
       @include transition();
 
@@ -325,8 +338,10 @@ aside {
 }
 
 main {
-  @include sm() {
-    margin-top: 5rem;
+  margin-top: 4.6rem;
+
+  @include lg() {
+    margin-top: 0;
   }
 
   .item {
@@ -335,14 +350,6 @@ main {
     padding-bottom: 0.5rem;
     margin-bottom: 0.2rem;
     border-radius: 0.9rem;
-
-    //hover
-    // @include transition();
-    // transition: background 0.1s linear;
-
-    // &:hover {
-    //   background: #737373;
-    // }
 
     img {
       width: 10rem;

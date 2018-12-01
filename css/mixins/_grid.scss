@@ -41,3 +41,15 @@
         column-count: 6;
     }
 }
+
+@media (min-width: 1600px) {
+    .masonry-layout {
+        column-count: 7;
+    }
+}
+
+@media (min-width: 1800px) {
+    .masonry-layout {
+        column-count: 8;
+    }
+}
