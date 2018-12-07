@@ -125,52 +125,37 @@
 
         </menu>
     </div>
-    <div class="container-fluid ml-lg-3" id="page">
+    <div class="container-fluid px-2 ml-lg-3 pb-5" id="page">
         <!-- filter -->
-        <div id="filter" class="d-flex mt-lg-2">
-            <div class="w-100 mx-1">
-                <button class="text-white button">
-                    <div class="d-flex justify-content-between align-items-center px-1">
-                        <img src="img/arrow.svg" alt="">
-                        بازه قیمت
-                    </div>
-                </button>
-            </div>
-            <div class="w-100 mx-1">
-                <button class="text-white button">
-                    <div class="d-flex justify-content-between align-items-center px-1">
-                        <img src="img/arrow.svg" alt="">
-                        سبک
-                    </div>
-                </button>
-            </div>
-            <div class="w-100 mx-1">
-                <button class="text-white button">
-                    <div class="d-flex justify-content-between align-items-center px-1">
-                        <img src="img/arrow.svg" alt="">
-                        تکنیک
-                    </div>
-                </button>
-            </div>
-            <div class="w-100 mx-1">
-                <button class="text-white button">
-                    <div class="d-flex justify-content-between align-items-center px-1">
-                        <img src="img/arrow.svg" alt="">
-                        دسته بندی هنری
-                    </div>
-                </button>
-            </div>
-            <div class="w-100 mx-1">
-                <button class="text-white button">
-                    <div class="d-flex justify-content-between align-items-center px-1">
-                        <img src="img/arrow.svg" alt="">
-                        مرتب سازی بر اساس
-                    </div>
-                </button>
-            </div>
+        <div id="filter" class="d-flex mt-lg-2 text-right">
+            <a class="w-100 mx-1" href="discount.html">
+                <div class="px-2 py-1 button">
+                    تخفیف خورده ها
+                </div>
+            </a>
+            <a class="w-100 mx-1" href="special offers.html">
+                <div class="px-2 py-1 button">
+                    پیشنهادات ویژه
+                </div>
+            </a>
+            <a class="w-100 mx-1" href="artist rate.html">
+                <div class="px-2 py-1 button">
+                    امتیاز هنرمند
+                </div>
+            </a>
+            <a class="w-100 mx-1" href="most popular.html">
+                <div class="px-2 py-1 button">
+                    محبوب ترین
+                </div>
+            </a>
+            <a class="w-100 mx-1" href="newset.html">
+                <div class="px-2 py-1 button">
+                    جدید ترین
+                </div>
+            </a>
             <!-- search -->
             <div class="w-100 mx-1">
-                <form action="" class="text-right rtl ml-auto mr-1 position-relative">
+                <form action="" class="w-100 rtl ml-auto mr-1 position-relative">
                     <img src="img/clear.svg" alt="" class="position-absolute invisible" id="clear">
                     <input type="text" id="search">
                     <button type="submit" class="position-absolute" id="magnifier">
@@ -180,11 +165,14 @@
             </div>
         </div>
         <!-- main -->
-        <main class="container-fluid px-2 mt-lg-3 pb-5">
-            <div class="row" id="home">
-                <div class="col-4 col-md-3 col-lg-2 p-0">
+        <main class="mt-lg-3 text-center">
+            <div class="masonry-layout" id="home">
+                <div class="masonry-layout__panel">
                     <div class="item">
-                        <img src="img/l1@2x.png" alt="" class="img-fluid">
+                        <div class="status-container">
+                            <img src="img/l1@2x.png" alt="" class="img-fluid">
+                            <img src="img/s1.svg" alt="" class="status">
+                        </div>
                         <div class="body mt-1 d-flex justify-content-between text-right text-white">
                             <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
                             <div>
@@ -201,6 +189,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="masonry-layout__panel">
                     <div class="item">
                         <img src="img/l2@2x.png" alt="" class="img-fluid">
                         <div class="body mt-1 d-flex justify-content-between text-right text-white">
@@ -219,6 +209,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="masonry-layout__panel">
                     <div class="item">
                         <img src="img/l3@2x.png" alt="" class="img-fluid">
                         <div class="body mt-1 d-flex justify-content-between text-right text-white">
@@ -238,7 +230,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 col-md-3 col-lg-2 p-0">
+                <div class="masonry-layout__panel">
                     <div class="item">
                         <img src="img/l4@2x.png" alt="" class="img-fluid">
                         <div class="body mt-1 d-flex justify-content-between text-right text-white">
@@ -257,80 +249,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <img src="img/l2@2x.png" alt="" class="img-fluid">
-                        <div class="body mt-1 d-flex justify-content-between text-right text-white">
-                            <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
-                            <div>
-                                <div class="title">گالری سیحون</div>
-                                <div class="type text-orange">نقاشی - رنگ روغن</div>
-                                <div class="price d-flex flex-row-reverse">
-                                    <div>
-                                        15,000,000
-                                    </div>
-                                    <div class="tag">
-                                        تومان
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="img/l3@2x.png" alt="" class="img-fluid">
-                        <div class="body mt-1 d-flex justify-content-between text-right text-white">
-                            <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
-                            <div>
-                                <div class="title">گالری سیحون</div>
-                                <div class="type text-orange">نقاشی - رنگ روغن</div>
-                                <div class="price d-flex flex-row-reverse">
-                                    <div>
-                                        15,000,000
-                                    </div>
-                                    <div class="tag">
-                                        تومان
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-4 col-md-3 col-lg-2 p-0">
-                    <div class="item">
-                        <img src="img/l3@2x.png" alt="" class="img-fluid">
-                        <div class="body mt-1 d-flex justify-content-between text-right text-white">
-                            <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
-                            <div>
-                                <div class="title">گالری سیحون</div>
-                                <div class="type text-orange">نقاشی - رنگ روغن</div>
-                                <div class="price d-flex flex-row-reverse">
-                                    <div>
-                                        15,000,000
-                                    </div>
-                                    <div class="tag">
-                                        تومان
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="img/l4@2x.png" alt="" class="img-fluid">
-                        <div class="body mt-1 d-flex justify-content-between text-right text-white">
-                            <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
-                            <div>
-                                <div class="title">گالری سیحون</div>
-                                <div class="type text-orange">نقاشی - رنگ روغن</div>
-                                <div class="price d-flex flex-row-reverse">
-                                    <div>
-                                        15,000,000
-                                    </div>
-                                    <div class="tag">
-                                        تومان
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="masonry-layout__panel">
                     <div class="item">
                         <img src="img/l2@2x.png" alt="" class="img-fluid">
                         <div class="body mt-1 d-flex justify-content-between text-right text-white">
@@ -350,7 +270,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 col-md-3 col-lg-2 p-0">
+                <div class="masonry-layout__panel">
                     <div class="item">
                         <img src="img/l3@2x.png" alt="" class="img-fluid">
                         <div class="body mt-1 d-flex justify-content-between text-right text-white">
@@ -369,6 +289,54 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="masonry-layout__panel">
+                    <div class="item">
+                        <div class="status-container">
+                            <img src="img/l3@2x.png" alt="" class="img-fluid">
+                            <img src="img/s2.svg" alt="" class="status">
+                        </div>
+                        <div class="body mt-1 d-flex justify-content-between text-right text-white">
+                            <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
+                            <div>
+                                <div class="title">گالری سیحون</div>
+                                <div class="type text-orange">نقاشی - رنگ روغن</div>
+                                <div class="price d-flex flex-row-reverse">
+                                    <div>
+                                        15,000,000
+                                    </div>
+                                    <div class="tag">
+                                        تومان
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-layout__panel">
+                    <div class="item">
+                        <div class="status-container">
+                            <img src="img/l4@2x.png" alt="" class="img-fluid">
+                            <img src="img/s3.svg" alt="" class="status">
+                        </div>
+                        <div class="body mt-1 d-flex justify-content-between text-right text-white">
+                            <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
+                            <div>
+                                <div class="title">گالری سیحون</div>
+                                <div class="type text-orange">نقاشی - رنگ روغن</div>
+                                <div class="price d-flex flex-row-reverse">
+                                    <div>
+                                        15,000,000
+                                    </div>
+                                    <div class="tag">
+                                        تومان
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-layout__panel">
                     <div class="item">
                         <img src="img/l2@2x.png" alt="" class="img-fluid">
                         <div class="body mt-1 d-flex justify-content-between text-right text-white">
@@ -387,6 +355,51 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="masonry-layout__panel">
+                    <div class="item">
+                        <div class="status-container">
+                            <img src="img/l3@2x.png" alt="" class="img-fluid">
+                            <img src="img/s1.svg" alt="" class="status">
+                        </div>
+                        <div class="body mt-1 d-flex justify-content-between text-right text-white">
+                            <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
+                            <div>
+                                <div class="title">گالری سیحون</div>
+                                <div class="type text-orange">نقاشی - رنگ روغن</div>
+                                <div class="price d-flex flex-row-reverse">
+                                    <div>
+                                        15,000,000
+                                    </div>
+                                    <div class="tag">
+                                        تومان
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-layout__panel">
+                    <div class="item">
+                        <img src="img/l2@2x.png" alt="" class="img-fluid">
+                        <div class="body mt-1 d-flex justify-content-between text-right text-white">
+                            <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
+                            <div>
+                                <div class="title">گالری سیحون</div>
+                                <div class="type text-orange">نقاشی - رنگ روغن</div>
+                                <div class="price d-flex flex-row-reverse">
+                                    <div>
+                                        15,000,000
+                                    </div>
+                                    <div class="tag">
+                                        تومان
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-layout__panel">
                     <div class="item">
                         <img src="img/l1@2x.png" alt="" class="img-fluid">
                         <div class="body mt-1 d-flex justify-content-between text-right text-white">
@@ -406,7 +419,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 col-md-3 col-lg-2 p-0">
+                <div class="masonry-layout__panel">
                     <div class="item">
                         <img src="img/l2@2x.png" alt="" class="img-fluid">
                         <div class="body mt-1 d-flex justify-content-between text-right text-white">
@@ -425,6 +438,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="masonry-layout__panel">
                     <div class="item">
                         <img src="img/l4@2x.png" alt="" class="img-fluid">
                         <div class="body mt-1 d-flex justify-content-between text-right text-white">
@@ -443,6 +458,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="masonry-layout__panel">
                     <div class="item">
                         <img src="img/l3@2x.png" alt="" class="img-fluid">
                         <div class="body mt-1 d-flex justify-content-between text-right text-white">
@@ -462,9 +479,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 col-md-3 col-lg-2 p-0">
+                <div class="masonry-layout__panel">
                     <div class="item">
-                        <img src="img/l1@2x.png" alt="" class="img-fluid">
+                        <div class="status-container">
+                            <img src="img/l1@2x.png" alt="" class="img-fluid">
+                            <img src="img/s2.svg" alt="" class="status">
+                        </div>
                         <div class="body mt-1 d-flex justify-content-between text-right text-white">
                             <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
                             <div>
@@ -481,8 +501,13 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="masonry-layout__panel">
                     <div class="item">
-                        <img src="img/l3@2x.png" alt="" class="img-fluid">
+                        <div class="status-container">
+                            <img src="img/l3@2x.png" alt="" class="img-fluid">
+                            <img src="img/s3.svg" alt="" class="status">
+                        </div>
                         <div class="body mt-1 d-flex justify-content-between text-right text-white">
                             <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
                             <div>
@@ -499,6 +524,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="masonry-layout__panel">
                     <div class="item">
                         <img src="img/l2@2x.png" alt="" class="img-fluid">
                         <div class="body mt-1 d-flex justify-content-between text-right text-white">
@@ -518,6 +545,175 @@
                         </div>
                     </div>
                 </div>
+                <div class="masonry-layout__panel">
+                    <div class="item">
+                        <img src="img/l2@2x.png" alt="" class="img-fluid">
+                        <div class="body mt-1 d-flex justify-content-between text-right text-white">
+                            <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
+                            <div>
+                                <div class="title">گالری سیحون</div>
+                                <div class="type text-orange">نقاشی - رنگ روغن</div>
+                                <div class="price d-flex flex-row-reverse">
+                                    <div>
+                                        15,000,000
+                                    </div>
+                                    <div class="tag">
+                                        تومان
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-layout__panel">
+                    <div class="item">
+                        <img src="img/l1@2x.png" alt="" class="img-fluid">
+                        <div class="body mt-1 d-flex justify-content-between text-right text-white">
+                            <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
+                            <div>
+                                <div class="title">گالری سیحون</div>
+                                <div class="type text-orange">نقاشی - رنگ روغن</div>
+                                <div class="price d-flex flex-row-reverse">
+                                    <div>
+                                        15,000,000
+                                    </div>
+                                    <div class="tag">
+                                        تومان
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-layout__panel">
+                    <div class="item">
+                        <img src="img/l2@2x.png" alt="" class="img-fluid">
+                        <div class="body mt-1 d-flex justify-content-between text-right text-white">
+                            <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
+                            <div>
+                                <div class="title">گالری سیحون</div>
+                                <div class="type text-orange">نقاشی - رنگ روغن</div>
+                                <div class="price d-flex flex-row-reverse">
+                                    <div>
+                                        15,000,000
+                                    </div>
+                                    <div class="tag">
+                                        تومان
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-layout__panel">
+                    <div class="item">
+                        <img src="img/l4@2x.png" alt="" class="img-fluid">
+                        <div class="body mt-1 d-flex justify-content-between text-right text-white">
+                            <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
+                            <div>
+                                <div class="title">گالری سیحون</div>
+                                <div class="type text-orange">نقاشی - رنگ روغن</div>
+                                <div class="price d-flex flex-row-reverse">
+                                    <div>
+                                        15,000,000
+                                    </div>
+                                    <div class="tag">
+                                        تومان
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-layout__panel">
+                    <div class="item">
+                        <img src="img/l3@2x.png" alt="" class="img-fluid">
+                        <div class="body mt-1 d-flex justify-content-between text-right text-white">
+                            <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
+                            <div>
+                                <div class="title">گالری سیحون</div>
+                                <div class="type text-orange">نقاشی - رنگ روغن</div>
+                                <div class="price d-flex flex-row-reverse">
+                                    <div>
+                                        15,000,000
+                                    </div>
+                                    <div class="tag">
+                                        تومان
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-layout__panel">
+                    <div class="item">
+                        <div class="status-container">
+                            <img src="img/l1@2x.png" alt="" class="img-fluid">
+                            <img src="img/s2.svg" alt="" class="status">
+                        </div>
+                        <div class="body mt-1 d-flex justify-content-between text-right text-white">
+                            <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
+                            <div>
+                                <div class="title">گالری سیحون</div>
+                                <div class="type text-orange">نقاشی - رنگ روغن</div>
+                                <div class="price d-flex flex-row-reverse">
+                                    <div>
+                                        15,000,000
+                                    </div>
+                                    <div class="tag">
+                                        تومان
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-layout__panel">
+                    <div class="item">
+                        <div class="status-container">
+                            <img src="img/l3@2x.png" alt="" class="img-fluid">
+                            <img src="img/s3.svg" alt="" class="status">
+                        </div>
+                        <div class="body mt-1 d-flex justify-content-between text-right text-white">
+                            <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
+                            <div>
+                                <div class="title">گالری سیحون</div>
+                                <div class="type text-orange">نقاشی - رنگ روغن</div>
+                                <div class="price d-flex flex-row-reverse">
+                                    <div>
+                                        15,000,000
+                                    </div>
+                                    <div class="tag">
+                                        تومان
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-layout__panel">
+                    <div class="item">
+                        <img src="img/l2@2x.png" alt="" class="img-fluid">
+                        <div class="body mt-1 d-flex justify-content-between text-right text-white">
+                            <img src="img/user-2@4x.png" alt="" class="rounded-circle align-self-center">
+                            <div>
+                                <div class="title">گالری سیحون</div>
+                                <div class="type text-orange">نقاشی - رنگ روغن</div>
+                                <div class="price d-flex flex-row-reverse">
+                                    <div>
+                                        15,000,000
+                                    </div>
+                                    <div class="tag">
+                                        تومان
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="masonry-layout__panel">
+
+                </div> -->
             </div>
         </main>
     </div>

@@ -17,7 +17,7 @@ html {
 
 @media screen and (min-width: 1200px) {
   html {
-    font-size: 1.5vw;
+    font-size: 23px;
   }
 }
 
@@ -77,7 +77,7 @@ menu {
   }
 
   .menu-item {
-    padding: 0 0.9rem;
+    padding: 0 0.8rem;
     cursor: pointer;
     @include transition(filter);
 
@@ -265,7 +265,7 @@ aside {
     height: 0;
 
     form {
-      height: 9rem;
+      height: 9.5rem;
       overflow-y: scroll;
 
       &::-webkit-scrollbar {
@@ -512,12 +512,7 @@ main {
 
   #u-pic {
     background: $main;
-
     height: 100%;
-
-    @include lg() {
-      height: 15.13rem;
-    }
 
     margin: auto;
     top: 0;
@@ -591,7 +586,11 @@ main {
 
 // product
 #product {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
+
+  @include lg() {
+    font-size: 0.6rem;
+  }
 
   //switching
   .disappear {
@@ -607,7 +606,12 @@ main {
   }
 
   #comment {
-    font-size: .5rem;
+    font-size: .6rem;
+
+    @include lg() {
+      font-size: 0.5rem;
+    }
+
     color: #CBCBCB;
 
     img {
@@ -672,7 +676,6 @@ main {
         color: #ffffff;
         border-radius: 5rem;
 
-        font-size: 0.55rem;
         width: 2.5rem;
         height: 1rem;
 
@@ -737,6 +740,12 @@ main {
   }
 
   #similar {
+    margin-top: 2rem;
+
+    @include lg() {
+      margin-top: 5rem;
+    }
+
     img {
       border-radius: 0.6rem;
     }
@@ -816,7 +825,11 @@ main {
   }
 
   .detail {
-    font-size: 0.55rem;
+    font-size: 0.65rem;
+
+    @include lg() {
+      font-size: 0.55rem;
+    }
 
     h6 {
       font-size: .8rem;
@@ -1041,7 +1054,7 @@ main {
 }
 
 .form {
-  font-size: 0.8rem;
+  font-size: .8rem;
   color: #CBCBCB;
 
   @include space();
@@ -1074,7 +1087,7 @@ main {
   }
 
   .table-container {
-    height: 22rem;
+    height: 20rem;
     overflow-y: auto;
     padding-left: .5rem;
   }
@@ -1099,7 +1112,7 @@ main {
 
   tr {
     background-color: #333333;
-    font-size: .6rem;
+    font-size: .55rem;
   }
 
   tr:nth-child(odd) {
@@ -1107,7 +1120,8 @@ main {
   }
 
   td {
-    height: 2rem;
+    height: 1.5rem;
+    padding: .50rem;
   }
 
   .end {

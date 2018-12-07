@@ -125,6 +125,46 @@ button {
     column-count: 8;
   }
 }
+@media (min-width: 2000px) {
+  .masonry-layout {
+    column-count: 9;
+  }
+}
+@media (min-width: 2500px) {
+  .masonry-layout {
+    column-count: 10;
+  }
+}
+@media (min-width: 3000px) {
+  .masonry-layout {
+    column-count: 11;
+  }
+}
+@media (min-width: 3500px) {
+  .masonry-layout {
+    column-count: 12;
+  }
+}
+@media (min-width: 3700px) {
+  .masonry-layout {
+    column-count: 14;
+  }
+}
+@media (min-width: 4000px) {
+  .masonry-layout {
+    column-count: 16;
+  }
+}
+@media (min-width: 4500px) {
+  .masonry-layout {
+    column-count: 18;
+  }
+}
+@media (min-width: 5000px) {
+  .masonry-layout {
+    column-count: 20;
+  }
+}
 html {
   font-size: 16px;
 }
@@ -136,7 +176,7 @@ html {
 }
 @media screen and (min-width: 1200px) {
   html {
-    font-size: 1.5vw;
+    font-size: 23px;
   }
 }
 body {
@@ -189,7 +229,7 @@ menu img {
   height: 1rem;
 }
 menu .menu-item {
-  padding: 0 0.9rem;
+  padding: 0 0.8rem;
   cursor: pointer;
   transition: filter 0.3s linear;
   filter: grayscale(0.99);
@@ -345,7 +385,7 @@ aside #copyright img {
   height: 0;
 }
 #filter .filter-content form {
-  height: 9rem;
+  height: 9.5rem;
   overflow-y: scroll;
 }
 #filter .filter-content form::-webkit-scrollbar {
@@ -554,11 +594,6 @@ main .status {
   border-top-right-radius: 100%;
   border-bottom-right-radius: 100%;
 }
-@media screen and (min-width: 1024px) {
-  #news #u-pic {
-    height: 15.13rem;
-  }
-}
 #news #u-pic img {
   height: 100%;
   width: auto;
@@ -606,7 +641,12 @@ main .status {
 }
 
 #product {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
+}
+@media screen and (min-width: 1024px) {
+  #product {
+    font-size: 0.6rem;
+  }
 }
 #product .disappear {
   display: none;
@@ -618,8 +658,13 @@ main .status {
   filter: brightness(0) invert(1);
 }
 #product #comment {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   color: #CBCBCB;
+}
+@media screen and (min-width: 1024px) {
+  #product #comment {
+    font-size: 0.5rem;
+  }
 }
 #product #comment img {
   height: 2rem;
@@ -672,7 +717,6 @@ main .status {
   background: #ffab00;
   color: #ffffff;
   border-radius: 5rem;
-  font-size: 0.55rem;
   width: 2.5rem;
   height: 1rem;
   border: 0.1rem solid transparent;
@@ -719,6 +763,14 @@ main .status {
 @media screen and (min-width: 1024px) {
   #product .indicators img {
     width: 90%;
+  }
+}
+#product #similar {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  #product #similar {
+    margin-top: 5rem;
   }
 }
 #product #similar img {
@@ -782,7 +834,12 @@ main .status {
   padding: 0.1rem 0.5rem;
 }
 #product .detail {
-  font-size: 0.55rem;
+  font-size: 0.65rem;
+}
+@media screen and (min-width: 1024px) {
+  #product .detail {
+    font-size: 0.55rem;
+  }
 }
 #product .detail h6 {
   font-size: 0.8rem;
@@ -993,10 +1050,10 @@ main .status {
 }
 @media screen and (min-width: 1024px) {
   .form {
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }
 .form .price {
@@ -1021,7 +1078,7 @@ main .status {
   width: 35%;
 }
 .form .table-container {
-  height: 22rem;
+  height: 20rem;
   overflow-y: auto;
   padding-left: 0.5rem;
 }
@@ -1041,13 +1098,14 @@ main .status {
 }
 .form tr {
   background-color: #333333;
-  font-size: 0.6rem;
+  font-size: 0.55rem;
 }
 .form tr:nth-child(odd) {
   background-color: #4d4d4d;
 }
 .form td {
-  height: 2rem;
+  height: 1.5rem;
+  padding: 0.5rem;
 }
 .form .end {
   background-color: #B1B1B1 !important;
@@ -1124,10 +1182,10 @@ main .status {
 }
 @media screen and (min-width: 1024px) {
   #status {
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }
 #status th,
@@ -1163,10 +1221,10 @@ main .status {
 }
 @media screen and (min-width: 1024px) {
   #orders {
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }
 #orders .col-lg-4 {

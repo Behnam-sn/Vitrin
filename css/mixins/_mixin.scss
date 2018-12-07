@@ -22,10 +22,10 @@
 
 @mixin space {
   @include lg() {
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 
   margin-top: 1.5rem;
